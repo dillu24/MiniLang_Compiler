@@ -4,7 +4,8 @@
 
 #include "Keywords.h"
 
-Lexer::Keywords::Keywords() {
+Lexer::Keywords::Keywords() { //Whenever an object of type Keywords is created , initializes it's set with the keywords
+                              // of mini lang
     KeywordsList.insert("real");
     KeywordsList.insert("int");
     KeywordsList.insert("bool");
@@ -24,6 +25,6 @@ Lexer::Keywords::Keywords() {
     KeywordsList.insert("def");
 }
 
-set<string> *Lexer::Keywords::getKeywordsList() {
+set<string> *Lexer::Keywords::getKeywordsList() { // get the address of the list
     return &KeywordsList;
 }

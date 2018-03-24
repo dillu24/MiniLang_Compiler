@@ -2,9 +2,6 @@
 // Created by Dylan Galea on 14/03/2018.
 //
 
-//TODO Ask about for and while
-//ToDo - logic not
-//ToDo Comments both multi line and single line
 #include "LexerImplementation.h"
 #include "Keywords.h"
 
@@ -12,17 +9,17 @@
 #include <stack>
 
 Lexer::LexerImplementation::LexerImplementation() {
-    initialize_input_characters("SourceCodeInput.txt");
-    current_state = State::S0;
-    current_input_index =0;
-    lineNumber = 1;
+    initialize_input_characters("SourceCodeInput.txt"); //get from default file
+    current_state = State::S0; //initialize start state
+    current_input_index =0; //initialize current state in the source program
+    lineNumber = 1; // started from line 1
 }
 
 Lexer::LexerImplementation::LexerImplementation(string file_name) {
-    initialize_input_characters(std::move(file_name));
-    current_state = State::S0;
-    current_input_index =0;
-    lineNumber = 1;
+    initialize_input_characters(std::move(file_name)); //get source file and initialzie input character
+    current_state = State::S0; //initialize start state
+    current_input_index =0; // initialize current state in the source program
+    lineNumber = 1; // start from line 1
 }
 
 Lexer::LexerImplementation::~LexerImplementation() = default;
@@ -31,39 +28,41 @@ void Lexer::LexerImplementation::initialize_input_characters(string file_name) {
     fstream input_file;
     input_file.open(file_name);
     if(input_file.is_open()){
-        cout<<"File opened"<<endl;
         char nextChar;
-        while(input_file.get(nextChar)){
+        while(input_file.get(nextChar)){ //until end of file keep reading characters and save them
             input_characters.push_back(nextChar);
         }
-        input_characters.push_back(EOF);
-        input_file.close();
+        input_characters.push_back(EOF); // push EOF marker as an indication that reading of characters is done
+        input_file.close(); //close file
     }else{
-        cout<<"File could not be opened"<<endl;
+        cout<<"File could not be opened"<<endl; // if the file cannot be opened indicate to the user and stop program
         input_file.close();
         exit(-1);
     }
 }
 
 Lexer::Token* Lexer::LexerImplementation::getNextToken() {
-    current_state = State::S0;
-    string lexeme;
-    stack<State> stack;
-    stack.push(State::BAD);
+    current_state = State::S0; // start from start state
+    string lexeme; // lexeme that is read so far
+    stack<State> stack; // stack to store the states
+    stack.push(State::BAD); // push bad state in order to check for valid input
     while(current_state != State::SE){
-        char next_character = input_characters[current_input_index];
-        current_input_index++;
+        char next_character = input_characters[current_input_index]; // read next character from source file
+        current_input_index++; // go to the next character for next iteration
         if(lexeme.length()==0){ //to handle spaces when a token has been read , note that this was done this way
                                 // in order not to interfere with white spaces in string literals
-            if(next_character == ' '){
+            if(next_character == ' '){ // if next is a space skip the character since it is not in a string literal,
+                                       // if it where in a string literal the lexeme length would be greater than zero
+                                       // since the first character is ""
                 continue;
-            }else if(next_character =='\n'){
+            }else if(next_character =='\n'){ // if new line has been encountered skip it also and increment the line
+                                             // number for error reporting
                 lineNumber++;
                 continue;
             }
         }
         if(next_character == '/'){ //handling of comments
-            bool invalidComment = false;
+            bool invalidComment = false; // in order to check for invalid coments
             if(input_characters[current_input_index] == '/'){ //if next character is a forward slash this means a comment
                                                               // should be interpreted
                 while (input_characters[current_input_index] != '\n' && input_characters[current_input_index] != EOF){
@@ -97,30 +96,31 @@ Lexer::Token* Lexer::LexerImplementation::getNextToken() {
                 }
             }
         }
-        lexeme += next_character;
-        current_state = transitionFunction(current_state,next_character);
-        if(checkIfFinalState()){
+        lexeme += next_character; // if no comments , spaces , new lines are present add character to lexeme
+        current_state = transitionFunction(current_state,next_character); // get next state
+        if(checkIfFinalState()){ // if this is final state no need to store previous states.
             stack.empty();
         }
-        stack.push(current_state);
+        stack.push(current_state); //push current state
     }
-    while(!checkIfFinalState() && current_state != State::BAD){
+    while(!checkIfFinalState() && current_state != State::BAD){ // get ending state and lexeme depending on that ending
         stack.pop();
         lexeme.pop_back();
         current_state = stack.top();
         current_input_index--; //to start from where last was accepted.
     }
-    if(checkIfFinalState()){
-        Token *token = new Token(lexeme,current_state);
+    if(checkIfFinalState()){ //check if ending state is final
+        Token *token = new Token(lexeme,current_state); // if final a valid token is initialized
         return token;
-    }else{
+    }else{ // otherwise we get an invalid token
         auto *token = new Token();
-        cout<<"Syntax error in line "<<lineNumber<<endl;
+        cout<<"Syntax error in line "<<lineNumber<<endl; // report error at that particular line
         return token;
     }
 }
 
-bool Lexer::LexerImplementation::checkIfFinalState() {
+bool Lexer::LexerImplementation::checkIfFinalState() { // This method determines which are the final states according
+                                                       // to the given DFSA
     switch(current_state){
         case State::S1:
         case State::S2:
@@ -141,6 +141,7 @@ bool Lexer::LexerImplementation::checkIfFinalState() {
 }
 
 Lexer::State Lexer::LexerImplementation::transitionFunction(Lexer::State state, char input) {
+    //The transition function , in order to understand fully see diagram
     switch(state){
         case State::S0:
             if(isdigit(input)){
