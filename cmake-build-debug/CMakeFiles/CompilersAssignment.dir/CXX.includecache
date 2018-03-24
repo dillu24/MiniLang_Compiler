@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp
+Keywords.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
+iostream
+-
+set
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.cpp
+LexerImplementation.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
+Keywords.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
+utility
+-
+stack
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
+iostream
+-
+fstream
+-
+vector
+-
+Token.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
+State.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.cpp
+Token.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
+Keywords.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
+utility
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
+iostream
+-
+State.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp
+iostream
+-
+Lexer/LexerImplementation.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
+
