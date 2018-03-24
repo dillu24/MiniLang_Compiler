@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17033030-dfd1-48ad-b3c7-f221036d4fe5" name="Default" comment="" />
+    <list default="true" id="17033030-dfd1-48ad-b3c7-f221036d4fe5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -168,12 +170,12 @@
       <workItem from="1521529329959" duration="159000" />
       <workItem from="1521716387498" duration="6465000" />
       <workItem from="1521795867009" duration="3096000" />
-      <workItem from="1521882323693" duration="1530000" />
+      <workItem from="1521882323693" duration="1868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57975000" />
+    <option name="totallyTimeSpent" value="58313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
