@@ -99,7 +99,9 @@ Lexer::Token* Lexer::LexerImplementation::getNextToken() {
         lexeme += next_character; // if no comments , spaces , new lines are present add character to lexeme
         current_state = transitionFunction(current_state,next_character); // get next state
         if(checkIfFinalState()){ // if this is final state no need to store previous states.
-            stack.empty();
+            while(!stack.empty()){
+               stack.pop();
+            }
         }
         stack.push(current_state); //push current state
     }

@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.cpp
+ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ASTNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.cpp
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.cpp
+ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp
 Keywords.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
@@ -53,6 +73,18 @@ iostream
 -
 State.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp
+PredictiveParser.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+../ASTHierarchy/ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+../ASTHierarchy/ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp
 iostream

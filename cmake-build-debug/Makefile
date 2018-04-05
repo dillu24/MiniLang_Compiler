@@ -122,6 +122,87 @@ CompilersAssignment/fast:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/build
 .PHONY : CompilersAssignment/fast
 
+ASTHierarchy/ASTExprNode.obj: ASTHierarchy/ASTExprNode.cpp.obj
+
+.PHONY : ASTHierarchy/ASTExprNode.obj
+
+# target to build an object file
+ASTHierarchy/ASTExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.obj
+.PHONY : ASTHierarchy/ASTExprNode.cpp.obj
+
+ASTHierarchy/ASTExprNode.i: ASTHierarchy/ASTExprNode.cpp.i
+
+.PHONY : ASTHierarchy/ASTExprNode.i
+
+# target to preprocess a source file
+ASTHierarchy/ASTExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.i
+.PHONY : ASTHierarchy/ASTExprNode.cpp.i
+
+ASTHierarchy/ASTExprNode.s: ASTHierarchy/ASTExprNode.cpp.s
+
+.PHONY : ASTHierarchy/ASTExprNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/ASTExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.s
+.PHONY : ASTHierarchy/ASTExprNode.cpp.s
+
+ASTHierarchy/ASTNode.obj: ASTHierarchy/ASTNode.cpp.obj
+
+.PHONY : ASTHierarchy/ASTNode.obj
+
+# target to build an object file
+ASTHierarchy/ASTNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTNode.cpp.obj
+.PHONY : ASTHierarchy/ASTNode.cpp.obj
+
+ASTHierarchy/ASTNode.i: ASTHierarchy/ASTNode.cpp.i
+
+.PHONY : ASTHierarchy/ASTNode.i
+
+# target to preprocess a source file
+ASTHierarchy/ASTNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTNode.cpp.i
+.PHONY : ASTHierarchy/ASTNode.cpp.i
+
+ASTHierarchy/ASTNode.s: ASTHierarchy/ASTNode.cpp.s
+
+.PHONY : ASTHierarchy/ASTNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/ASTNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTNode.cpp.s
+.PHONY : ASTHierarchy/ASTNode.cpp.s
+
+ASTHierarchy/ASTStatementNode.obj: ASTHierarchy/ASTStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/ASTStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/ASTStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.obj
+.PHONY : ASTHierarchy/ASTStatementNode.cpp.obj
+
+ASTHierarchy/ASTStatementNode.i: ASTHierarchy/ASTStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/ASTStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/ASTStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.i
+.PHONY : ASTHierarchy/ASTStatementNode.cpp.i
+
+ASTHierarchy/ASTStatementNode.s: ASTHierarchy/ASTStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/ASTStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/ASTStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.s
+.PHONY : ASTHierarchy/ASTStatementNode.cpp.s
+
 Lexer/Keywords.obj: Lexer/Keywords.cpp.obj
 
 .PHONY : Lexer/Keywords.obj
@@ -203,6 +284,33 @@ Lexer/Token.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.s
 .PHONY : Lexer/Token.cpp.s
 
+Parser/PredictiveParser.obj: Parser/PredictiveParser.cpp.obj
+
+.PHONY : Parser/PredictiveParser.obj
+
+# target to build an object file
+Parser/PredictiveParser.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj
+.PHONY : Parser/PredictiveParser.cpp.obj
+
+Parser/PredictiveParser.i: Parser/PredictiveParser.cpp.i
+
+.PHONY : Parser/PredictiveParser.i
+
+# target to preprocess a source file
+Parser/PredictiveParser.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.i
+.PHONY : Parser/PredictiveParser.cpp.i
+
+Parser/PredictiveParser.s: Parser/PredictiveParser.cpp.s
+
+.PHONY : Parser/PredictiveParser.s
+
+# target to generate assembly for a file
+Parser/PredictiveParser.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.s
+.PHONY : Parser/PredictiveParser.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -239,6 +347,15 @@ help:
 	@echo ... edit_cache
 	@echo ... CompilersAssignment
 	@echo ... rebuild_cache
+	@echo ... ASTHierarchy/ASTExprNode.obj
+	@echo ... ASTHierarchy/ASTExprNode.i
+	@echo ... ASTHierarchy/ASTExprNode.s
+	@echo ... ASTHierarchy/ASTNode.obj
+	@echo ... ASTHierarchy/ASTNode.i
+	@echo ... ASTHierarchy/ASTNode.s
+	@echo ... ASTHierarchy/ASTStatementNode.obj
+	@echo ... ASTHierarchy/ASTStatementNode.i
+	@echo ... ASTHierarchy/ASTStatementNode.s
 	@echo ... Lexer/Keywords.obj
 	@echo ... Lexer/Keywords.i
 	@echo ... Lexer/Keywords.s
@@ -248,6 +365,9 @@ help:
 	@echo ... Lexer/Token.obj
 	@echo ... Lexer/Token.i
 	@echo ... Lexer/Token.s
+	@echo ... Parser/PredictiveParser.obj
+	@echo ... Parser/PredictiveParser.i
+	@echo ... Parser/PredictiveParser.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
