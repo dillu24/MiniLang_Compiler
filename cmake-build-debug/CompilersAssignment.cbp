@@ -80,22 +80,76 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.cpp">
-			<Option target="CompilersAssignment"/>
-		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h">
-			<Option target="CompilersAssignment"/>
-		</Unit>
-		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.cpp">
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
-		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.cpp">
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
-		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h">
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/Type.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp">

@@ -61,7 +61,7 @@ namespace Lexer{
          * @return
          * An integer that refers to the value of the TOK_NUMBER
          */
-        int getTokenValue();
+        double getTokenValue();
 
         /**
          * This is a getter method used to get a name assigned to each token type in order to be more specific
@@ -96,7 +96,7 @@ namespace Lexer{
     private:
         TokenType token_type; //stores the token type
         string token_name; //stores a specific token name related to the token type
-        int token_value; // stores the integer representing the lexeme that is related to the token
+        double token_value; // stores the double representing the lexeme that is related to the token
         char token_character_value; // stores the character representing the lexeme that is related to the token
         string token_string_value; // stores the string representing the lexeme that is related to the token
         /**

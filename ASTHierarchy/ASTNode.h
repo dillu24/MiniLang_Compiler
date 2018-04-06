@@ -5,10 +5,12 @@
 #ifndef COMPILERSASSIGNMENT_ASTNODE_H
 #define COMPILERSASSIGNMENT_ASTNODE_H
 
-#include "../Visitors/Visitor.h"
-using namespace Visitors;
 
-namespace ASTHierarchy{
+namespace Visitors{
+    class Visitor;
+}
+using namespace Visitors;
+namespace AST{
     class ASTNode {
     public:
         virtual void accept(Visitor *v ) =0;

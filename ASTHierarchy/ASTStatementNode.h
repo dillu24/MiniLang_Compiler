@@ -5,10 +5,15 @@
 #ifndef COMPILERSASSIGNMENT_ASTSTATEMENTNODE_H
 #define COMPILERSASSIGNMENT_ASTSTATEMENTNODE_H
 
+#include "ASTNode.h"
 
-class ASTStatementNode {
-
-};
+using namespace AST;
+namespace AST{
+    class ASTStatementNode : ASTNode {
+    public:
+        void accept(Visitor *v) override = 0;
+    };
+}
 
 
 #endif //COMPILERSASSIGNMENT_ASTSTATEMENTNODE_H

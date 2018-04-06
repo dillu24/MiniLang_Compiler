@@ -122,86 +122,275 @@ CompilersAssignment/fast:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/build
 .PHONY : CompilersAssignment/fast
 
-ASTHierarchy/ASTExprNode.obj: ASTHierarchy/ASTExprNode.cpp.obj
+ASTHierarchy/Expression/ASTBinaryExprNode.obj: ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj
 
-.PHONY : ASTHierarchy/ASTExprNode.obj
-
-# target to build an object file
-ASTHierarchy/ASTExprNode.cpp.obj:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.obj
-.PHONY : ASTHierarchy/ASTExprNode.cpp.obj
-
-ASTHierarchy/ASTExprNode.i: ASTHierarchy/ASTExprNode.cpp.i
-
-.PHONY : ASTHierarchy/ASTExprNode.i
-
-# target to preprocess a source file
-ASTHierarchy/ASTExprNode.cpp.i:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.i
-.PHONY : ASTHierarchy/ASTExprNode.cpp.i
-
-ASTHierarchy/ASTExprNode.s: ASTHierarchy/ASTExprNode.cpp.s
-
-.PHONY : ASTHierarchy/ASTExprNode.s
-
-# target to generate assembly for a file
-ASTHierarchy/ASTExprNode.cpp.s:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.s
-.PHONY : ASTHierarchy/ASTExprNode.cpp.s
-
-ASTHierarchy/ASTNode.obj: ASTHierarchy/ASTNode.cpp.obj
-
-.PHONY : ASTHierarchy/ASTNode.obj
+.PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.obj
 
 # target to build an object file
-ASTHierarchy/ASTNode.cpp.obj:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTNode.cpp.obj
-.PHONY : ASTHierarchy/ASTNode.cpp.obj
+ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj
 
-ASTHierarchy/ASTNode.i: ASTHierarchy/ASTNode.cpp.i
+ASTHierarchy/Expression/ASTBinaryExprNode.i: ASTHierarchy/Expression/ASTBinaryExprNode.cpp.i
 
-.PHONY : ASTHierarchy/ASTNode.i
+.PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.i
 
 # target to preprocess a source file
-ASTHierarchy/ASTNode.cpp.i:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTNode.cpp.i
-.PHONY : ASTHierarchy/ASTNode.cpp.i
+ASTHierarchy/Expression/ASTBinaryExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.cpp.i
 
-ASTHierarchy/ASTNode.s: ASTHierarchy/ASTNode.cpp.s
+ASTHierarchy/Expression/ASTBinaryExprNode.s: ASTHierarchy/Expression/ASTBinaryExprNode.cpp.s
 
-.PHONY : ASTHierarchy/ASTNode.s
+.PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.s
 
 # target to generate assembly for a file
-ASTHierarchy/ASTNode.cpp.s:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTNode.cpp.s
-.PHONY : ASTHierarchy/ASTNode.cpp.s
+ASTHierarchy/Expression/ASTBinaryExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.cpp.s
 
-ASTHierarchy/ASTStatementNode.obj: ASTHierarchy/ASTStatementNode.cpp.obj
+ASTHierarchy/Expression/ASTNumberExprNode.obj: ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj
 
-.PHONY : ASTHierarchy/ASTStatementNode.obj
+.PHONY : ASTHierarchy/Expression/ASTNumberExprNode.obj
 
 # target to build an object file
-ASTHierarchy/ASTStatementNode.cpp.obj:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.obj
-.PHONY : ASTHierarchy/ASTStatementNode.cpp.obj
+ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj
 
-ASTHierarchy/ASTStatementNode.i: ASTHierarchy/ASTStatementNode.cpp.i
+ASTHierarchy/Expression/ASTNumberExprNode.i: ASTHierarchy/Expression/ASTNumberExprNode.cpp.i
 
-.PHONY : ASTHierarchy/ASTStatementNode.i
+.PHONY : ASTHierarchy/Expression/ASTNumberExprNode.i
 
 # target to preprocess a source file
-ASTHierarchy/ASTStatementNode.cpp.i:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.i
-.PHONY : ASTHierarchy/ASTStatementNode.cpp.i
+ASTHierarchy/Expression/ASTNumberExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTNumberExprNode.cpp.i
 
-ASTHierarchy/ASTStatementNode.s: ASTHierarchy/ASTStatementNode.cpp.s
+ASTHierarchy/Expression/ASTNumberExprNode.s: ASTHierarchy/Expression/ASTNumberExprNode.cpp.s
 
-.PHONY : ASTHierarchy/ASTStatementNode.s
+.PHONY : ASTHierarchy/Expression/ASTNumberExprNode.s
 
 # target to generate assembly for a file
-ASTHierarchy/ASTStatementNode.cpp.s:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.s
-.PHONY : ASTHierarchy/ASTStatementNode.cpp.s
+ASTHierarchy/Expression/ASTNumberExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTNumberExprNode.cpp.s
+
+ASTHierarchy/Statement/ASTAssignStatementNode.obj: ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTAssignStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTAssignStatementNode.i: ASTHierarchy/Statement/ASTAssignStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTAssignStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTAssignStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTAssignStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTAssignStatementNode.s: ASTHierarchy/Statement/ASTAssignStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTAssignStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTAssignStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTAssignStatementNode.cpp.s
+
+ASTHierarchy/Statement/ASTBlockStatementNode.obj: ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTBlockStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTBlockStatementNode.i: ASTHierarchy/Statement/ASTBlockStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTBlockStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTBlockStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTBlockStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTBlockStatementNode.s: ASTHierarchy/Statement/ASTBlockStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTBlockStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTBlockStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTBlockStatementNode.cpp.s
+
+ASTHierarchy/Statement/ASTFuncDeclStatementNode.obj: ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTFuncDeclStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTFuncDeclStatementNode.i: ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTFuncDeclStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTFuncDeclStatementNode.s: ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTFuncDeclStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.s
+
+ASTHierarchy/Statement/ASTIfStatementNode.obj: ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTIfStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTIfStatementNode.i: ASTHierarchy/Statement/ASTIfStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTIfStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTIfStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTIfStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTIfStatementNode.s: ASTHierarchy/Statement/ASTIfStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTIfStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTIfStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTIfStatementNode.cpp.s
+
+ASTHierarchy/Statement/ASTPrintStatementNode.obj: ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTPrintStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTPrintStatementNode.i: ASTHierarchy/Statement/ASTPrintStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTPrintStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTPrintStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTPrintStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTPrintStatementNode.s: ASTHierarchy/Statement/ASTPrintStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTPrintStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTPrintStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTPrintStatementNode.cpp.s
+
+ASTHierarchy/Statement/ASTReturnStatementNode.obj: ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTReturnStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTReturnStatementNode.i: ASTHierarchy/Statement/ASTReturnStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTReturnStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTReturnStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTReturnStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTReturnStatementNode.s: ASTHierarchy/Statement/ASTReturnStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTReturnStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTReturnStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTReturnStatementNode.cpp.s
+
+ASTHierarchy/Statement/ASTVarDeclStatementNode.obj: ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTVarDeclStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTVarDeclStatementNode.i: ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTVarDeclStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTVarDeclStatementNode.s: ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTVarDeclStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.s
+
+ASTHierarchy/Statement/ASTWhileStatementNode.obj: ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/ASTWhileStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj
+.PHONY : ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj
+
+ASTHierarchy/Statement/ASTWhileStatementNode.i: ASTHierarchy/Statement/ASTWhileStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/Statement/ASTWhileStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/ASTWhileStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.i
+.PHONY : ASTHierarchy/Statement/ASTWhileStatementNode.cpp.i
+
+ASTHierarchy/Statement/ASTWhileStatementNode.s: ASTHierarchy/Statement/ASTWhileStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/Statement/ASTWhileStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/ASTWhileStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.s
+.PHONY : ASTHierarchy/Statement/ASTWhileStatementNode.cpp.s
 
 Lexer/Keywords.obj: Lexer/Keywords.cpp.obj
 
@@ -347,15 +536,36 @@ help:
 	@echo ... edit_cache
 	@echo ... CompilersAssignment
 	@echo ... rebuild_cache
-	@echo ... ASTHierarchy/ASTExprNode.obj
-	@echo ... ASTHierarchy/ASTExprNode.i
-	@echo ... ASTHierarchy/ASTExprNode.s
-	@echo ... ASTHierarchy/ASTNode.obj
-	@echo ... ASTHierarchy/ASTNode.i
-	@echo ... ASTHierarchy/ASTNode.s
-	@echo ... ASTHierarchy/ASTStatementNode.obj
-	@echo ... ASTHierarchy/ASTStatementNode.i
-	@echo ... ASTHierarchy/ASTStatementNode.s
+	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.obj
+	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.i
+	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.s
+	@echo ... ASTHierarchy/Expression/ASTNumberExprNode.obj
+	@echo ... ASTHierarchy/Expression/ASTNumberExprNode.i
+	@echo ... ASTHierarchy/Expression/ASTNumberExprNode.s
+	@echo ... ASTHierarchy/Statement/ASTAssignStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTAssignStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTAssignStatementNode.s
+	@echo ... ASTHierarchy/Statement/ASTBlockStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTBlockStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTBlockStatementNode.s
+	@echo ... ASTHierarchy/Statement/ASTFuncDeclStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTFuncDeclStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTFuncDeclStatementNode.s
+	@echo ... ASTHierarchy/Statement/ASTIfStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTIfStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTIfStatementNode.s
+	@echo ... ASTHierarchy/Statement/ASTPrintStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTPrintStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTPrintStatementNode.s
+	@echo ... ASTHierarchy/Statement/ASTReturnStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTReturnStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTReturnStatementNode.s
+	@echo ... ASTHierarchy/Statement/ASTVarDeclStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTVarDeclStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTVarDeclStatementNode.s
+	@echo ... ASTHierarchy/Statement/ASTWhileStatementNode.obj
+	@echo ... ASTHierarchy/Statement/ASTWhileStatementNode.i
+	@echo ... ASTHierarchy/Statement/ASTWhileStatementNode.s
 	@echo ... Lexer/Keywords.obj
 	@echo ... Lexer/Keywords.i
 	@echo ... Lexer/Keywords.s

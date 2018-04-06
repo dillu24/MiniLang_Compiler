@@ -26,7 +26,7 @@ Lexer::Token::Token(string lexeme,State state) { // whenever a lexeme and state 
 
 Lexer::Token::~Token() = default; //default destructor , nothing special to do when end of program
 
-int Lexer::Token::getTokenValue() { //getter method for token_value
+double Lexer::Token::getTokenValue() { //getter method for token_value
     return token_value;
 }
 
@@ -101,7 +101,7 @@ void Lexer::Token::determineTokenValues(string lexeme,State state) {
 
 void Lexer::Token::setNumberToken(string lexeme) {
     token_type = TOK_NUMBER;
-    token_value = stoi(lexeme);
+    token_value = stod(lexeme);
     if(lexeme.find('.') != string::npos){ // if there is a full stop we have a real number
         token_name = "REAL NUMBER";
     }else{ // otherwise the number must be an integer

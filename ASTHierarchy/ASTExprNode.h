@@ -6,10 +6,8 @@
 #define COMPILERSASSIGNMENT_ASTEXPRNODE_H
 
 #include "ASTNode.h"
-
-using namespace ASTHierarchy;
-namespace ASTHierarchy {
-    class ASTExprNode :ASTNode{
+namespace AST {
+    class ASTExprNode:ASTNode{
     public:
         void accept(Visitor *v) override = 0;
     };
