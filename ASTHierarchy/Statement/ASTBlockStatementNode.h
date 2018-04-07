@@ -10,7 +10,7 @@
 using namespace std;
 
 namespace AST{
-    class ASTBlockStatementNode:ASTStatementNode {
+    class ASTBlockStatementNode:public ASTStatementNode {
     private:
         vector<ASTStatementNode*> *statements;
     public:

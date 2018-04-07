@@ -7,23 +7,25 @@
 
 #include <string>
 #include "../ASTStatementNode.h"
-#include "Type.h"
+#include "../Type.h"
 #include "../ASTExprNode.h"
+#include "../Expression/ASTIdentifierExprNode.h"
 
 using namespace std;
 namespace AST{
-    class ASTVarDeclStatementNode:ASTStatementNode{
+    class ASTVarDeclStatementNode:public ASTStatementNode{
     private:
-        string identifier;
+        ASTIdentifierExprNode *identifier;
         Type type;
         ASTExprNode* expression;
     public:
-        ASTVarDeclStatementNode(string identifier,Type type,ASTExprNode* expr);
+        ASTVarDeclStatementNode();
+        ASTVarDeclStatementNode(ASTIdentifierExprNode *identifier,Type type,ASTExprNode* expr);
         ~ASTVarDeclStatementNode();
-        void setIdentifier(string ident);
+        void setIdentifier(AST::ASTIdentifierExprNode *ident);
         void setType(Type type);
         void setExpr(ASTExprNode* expr);
-        string getIdentifier();
+        ASTIdentifierExprNode* getIdentifier();
         Type getType();
         ASTExprNode* getExpr();
         void accept(Visitor *v) override;

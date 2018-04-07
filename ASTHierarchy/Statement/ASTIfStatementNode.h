@@ -10,7 +10,7 @@
 #include "ASTBlockStatementNode.h"
 
 namespace AST{
-    class ASTIfStatementNode:ASTStatementNode {
+    class ASTIfStatementNode:public ASTStatementNode {
     private:
         ASTExprNode *expression;
         ASTBlockStatementNode *trueBlock;

@@ -7,6 +7,10 @@
 
 #include "../Lexer/LexerImplementation.h"
 #include "../ASTHierarchy/ASTNode.h"
+#include "../ASTHierarchy/ASTStatementNode.h"
+#include "../ASTHierarchy/Expression/ASTNumberExprNode.h"
+#include "../ASTHierarchy/Statement/ASTPrintStatementNode.h"
+#include "../ASTHierarchy/Statement/ASTVarDeclStatementNode.h"
 
 using namespace Lexer;
 using namespace AST;
@@ -23,6 +27,9 @@ namespace Parser{
         explicit PredictiveParser(LexerImplementation *lex);
         ~PredictiveParser();
         vector<ASTNode*>* parse();
+        ASTStatementNode* parseStatement();
+        ASTVarDeclStatementNode* parseVarDecl();
+        ASTIdentifierExprNode* parseIdentifier();
     };
 }
 

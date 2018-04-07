@@ -416,6 +416,198 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNo
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj
 
 
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj: ../ASTHierarchy/Statement/FormalParam.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Statement\FormalParam.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Statement\FormalParam.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Statement\FormalParam.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Statement\FormalParam.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Statement\FormalParam.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Statement\FormalParam.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj: ../ASTHierarchy/Statement/FormalParams.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Statement\FormalParams.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Statement\FormalParams.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Statement\FormalParams.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Statement\FormalParams.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Statement\FormalParams.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Statement\FormalParams.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTBooleanLiteralExpressionNode.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTBooleanLiteralExpressionNode.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTBooleanLiteralExpressionNode.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTBooleanLiteralExpressionNode.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTBooleanLiteralExpressionNode.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTBooleanLiteralExpressionNode.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTStringLiteralExprNode.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTStringLiteralExprNode.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTStringLiteralExprNode.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTStringLiteralExprNode.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTStringLiteralExprNode.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTStringLiteralExprNode.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTIdentifierExprNode.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTIdentifierExprNode.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTIdentifierExprNode.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTIdentifierExprNode.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTIdentifierExprNode.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTIdentifierExprNode.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTSubExprNode.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTSubExprNode.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTSubExprNode.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTSubExprNode.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTSubExprNode.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTSubExprNode.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTUnaryExprNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTUnaryExprNode.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTUnaryExprNode.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTUnaryExprNode.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTUnaryExprNode.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTUnaryExprNode.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTUnaryExprNode.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTFnCallExprNode.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTFnCallExprNode.cpp"
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTFnCallExprNode.cpp" > CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTFnCallExprNode.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\ASTHierarchy\Expression\ASTFnCallExprNode.cpp" -o CMakeFiles\CompilersAssignment.dir\ASTHierarchy\Expression\ASTFnCallExprNode.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj
+
+
 # Object files for target CompilersAssignment
 CompilersAssignment_OBJECTS = \
 "CMakeFiles/CompilersAssignment.dir/main.cpp.obj" \
@@ -432,7 +624,15 @@ CompilersAssignment_OBJECTS = \
 "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj" \
-"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj"
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj"
 
 # External object files for target CompilersAssignment
 CompilersAssignment_EXTERNAL_OBJECTS =
@@ -452,11 +652,19 @@ CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Stateme
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/build.make
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/linklibs.rsp
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/objects1.rsp
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable CompilersAssignment.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable CompilersAssignment.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CompilersAssignment.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -479,6 +687,14 @@ CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj.requires
 
 .PHONY : CMakeFiles/CompilersAssignment.dir/requires
 

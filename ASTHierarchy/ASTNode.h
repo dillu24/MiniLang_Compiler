@@ -13,7 +13,7 @@ using namespace Visitors;
 namespace AST{
     class ASTNode {
     public:
-        virtual void accept(Visitor *v ) =0;
+        virtual void accept(Visitor *v )=0;
     };
 }
 

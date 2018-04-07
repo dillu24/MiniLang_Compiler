@@ -149,6 +149,87 @@ ASTHierarchy/Expression/ASTBinaryExprNode.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.s
 .PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.cpp.s
 
+ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.obj: ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj
+
+.PHONY : ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.obj
+
+# target to build an object file
+ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj
+
+ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.i: ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.i
+
+.PHONY : ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.i
+
+ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.s: ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.s
+
+.PHONY : ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.s
+
+ASTHierarchy/Expression/ASTFnCallExprNode.obj: ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj
+
+.PHONY : ASTHierarchy/Expression/ASTFnCallExprNode.obj
+
+# target to build an object file
+ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj
+
+ASTHierarchy/Expression/ASTFnCallExprNode.i: ASTHierarchy/Expression/ASTFnCallExprNode.cpp.i
+
+.PHONY : ASTHierarchy/Expression/ASTFnCallExprNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Expression/ASTFnCallExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTFnCallExprNode.cpp.i
+
+ASTHierarchy/Expression/ASTFnCallExprNode.s: ASTHierarchy/Expression/ASTFnCallExprNode.cpp.s
+
+.PHONY : ASTHierarchy/Expression/ASTFnCallExprNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Expression/ASTFnCallExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTFnCallExprNode.cpp.s
+
+ASTHierarchy/Expression/ASTIdentifierExprNode.obj: ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj
+
+.PHONY : ASTHierarchy/Expression/ASTIdentifierExprNode.obj
+
+# target to build an object file
+ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj
+
+ASTHierarchy/Expression/ASTIdentifierExprNode.i: ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.i
+
+.PHONY : ASTHierarchy/Expression/ASTIdentifierExprNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.i
+
+ASTHierarchy/Expression/ASTIdentifierExprNode.s: ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.s
+
+.PHONY : ASTHierarchy/Expression/ASTIdentifierExprNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.s
+
 ASTHierarchy/Expression/ASTNumberExprNode.obj: ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj
 
 .PHONY : ASTHierarchy/Expression/ASTNumberExprNode.obj
@@ -175,6 +256,87 @@ ASTHierarchy/Expression/ASTNumberExprNode.s: ASTHierarchy/Expression/ASTNumberEx
 ASTHierarchy/Expression/ASTNumberExprNode.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.s
 .PHONY : ASTHierarchy/Expression/ASTNumberExprNode.cpp.s
+
+ASTHierarchy/Expression/ASTStringLiteralExprNode.obj: ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj
+
+.PHONY : ASTHierarchy/Expression/ASTStringLiteralExprNode.obj
+
+# target to build an object file
+ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj
+
+ASTHierarchy/Expression/ASTStringLiteralExprNode.i: ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.i
+
+.PHONY : ASTHierarchy/Expression/ASTStringLiteralExprNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.i
+
+ASTHierarchy/Expression/ASTStringLiteralExprNode.s: ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.s
+
+.PHONY : ASTHierarchy/Expression/ASTStringLiteralExprNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.s
+
+ASTHierarchy/Expression/ASTSubExprNode.obj: ASTHierarchy/Expression/ASTSubExprNode.cpp.obj
+
+.PHONY : ASTHierarchy/Expression/ASTSubExprNode.obj
+
+# target to build an object file
+ASTHierarchy/Expression/ASTSubExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTSubExprNode.cpp.obj
+
+ASTHierarchy/Expression/ASTSubExprNode.i: ASTHierarchy/Expression/ASTSubExprNode.cpp.i
+
+.PHONY : ASTHierarchy/Expression/ASTSubExprNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Expression/ASTSubExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTSubExprNode.cpp.i
+
+ASTHierarchy/Expression/ASTSubExprNode.s: ASTHierarchy/Expression/ASTSubExprNode.cpp.s
+
+.PHONY : ASTHierarchy/Expression/ASTSubExprNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Expression/ASTSubExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTSubExprNode.cpp.s
+
+ASTHierarchy/Expression/ASTUnaryExprNode.obj: ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj
+
+.PHONY : ASTHierarchy/Expression/ASTUnaryExprNode.obj
+
+# target to build an object file
+ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj
+.PHONY : ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj
+
+ASTHierarchy/Expression/ASTUnaryExprNode.i: ASTHierarchy/Expression/ASTUnaryExprNode.cpp.i
+
+.PHONY : ASTHierarchy/Expression/ASTUnaryExprNode.i
+
+# target to preprocess a source file
+ASTHierarchy/Expression/ASTUnaryExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.i
+.PHONY : ASTHierarchy/Expression/ASTUnaryExprNode.cpp.i
+
+ASTHierarchy/Expression/ASTUnaryExprNode.s: ASTHierarchy/Expression/ASTUnaryExprNode.cpp.s
+
+.PHONY : ASTHierarchy/Expression/ASTUnaryExprNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/Expression/ASTUnaryExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.s
+.PHONY : ASTHierarchy/Expression/ASTUnaryExprNode.cpp.s
 
 ASTHierarchy/Statement/ASTAssignStatementNode.obj: ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj
 
@@ -392,6 +554,60 @@ ASTHierarchy/Statement/ASTWhileStatementNode.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.s
 .PHONY : ASTHierarchy/Statement/ASTWhileStatementNode.cpp.s
 
+ASTHierarchy/Statement/FormalParam.obj: ASTHierarchy/Statement/FormalParam.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/FormalParam.obj
+
+# target to build an object file
+ASTHierarchy/Statement/FormalParam.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj
+.PHONY : ASTHierarchy/Statement/FormalParam.cpp.obj
+
+ASTHierarchy/Statement/FormalParam.i: ASTHierarchy/Statement/FormalParam.cpp.i
+
+.PHONY : ASTHierarchy/Statement/FormalParam.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/FormalParam.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.i
+.PHONY : ASTHierarchy/Statement/FormalParam.cpp.i
+
+ASTHierarchy/Statement/FormalParam.s: ASTHierarchy/Statement/FormalParam.cpp.s
+
+.PHONY : ASTHierarchy/Statement/FormalParam.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/FormalParam.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.s
+.PHONY : ASTHierarchy/Statement/FormalParam.cpp.s
+
+ASTHierarchy/Statement/FormalParams.obj: ASTHierarchy/Statement/FormalParams.cpp.obj
+
+.PHONY : ASTHierarchy/Statement/FormalParams.obj
+
+# target to build an object file
+ASTHierarchy/Statement/FormalParams.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj
+.PHONY : ASTHierarchy/Statement/FormalParams.cpp.obj
+
+ASTHierarchy/Statement/FormalParams.i: ASTHierarchy/Statement/FormalParams.cpp.i
+
+.PHONY : ASTHierarchy/Statement/FormalParams.i
+
+# target to preprocess a source file
+ASTHierarchy/Statement/FormalParams.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.i
+.PHONY : ASTHierarchy/Statement/FormalParams.cpp.i
+
+ASTHierarchy/Statement/FormalParams.s: ASTHierarchy/Statement/FormalParams.cpp.s
+
+.PHONY : ASTHierarchy/Statement/FormalParams.s
+
+# target to generate assembly for a file
+ASTHierarchy/Statement/FormalParams.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.s
+.PHONY : ASTHierarchy/Statement/FormalParams.cpp.s
+
 Lexer/Keywords.obj: Lexer/Keywords.cpp.obj
 
 .PHONY : Lexer/Keywords.obj
@@ -539,9 +755,27 @@ help:
 	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.obj
 	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.i
 	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.s
+	@echo ... ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.obj
+	@echo ... ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.i
+	@echo ... ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.s
+	@echo ... ASTHierarchy/Expression/ASTFnCallExprNode.obj
+	@echo ... ASTHierarchy/Expression/ASTFnCallExprNode.i
+	@echo ... ASTHierarchy/Expression/ASTFnCallExprNode.s
+	@echo ... ASTHierarchy/Expression/ASTIdentifierExprNode.obj
+	@echo ... ASTHierarchy/Expression/ASTIdentifierExprNode.i
+	@echo ... ASTHierarchy/Expression/ASTIdentifierExprNode.s
 	@echo ... ASTHierarchy/Expression/ASTNumberExprNode.obj
 	@echo ... ASTHierarchy/Expression/ASTNumberExprNode.i
 	@echo ... ASTHierarchy/Expression/ASTNumberExprNode.s
+	@echo ... ASTHierarchy/Expression/ASTStringLiteralExprNode.obj
+	@echo ... ASTHierarchy/Expression/ASTStringLiteralExprNode.i
+	@echo ... ASTHierarchy/Expression/ASTStringLiteralExprNode.s
+	@echo ... ASTHierarchy/Expression/ASTSubExprNode.obj
+	@echo ... ASTHierarchy/Expression/ASTSubExprNode.i
+	@echo ... ASTHierarchy/Expression/ASTSubExprNode.s
+	@echo ... ASTHierarchy/Expression/ASTUnaryExprNode.obj
+	@echo ... ASTHierarchy/Expression/ASTUnaryExprNode.i
+	@echo ... ASTHierarchy/Expression/ASTUnaryExprNode.s
 	@echo ... ASTHierarchy/Statement/ASTAssignStatementNode.obj
 	@echo ... ASTHierarchy/Statement/ASTAssignStatementNode.i
 	@echo ... ASTHierarchy/Statement/ASTAssignStatementNode.s
@@ -566,6 +800,12 @@ help:
 	@echo ... ASTHierarchy/Statement/ASTWhileStatementNode.obj
 	@echo ... ASTHierarchy/Statement/ASTWhileStatementNode.i
 	@echo ... ASTHierarchy/Statement/ASTWhileStatementNode.s
+	@echo ... ASTHierarchy/Statement/FormalParam.obj
+	@echo ... ASTHierarchy/Statement/FormalParam.i
+	@echo ... ASTHierarchy/Statement/FormalParam.s
+	@echo ... ASTHierarchy/Statement/FormalParams.obj
+	@echo ... ASTHierarchy/Statement/FormalParams.i
+	@echo ... ASTHierarchy/Statement/FormalParams.s
 	@echo ... Lexer/Keywords.obj
 	@echo ... Lexer/Keywords.i
 	@echo ... Lexer/Keywords.s

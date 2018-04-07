@@ -9,7 +9,7 @@
 #include "../ASTExprNode.h"
 
 namespace AST{
-    class ASTReturnStatementNode:ASTStatementNode {
+    class ASTReturnStatementNode:public ASTStatementNode {
     private:
         ASTExprNode* expression;
     public:

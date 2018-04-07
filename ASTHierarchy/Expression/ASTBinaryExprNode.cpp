@@ -6,7 +6,7 @@
 #include "../../Visitors/Visitor.h"
 using namespace AST;
 
-ASTBinaryExprNode::ASTBinaryExprNode(ASTExprNode *left, ASTExprNode *right, char oper) {
+ASTBinaryExprNode::ASTBinaryExprNode(ASTExprNode *left, ASTExprNode *right, Operators oper) {
     Lhs = &*left;
     Rhs = &*left;
     op = oper;
@@ -35,4 +35,12 @@ ASTExprNode *ASTBinaryExprNode::getRhs() {
 
 void AST::ASTBinaryExprNode::accept(Visitor *v) {
     v->visit(this);
+}
+
+void ASTBinaryExprNode::setOperator(Operators op) {
+    this->op = op;
+}
+
+Operators ASTBinaryExprNode::getOperator() {
+    return op;
 }

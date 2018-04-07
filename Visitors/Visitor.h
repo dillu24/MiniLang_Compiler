@@ -14,6 +14,12 @@
 #include "../ASTHierarchy/Expression/ASTNumberExprNode.h"
 #include "../ASTHierarchy/Statement/ASTReturnStatementNode.h"
 #include "../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h"
+#include "../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h"
+#include "../ASTHierarchy/Expression/ASTStringLiteralExprNode.h"
+#include "../ASTHierarchy/Expression/ASTIdentifierExprNode.h"
+#include "../ASTHierarchy/Expression/ASTSubExprNode.h"
+#include "../ASTHierarchy/Expression/ASTUnaryExprNode.h"
+#include "../ASTHierarchy/Expression/ASTFnCallExprNode.h"
 
 using namespace AST;
 namespace Visitors{
@@ -29,6 +35,12 @@ namespace Visitors{
         virtual void visit(ASTFuncDeclStatementNode *node) =0;
         virtual void visit(ASTBinaryExprNode *node) = 0;
         virtual void visit(ASTNumberExprNode* node) = 0;
+        virtual void visit(ASTBooleanLiteralExpressionNode* node)=0;
+        virtual void visit(ASTStringLiteralExprNode* node)=0;
+        virtual void visit(ASTIdentifierExprNode* node)=0;
+        virtual void visit(ASTSubExprNode* node) = 0;
+        virtual void visit(ASTUnaryExprNode* node) = 0;
+        virtual void visit(ASTFnCallExprNode* node)=0;
     };
 }
 

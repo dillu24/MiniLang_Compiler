@@ -11,7 +11,7 @@
 using namespace std;
 
 namespace AST{
-    class ASTAssignStatementNode:ASTStatementNode {
+    class ASTAssignStatementNode: public ASTStatementNode {
     private:
         string identifier;
         ASTExprNode* expression;

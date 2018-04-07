@@ -8,18 +8,21 @@
 #include "ASTVarDeclStatementNode.h"
 #include "../../Visitors/Visitor.h"
 
-ASTVarDeclStatementNode::ASTVarDeclStatementNode(string identifier, Type type, ASTExprNode *expr) {
-    this->identifier = std::move(identifier);
+
+ASTVarDeclStatementNode::ASTVarDeclStatementNode() = default;
+
+ASTVarDeclStatementNode::ASTVarDeclStatementNode(AST::ASTIdentifierExprNode *identifier, Type type, ASTExprNode *expr) {
+    this->identifier = &*identifier;
     this->type = type;
     this->expression = &*expr;
 }
 
 ASTVarDeclStatementNode::~ASTVarDeclStatementNode() {
-    delete expression;
+    delete (expression,identifier);
 }
 
-void ASTVarDeclStatementNode::setIdentifier(string ident) {
-    identifier = ident;
+void ASTVarDeclStatementNode::setIdentifier(AST::ASTIdentifierExprNode* ident) {
+    identifier = &*ident;
 }
 
 void ASTVarDeclStatementNode::setType(Type type) {
@@ -30,7 +33,7 @@ void ASTVarDeclStatementNode::setExpr(ASTExprNode *expr) {
     expression = &*expr;
 }
 
-string ASTVarDeclStatementNode::getIdentifier() {
+AST::ASTIdentifierExprNode* ASTVarDeclStatementNode::getIdentifier() {
     return identifier;
 }
 

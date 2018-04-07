@@ -9,11 +9,11 @@
 #include "../ASTStatementNode.h"
 
 namespace AST{
-    class ASTPrintStatementNode:ASTStatementNode {
+    class ASTPrintStatementNode:public ASTStatementNode {
     private:
         ASTExprNode *expression;
     public:
-        ASTPrintStatementNode(ASTExprNode* expr);
+        explicit ASTPrintStatementNode(ASTExprNode* expr);
         ~ASTPrintStatementNode();
         void setExpr(ASTExprNode* expr);
         ASTExprNode* getExpr();

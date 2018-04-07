@@ -8,7 +8,7 @@
 #include "../ASTExprNode.h"
 
 namespace AST{
-    class ASTNumberExprNode:ASTExprNode {
+    class ASTNumberExprNode:public ASTExprNode {
     private:
         double value;
     public:

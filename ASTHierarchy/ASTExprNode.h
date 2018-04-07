@@ -7,7 +7,8 @@
 
 #include "ASTNode.h"
 namespace AST {
-    class ASTExprNode:ASTNode{
+    class ASTExprNode: public ASTNode{
+    private:
     public:
         void accept(Visitor *v) override = 0;
     };

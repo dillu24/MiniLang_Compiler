@@ -9,7 +9,7 @@
 
 using namespace AST;
 namespace AST{
-    class ASTStatementNode : ASTNode {
+    class ASTStatementNode : public ASTNode {
     public:
         void accept(Visitor *v) override = 0;
     };

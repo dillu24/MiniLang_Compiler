@@ -23,14 +23,15 @@ Parser::PredictiveParser::~PredictiveParser() {
 }
 
 vector<ASTNode *>* Parser::PredictiveParser::parse() {
-    while((nextToken=lexer->getNextToken())->getTokenType() != currentToken->TOK_EOF){
+    while((nextToken=lexer->getNextToken())->getTokenType() != Lexer::Token::TOK_EOF){
         lookAhead();
+        //tree->push_back(parseStatement());
     }
     return tree;
 }
 
-void Parser::PredictiveParser::lookAhead() {
-    currentToken = nextToken;
-    nextToken = lexer->getNextToken();
-}
 
+void Parser::PredictiveParser::lookAhead() {
+    currentToken = &*nextToken;
+    nextToken = &*lexer->getNextToken();
+}
