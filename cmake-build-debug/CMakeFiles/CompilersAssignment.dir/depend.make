@@ -9,6 +9,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -36,6 +37,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpr
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -63,6 +65,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -90,6 +93,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -116,6 +120,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTNumberExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
@@ -143,6 +148,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprN
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
@@ -170,6 +176,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.ob
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTSubExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.cpp
@@ -197,6 +204,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTUnaryExprNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -224,6 +232,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTAssignStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -251,6 +260,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTBlockStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -278,6 +288,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNo
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -305,6 +316,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTIfStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -332,6 +344,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTPrintStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -359,6 +372,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -386,6 +400,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNod
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -413,6 +428,7 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
@@ -465,8 +481,11 @@ CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj: ../Lexer/Token.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/ASTExprNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/ASTNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
+CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Statement/ASTPrintStatementNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Type.h
@@ -476,8 +495,18 @@ CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Lexer/Tok
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Parser/PredictiveParser.cpp
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Parser/PredictiveParser.h
 
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/ASTExprNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTPrintStatementNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Type.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/LexerImplementation.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/State.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/Token.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Parser/PredictiveParser.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../main.cpp
 

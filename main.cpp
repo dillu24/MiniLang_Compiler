@@ -1,7 +1,9 @@
 #include <iostream>
 #include "Lexer/LexerImplementation.h"
+#include "Parser/PredictiveParser.h"
 
 using namespace Lexer;
+using namespace Parser;
 
 /*
  * This is the main.cpp file and is used to call the compiler.
@@ -11,7 +13,10 @@ using namespace Lexer;
 
 
 int main() {
-    Token *nextToken;
+    PredictiveParser *parser = new PredictiveParser(
+            new LexerImplementation(R"(C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Lexer\SourceCodeInput)"));
+    parser->parse();
+    /*Token *nextToken;
     LexerImplementation *lexer = new LexerImplementation(
             R"(C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Lexer\SourceCodeInput)");
     while(true){
@@ -23,6 +28,8 @@ int main() {
             break;
         }
     }
-    delete(lexer);
+    delete(lexer);*/
+    delete(parser);
+
     return 0;
 }

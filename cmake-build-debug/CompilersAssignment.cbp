@@ -113,6 +113,9 @@
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.cpp">
 			<Option target="CompilersAssignment"/>
 		</Unit>

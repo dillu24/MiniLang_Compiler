@@ -6,9 +6,10 @@
 #define COMPILERSASSIGNMENT_ASTNUMBEREXPRNODE_H
 
 #include "../ASTExprNode.h"
+#include "ASTLiteralExprNode.h"
 
 namespace AST{
-    class ASTNumberExprNode:public ASTExprNode {
+    class ASTNumberExprNode:public ASTLiteralExprNode {
     private:
         double value;
     public:

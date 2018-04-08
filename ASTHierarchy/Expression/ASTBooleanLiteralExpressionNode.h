@@ -6,9 +6,10 @@
 #define COMPILERSASSIGNMENT_ASTBOOLEANLITERALEXPRESSIONNODE_H
 
 #include "../ASTExprNode.h"
+#include "ASTLiteralExprNode.h"
 
 namespace AST{
-    class ASTBooleanLiteralExpressionNode:ASTExprNode {
+    class ASTBooleanLiteralExpressionNode:public ASTLiteralExprNode {
     private:
         bool value;
     public:

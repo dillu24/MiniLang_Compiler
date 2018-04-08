@@ -11,6 +11,10 @@
 #include "../ASTHierarchy/Expression/ASTNumberExprNode.h"
 #include "../ASTHierarchy/Statement/ASTPrintStatementNode.h"
 #include "../ASTHierarchy/Statement/ASTVarDeclStatementNode.h"
+#include "../ASTHierarchy/Operators.h"
+#include "../ASTHierarchy/Expression/ASTFnCallExprNode.h"
+#include "../ASTHierarchy/Expression/ASTSubExprNode.h"
+#include "../ASTHierarchy/Expression/ASTUnaryExprNode.h"
 
 using namespace Lexer;
 using namespace AST;
@@ -23,13 +27,23 @@ namespace Parser{
         Token *nextToken;
         vector<ASTNode*> *tree;
         void lookAhead();
+        ASTExprNode* parseStatement();
+        ASTLiteralExprNode * parseLiteral();
+        ASTVarDeclStatementNode* parseVarDecl();
+        ASTIdentifierExprNode* parseIdentifier();
+        ASTExprNode* parseExpression();
+        ASTExprNode* parseSimpleExpr();
+        Operators parseOperator();
+        Type parseType();
+        ASTFnCallExprNode* parseFnCall();
+        vector<ASTExprNode*>* parseActualParams();
+        ASTSubExprNode* parseSubExpr();
+        ASTUnaryExprNode* parseUnary();
+        NegationOperator parseNegOp();
     public :
         explicit PredictiveParser(LexerImplementation *lex);
         ~PredictiveParser();
         vector<ASTNode*>* parse();
-        ASTStatementNode* parseStatement();
-        ASTVarDeclStatementNode* parseVarDecl();
-        ASTIdentifierExprNode* parseIdentifier();
     };
 }
 

@@ -6,15 +6,19 @@
 #define COMPILERSASSIGNMENT_ASTSTRINGLITERALEXPRNODE_H
 #include <string>
 #include "../ASTExprNode.h"
+#include "ASTLiteralExprNode.h"
+
 using namespace std;
+
 namespace AST{
-    class ASTStringLiteralExprNode:public ASTExprNode {
+    class ASTStringLiteralExprNode:public ASTLiteralExprNode {
     private:
         string sentence;
     public:
         explicit ASTStringLiteralExprNode(string sentence);
-        void setSentence(string sentence);
-        string getSentence();
+        ~ASTStringLiteralExprNode();
+        void setValue(string sentence);
+        string getValue();
         void accept(Visitor *v) override;
     };
 }
