@@ -70,6 +70,7 @@ ASTExprNode *Parser::PredictiveParser::parseExpression() {
     if(nextToken->getTokenType() == Lexer::Token::TOK_RELATIONAL_OPERATOR){
         lookAhead();
         Operators op = parseOperator();
+        lookAhead();
         ASTExprNode* rhs = parseExpression();
         return new ASTBinaryExprNode(simpleExpr,rhs,op);
     }else{
@@ -83,6 +84,7 @@ ASTExprNode *Parser::PredictiveParser::parseSimpleExpr() {
             getTokenStringValue() == "or"){
         lookAhead();
         Operators op = parseOperator();
+        lookAhead();
         ASTExprNode* rhs = parseSimpleExpr();
         return new ASTBinaryExprNode(term,rhs,op);
     }else{
@@ -234,6 +236,7 @@ ASTExprNode *Parser::PredictiveParser::parseTerm() {
             nextToken->getTokenStringValue() == "and"){
         lookAhead();
         Operators op = parseOperator();
+        lookAhead();
         ASTExprNode* rhs = parseTerm();
         return new ASTBinaryExprNode(factor,rhs,op);
     }else{

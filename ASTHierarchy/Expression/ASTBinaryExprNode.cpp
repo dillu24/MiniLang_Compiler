@@ -8,7 +8,7 @@ using namespace AST;
 
 ASTBinaryExprNode::ASTBinaryExprNode(ASTExprNode *left, ASTExprNode *right, Operators oper) {
     Lhs = &*left;
-    Rhs = &*left;
+    Rhs = &*right;
     op = oper;
 }
 
