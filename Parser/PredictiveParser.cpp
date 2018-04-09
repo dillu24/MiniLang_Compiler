@@ -28,7 +28,7 @@ vector<ASTNode *>* Parser::PredictiveParser::parse() {
     nextToken = lexer->getNextToken();
     while(nextToken->getTokenType() != Lexer::Token::TOK_EOF){
         lookAhead();
-        tree->push_back(parseExpression());
+        tree->push_back(parseStatement());
     }
     cout<<tree->size()<<endl;
     return tree;
@@ -40,8 +40,13 @@ void Parser::PredictiveParser::lookAhead() {
     nextToken = &*lexer->getNextToken();
 }
 
-ASTExprNode *Parser::PredictiveParser::parseStatement() {
-
+ASTStatementNode *Parser::PredictiveParser::parseStatement() {
+    if(currentToken->getTokenStringValue()=="set"){
+        return parseAssignStatement();
+    }else{
+        cout<<"Bad Statement"<<endl;
+        exit(-1);
+    }
 }
 
 ASTLiteralExprNode *Parser::PredictiveParser::parseLiteral() {
@@ -60,7 +65,12 @@ ASTLiteralExprNode *Parser::PredictiveParser::parseLiteral() {
 }
 
 ASTIdentifierExprNode *Parser::PredictiveParser::parseIdentifier() {
-    return new ASTIdentifierExprNode(currentToken->getTokenStringValue());
+    if(currentToken->getTokenType() == Lexer::Token::TOK_IDENTIFIER){
+        return new ASTIdentifierExprNode(currentToken->getTokenStringValue());
+    }else{
+        cout<<"Bad identifier"<<endl;
+        exit(-1);
+    }
 }
 
 
@@ -146,8 +156,9 @@ ASTFnCallExprNode *Parser::PredictiveParser::parseFnCall() {
     }
     lookAhead();
     auto * actualParams = new vector<ASTExprNode*>();
-    if(nextToken->getTokenStringValue() != ")"){
-         actualParams = &*parseActualParams();
+    if(nextToken->getTokenStringValue() != ")" && nextToken->getTokenType() != Lexer::Token::TOK_EOF){ //since if hello( .. tries to parse expr
+        lookAhead();
+        actualParams = &*parseActualParams();
     }
     if(nextToken->getTokenStringValue() != ")"){
         cout<<"Forgot closing brackets in function declaration"<<endl;
@@ -174,6 +185,7 @@ vector<ASTExprNode *>* Parser::PredictiveParser::parseActualParams() {
         lookAhead();
         parameters->push_back(parseExpression());
     }
+    return parameters;
 }
 
 ASTSubExprNode *Parser::PredictiveParser::parseSubExpr() {
@@ -227,6 +239,9 @@ ASTExprNode *Parser::PredictiveParser::parseFactor() {
         return parseSubExpr();
     }else if(currentToken->getTokenType() == Lexer::Token::TOK_MINUS || currentToken->getTokenStringValue()=="not"){
         return parseUnary();
+    }else{
+        cout<<"Invalid factor"<<endl;
+        exit(-1);
     }
 }
 
@@ -241,6 +256,23 @@ ASTExprNode *Parser::PredictiveParser::parseTerm() {
         return new ASTBinaryExprNode(factor,rhs,op);
     }else{
         return factor;
+    }
+}
+
+ASTAssignStatementNode *Parser::PredictiveParser::parseAssignStatement() {
+    lookAhead();
+    ASTIdentifierExprNode* identifier = parseIdentifier();
+    if(nextToken->getTokenType() == Lexer::Token::TOK_EQUALS){
+        lookAhead();
+        if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+            cout<<"Statement Incomplete"<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        return new ASTAssignStatementNode(identifier,parseExpression());
+    }else{
+        cout<<"Forgot equals in assignment"<<endl;
+        exit(-1);
     }
 }
 

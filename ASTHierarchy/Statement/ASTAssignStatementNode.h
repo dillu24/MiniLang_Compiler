@@ -7,21 +7,22 @@
 
 #include "../ASTStatementNode.h"
 #include "../ASTExprNode.h"
+#include "../Expression/ASTIdentifierExprNode.h"
 #include <string>
 using namespace std;
 
 namespace AST{
     class ASTAssignStatementNode: public ASTStatementNode {
     private:
-        string identifier;
+        ASTIdentifierExprNode* identifier;
         ASTExprNode* expression;
     public:
-        ASTAssignStatementNode(string ident,ASTExprNode* expr);
+        ASTAssignStatementNode(ASTIdentifierExprNode* ident,ASTExprNode* expr);
         ~ASTAssignStatementNode();
-        void setIdentifier(string identifier);
+        void setIdentifier(ASTIdentifierExprNode* identifier);
         void setExpression(ASTExprNode* expr);
         ASTExprNode* getExpression();
-        string getIdentifier();
+        ASTIdentifierExprNode* getIdentifier();
         void accept(Visitor *v) override;
     };
 }

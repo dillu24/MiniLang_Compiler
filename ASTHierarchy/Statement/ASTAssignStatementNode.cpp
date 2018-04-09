@@ -7,28 +7,28 @@
 #include <utility>
 #include "../../Visitors/Visitor.h"
 
-ASTAssignStatementNode::ASTAssignStatementNode(string ident, ASTExprNode *expr) {
-    identifier = std::move(ident);
+ASTAssignStatementNode::ASTAssignStatementNode(ASTIdentifierExprNode* ident, ASTExprNode *expr) {
+    identifier = &*ident;
     expression = &*expr;
 }
 
 ASTAssignStatementNode::~ASTAssignStatementNode() {
-    delete expression;
+    delete(identifier,expression);
 }
 
-void ASTAssignStatementNode::setIdentifier(string identifier) {
-    this->identifier = std::move(identifier);
+void ASTAssignStatementNode::setIdentifier(ASTIdentifierExprNode* identifier) {
+    this->identifier = &*identifier;
 }
 
 void ASTAssignStatementNode::setExpression(ASTExprNode *expr) {
-    expression = expr;
+    expression = &*expr;
 }
 
 ASTExprNode *ASTAssignStatementNode::getExpression() {
     return expression;
 }
 
-string ASTAssignStatementNode::getIdentifier() {
+ASTIdentifierExprNode* ASTAssignStatementNode::getIdentifier() {
     return identifier;
 }
 

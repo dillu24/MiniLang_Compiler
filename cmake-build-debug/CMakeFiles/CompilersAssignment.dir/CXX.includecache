@@ -137,6 +137,8 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/AS
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
 ../ASTExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+../Expression/ASTIdentifierExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
 string
 -
 
@@ -351,6 +353,8 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/A
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
 ../ASTHierarchy/Expression/ASTUnaryExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
+../ASTHierarchy/Statement/ASTAssignStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
 ../ASTHierarchy/Expression/ASTBinaryExprNode.h
