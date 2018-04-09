@@ -9,7 +9,7 @@
 #include "ASTIdentifierExprNode.h"
 
 namespace AST{
-    class ASTFnCallExprNode:ASTExprNode {
+    class ASTFnCallExprNode:public ASTExprNode {
     private:
         ASTIdentifierExprNode* identifier;
         vector<ASTExprNode*> parameters;

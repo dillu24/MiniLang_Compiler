@@ -323,12 +323,12 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp
 PredictiveParser.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
-../Lexer/Token.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
 ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
 ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+../ASTHierarchy/Expression/ASTBinaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
 ../Lexer/LexerImplementation.h
@@ -343,6 +343,14 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/A
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
 ../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+../ASTHierarchy/Operators.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Operators.h
+../ASTHierarchy/Expression/ASTFnCallExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
+../ASTHierarchy/Expression/ASTSubExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
+../ASTHierarchy/Expression/ASTUnaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
 ../ASTHierarchy/Expression/ASTBinaryExprNode.h

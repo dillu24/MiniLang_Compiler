@@ -40,6 +40,8 @@ namespace Parser{
         ASTSubExprNode* parseSubExpr();
         ASTUnaryExprNode* parseUnary();
         NegationOperator parseNegOp();
+        ASTExprNode* parseFactor();
+        ASTExprNode* parseTerm();
     public :
         explicit PredictiveParser(LexerImplementation *lex);
         ~PredictiveParser();

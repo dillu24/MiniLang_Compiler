@@ -28,7 +28,7 @@ vector<ASTNode *>* Parser::PredictiveParser::parse() {
     nextToken = lexer->getNextToken();
     while(nextToken->getTokenType() != Lexer::Token::TOK_EOF){
         lookAhead();
-        tree->push_back(parseLiteral());
+        tree->push_back(parseExpression());
     }
     cout<<tree->size()<<endl;
     return tree;
@@ -78,7 +78,16 @@ ASTExprNode *Parser::PredictiveParser::parseExpression() {
 }
 
 ASTExprNode *Parser::PredictiveParser::parseSimpleExpr() {
-
+    ASTExprNode* term = parseTerm();
+    if(nextToken->getTokenStringValue() == "+" || nextToken->getTokenStringValue() == "-" || nextToken->
+            getTokenStringValue() == "or"){
+        lookAhead();
+        Operators op = parseOperator();
+        ASTExprNode* rhs = parseSimpleExpr();
+        return new ASTBinaryExprNode(term,rhs,op);
+    }else{
+        return term;
+    }
 }
 
 Type Parser::PredictiveParser::parseType() {
@@ -181,8 +190,8 @@ ASTSubExprNode *Parser::PredictiveParser::parseSubExpr() {
 }
 
 ASTUnaryExprNode *Parser::PredictiveParser::parseUnary() {
-    lookAhead();
     NegationOperator negOperator = parseNegOp();
+    lookAhead();
     ASTExprNode* expression = parseExpression();
     return new ASTUnaryExprNode(negOperator,expression);
 }
@@ -200,6 +209,36 @@ NegationOperator Parser::PredictiveParser::parseNegOp() {
 
 ASTVarDeclStatementNode *Parser::PredictiveParser::parseVarDecl() {
     return nullptr;
+}
+
+ASTExprNode *Parser::PredictiveParser::parseFactor() {
+    if(currentToken->getTokenType() == Lexer::Token::TOK_STRING_LITERAL || currentToken->getTokenType() == Lexer::Token::
+            TOK_NUMBER || currentToken->getTokenStringValue() == "true"|| currentToken->getTokenStringValue() == "false"){
+        return parseLiteral();
+    }else if(currentToken->getTokenType() == Lexer::Token::TOK_IDENTIFIER){
+        if(nextToken->getTokenStringValue() == "("){
+            return parseFnCall();
+        }else{
+            return parseIdentifier();
+        }
+    }else if(currentToken->getTokenStringValue() == "("){
+        return parseSubExpr();
+    }else if(currentToken->getTokenType() == Lexer::Token::TOK_MINUS || currentToken->getTokenStringValue()=="not"){
+        return parseUnary();
+    }
+}
+
+ASTExprNode *Parser::PredictiveParser::parseTerm() {
+    ASTExprNode* factor = parseFactor();
+    if(nextToken->getTokenStringValue() == "*" || nextToken->getTokenStringValue() =="/" ||
+            nextToken->getTokenStringValue() == "and"){
+        lookAhead();
+        Operators op = parseOperator();
+        ASTExprNode* rhs = parseTerm();
+        return new ASTBinaryExprNode(factor,rhs,op);
+    }else{
+        return factor;
+    }
 }
 
 
