@@ -355,6 +355,20 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/A
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
 ../ASTHierarchy/Statement/ASTAssignStatementNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
+../ASTHierarchy/Statement/ASTReturnStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
+../ASTHierarchy/Statement/ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+../ASTHierarchy/Statement/ASTIfStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
+../ASTHierarchy/Statement/ASTWhileStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
+../ASTHierarchy/Statement/FormalParam.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
+../ASTHierarchy/Statement/FormalParams.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
 ../ASTHierarchy/Expression/ASTBinaryExprNode.h

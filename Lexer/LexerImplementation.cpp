@@ -114,10 +114,11 @@ Lexer::Token* Lexer::LexerImplementation::getNextToken() {
     if(checkIfFinalState()){ //check if ending state is final
         Token *token = new Token(lexeme,current_state); // if final a valid token is initialized
         return token;
-    }else{ // otherwise we get an invalid token
-        auto *token = new Token();
+    }else{ // otherwise we get an invalid token , therefore terminate lexer
+        //auto *token = new Token();
         cout<<"Syntax error in line "<<lineNumber<<endl; // report error at that particular line
-        return token;
+        exit(-1);
+        //return token;
     }
 }
 

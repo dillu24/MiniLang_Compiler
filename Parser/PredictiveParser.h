@@ -16,6 +16,13 @@
 #include "../ASTHierarchy/Expression/ASTSubExprNode.h"
 #include "../ASTHierarchy/Expression/ASTUnaryExprNode.h"
 #include "../ASTHierarchy/Statement/ASTAssignStatementNode.h"
+#include "../ASTHierarchy/Statement/ASTReturnStatementNode.h"
+#include "../ASTHierarchy/Statement/ASTBlockStatementNode.h"
+#include "../ASTHierarchy/Statement/ASTIfStatementNode.h"
+#include "../ASTHierarchy/Statement/ASTWhileStatementNode.h"
+#include "../ASTHierarchy/Statement/FormalParam.h"
+#include "../ASTHierarchy/Statement/FormalParams.h"
+#include "../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h"
 
 using namespace Lexer;
 using namespace AST;
@@ -44,6 +51,14 @@ namespace Parser{
         ASTExprNode* parseFactor();
         ASTExprNode* parseTerm();
         ASTAssignStatementNode* parseAssignStatement();
+        ASTPrintStatementNode* parsePrintStatement();
+        ASTReturnStatementNode* parseReturnStatement();
+        ASTBlockStatementNode* parseBlockStatement();
+        ASTIfStatementNode* parseIfStatement();
+        ASTWhileStatementNode* parseWhileStatement();
+        FormalParam* parseFormalParam();
+        FormalParams* parseFormalParams();
+        ASTFuncDeclStatementNode* parseFunctionDefinition();
     public :
         explicit PredictiveParser(LexerImplementation *lex);
         ~PredictiveParser();

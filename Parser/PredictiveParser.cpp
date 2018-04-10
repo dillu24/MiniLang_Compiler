@@ -42,9 +42,47 @@ void Parser::PredictiveParser::lookAhead() {
 
 ASTStatementNode *Parser::PredictiveParser::parseStatement() {
     if(currentToken->getTokenStringValue()=="set"){
-        return parseAssignStatement();
+        ASTAssignStatementNode* assign = parseAssignStatement();
+        if(nextToken->getTokenStringValue() != ";"){
+            cout<<"Statement did not end with semi colon for var "<<assign->getIdentifier()->getIdentifierName()<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        return assign;
+    }else if(currentToken->getTokenStringValue() =="var"){
+        ASTVarDeclStatementNode* varDec = parseVarDecl();
+        if(nextToken->getTokenStringValue() != ";"){
+            cout<<"Statement did not end with semi colon for var "<<varDec->getIdentifier()->getIdentifierName()<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        return varDec;
+    }else if(currentToken->getTokenStringValue() == "print"){
+        ASTPrintStatementNode* print = parsePrintStatement();
+        if(nextToken->getTokenStringValue() != ";"){
+            cout<<"Semi colon did not end printing statement "<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        return print;
+    }else if (currentToken->getTokenStringValue() == "return"){
+        ASTReturnStatementNode* returnStatement = parseReturnStatement();
+        if(nextToken->getTokenStringValue() != ";"){
+            cout<<"Semi colon did not end return statement"<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        return returnStatement;
+    }else if (currentToken->getTokenStringValue() == "{"){
+        return parseBlockStatement();
+    }else if(currentToken->getTokenStringValue() == "if"){
+        return parseIfStatement();
+    }else if(currentToken->getTokenStringValue()== "while"){
+        return parseWhileStatement();
+    }else if(currentToken->getTokenStringValue() == "def"){
+        return parseFunctionDefinition();
     }else{
-        cout<<"Bad Statement"<<endl;
+        cout<<"Invalid Statement"<<endl;
         exit(-1);
     }
 }
@@ -72,8 +110,6 @@ ASTIdentifierExprNode *Parser::PredictiveParser::parseIdentifier() {
         exit(-1);
     }
 }
-
-
 
 ASTExprNode *Parser::PredictiveParser::parseExpression() {
     ASTExprNode* simpleExpr = parseSimpleExpr();
@@ -151,7 +187,7 @@ Operators Parser::PredictiveParser::parseOperator() {
 ASTFnCallExprNode *Parser::PredictiveParser::parseFnCall() {
     ASTIdentifierExprNode* identifier = parseIdentifier();
     if(nextToken->getTokenStringValue() != "("){
-        cout<<"Forgot opening brackets in function declaration"<<endl;
+        cout<<"Forgot opening brackets in function call"<<endl;
         exit(-1);
     }
     lookAhead();
@@ -161,7 +197,7 @@ ASTFnCallExprNode *Parser::PredictiveParser::parseFnCall() {
         actualParams = &*parseActualParams();
     }
     if(nextToken->getTokenStringValue() != ")"){
-        cout<<"Forgot closing brackets in function declaration"<<endl;
+        cout<<"Forgot closing brackets in function call"<<endl;
         exit(-1);
     }
     lookAhead();
@@ -189,11 +225,11 @@ vector<ASTExprNode *>* Parser::PredictiveParser::parseActualParams() {
 }
 
 ASTSubExprNode *Parser::PredictiveParser::parseSubExpr() {
-    lookAhead();
-    if(nextToken->getTokenStringValue() == ")"){
+    if(nextToken->getTokenStringValue() == ")" || nextToken->getTokenType() == Lexer::Token::TOK_EOF){
         cout<<"forgot expression"<<endl;
         exit(-1);
     }
+    lookAhead();
     ASTExprNode* expression = parseExpression();
     if(nextToken->getTokenStringValue() != ")"){
         cout<<"forgot closing brackets in sub expression"<<endl;
@@ -205,6 +241,10 @@ ASTSubExprNode *Parser::PredictiveParser::parseSubExpr() {
 
 ASTUnaryExprNode *Parser::PredictiveParser::parseUnary() {
     NegationOperator negOperator = parseNegOp();
+    if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+        cout<<"Forgot expression"<<endl;
+        exit(-1);
+    }
     lookAhead();
     ASTExprNode* expression = parseExpression();
     return new ASTUnaryExprNode(negOperator,expression);
@@ -222,7 +262,32 @@ NegationOperator Parser::PredictiveParser::parseNegOp() {
 }
 
 ASTVarDeclStatementNode *Parser::PredictiveParser::parseVarDecl() {
-    return nullptr;
+    lookAhead();
+    ASTIdentifierExprNode* identifier = &*parseIdentifier();
+    if(nextToken->getTokenStringValue() == ":"){
+        lookAhead();
+        if(!nextToken->getTokenType() == Lexer::Token::TOK_KEYWORD){
+            cout<<"Forgot type in declaring "<<identifier->getIdentifierName()<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        Type type = parseType();
+        if(nextToken->getTokenType() != Lexer::Token::TOK_EQUALS){
+            cout<<"Forgot equals assignment when declaring "<<identifier->getIdentifierName()<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+            cout<<"Forgot expression when declaring variable "<<identifier->getIdentifierName()<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        ASTExprNode* expr = &*parseExpression();
+        return new ASTVarDeclStatementNode(identifier,type,expr);
+    }else{
+        cout <<"Forgot colon when declaring variable "<<identifier->getIdentifierName()<<endl;
+        exit(-1);
+    }
 }
 
 ASTExprNode *Parser::PredictiveParser::parseFactor() {
@@ -265,13 +330,191 @@ ASTAssignStatementNode *Parser::PredictiveParser::parseAssignStatement() {
     if(nextToken->getTokenType() == Lexer::Token::TOK_EQUALS){
         lookAhead();
         if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
-            cout<<"Statement Incomplete"<<endl;
+            cout<<"Forgot expression when assigning variable "<<identifier->getIdentifierName()<<endl;
             exit(-1);
         }
         lookAhead();
         return new ASTAssignStatementNode(identifier,parseExpression());
     }else{
-        cout<<"Forgot equals in assignment"<<endl;
+        cout<<"Forgot equals when assigning variable "<<identifier->getIdentifierName()<<endl;
+        exit(-1);
+    }
+}
+
+ASTPrintStatementNode *Parser::PredictiveParser::parsePrintStatement() {
+    if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+        cout<<"Forgot expression when printing"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    return new ASTPrintStatementNode(parseExpression());
+}
+
+ASTReturnStatementNode *Parser::PredictiveParser::parseReturnStatement() {
+    if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+        cout<<"Forgot returning expression"<<endl;
+    }
+    lookAhead();
+    return new ASTReturnStatementNode(parseExpression());
+}
+
+ASTBlockStatementNode *Parser::PredictiveParser::parseBlockStatement() {
+    auto * blockStatements = new vector<ASTStatementNode*>();
+    while(nextToken->getTokenStringValue() != "}"){
+        if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+            cout<<"Forgot closing scope"<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        blockStatements->push_back(parseStatement());
+    }
+    lookAhead();
+    return new ASTBlockStatementNode(blockStatements);
+}
+
+ASTIfStatementNode *Parser::PredictiveParser::parseIfStatement() {
+    if(nextToken->getTokenStringValue() != "("){
+        cout<<"Forgot opening brackets in if statement"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+        cout<<"Forgot expression"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    ASTExprNode* expr = parseExpression();
+    if(nextToken->getTokenStringValue() !=")"){
+        cout<<"Forgot closing brackets in if statement"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    if(nextToken->getTokenStringValue() != "{"){
+        cout<<"Forgot opening scope in if statement"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    ASTBlockStatementNode* block = parseBlockStatement();
+    if(nextToken->getTokenStringValue() == "else"){
+        lookAhead();
+        if(nextToken->getTokenStringValue() != "{"){
+            cout<<"Forgot opening scope in else block"<<endl;
+            exit(-1);
+        }
+        lookAhead();
+        ASTBlockStatementNode* eBlock = parseBlockStatement();
+        return new ASTIfStatementNode(expr,block,eBlock);
+    }else{
+        return new ASTIfStatementNode(expr,block, nullptr);
+    }
+}
+
+ASTWhileStatementNode *Parser::PredictiveParser::parseWhileStatement() {
+    if(nextToken->getTokenStringValue() != "("){
+        cout<<"Forgot opening brackets in while statement"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+        cout<<"Forgot expression in while statement"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    ASTExprNode* expr = parseExpression();
+    if(nextToken->getTokenStringValue() != ")"){
+        cout<<"forgot closing brackets in while statement"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    if(nextToken->getTokenStringValue() != "{"){
+        cout<<"forgot opening scope in while statement"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    ASTBlockStatementNode* block = parseBlockStatement();
+    return new ASTWhileStatementNode(expr,block);
+}
+
+FormalParam *Parser::PredictiveParser::parseFormalParam() {
+    ASTIdentifierExprNode * identifier = parseIdentifier();
+    if(nextToken->getTokenStringValue() != ":"){
+        cout<<"Forgot : in parameters"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+        cout<<"Forgot Type in parameters"<<endl;
+        exit(-1);
+    }
+    lookAhead();
+    Type type = parseType();
+    return new FormalParam(identifier,type);
+}
+
+FormalParams *Parser::PredictiveParser::parseFormalParams() {
+    if(currentToken->getTokenType() == Lexer::Token::TOK_IDENTIFIER){
+        FormalParam* fp = parseFormalParam();
+        auto * formalParams = new FormalParams(fp);
+        while(nextToken->getTokenStringValue() != ")"){
+            if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+                cout<<"didn't close bracket in parameters"<<endl;
+                exit(-1);
+            }
+            if(nextToken->getTokenStringValue() != ","){
+                cout<<"Forgot comma in parameters"<<endl;
+                exit(-1);
+            }
+            lookAhead();
+            lookAhead();
+            formalParams->parameters.push_back(parseFormalParam());
+        }
+        return formalParams;
+    }else{
+        cout<<"Forgot identifier for formal param"<<endl;
+        exit(-1);
+    }
+}
+
+ASTFuncDeclStatementNode *Parser::PredictiveParser::parseFunctionDefinition() {
+    if(nextToken->getTokenType() == Lexer::Token::TOK_IDENTIFIER){
+        lookAhead();
+        ASTIdentifierExprNode* identifier = parseIdentifier();
+        FormalParams* fp = nullptr;
+        if(nextToken->getTokenStringValue() == "("){
+            lookAhead();
+            if(nextToken->getTokenStringValue() != ")"){
+                lookAhead();
+                fp = parseFormalParams();
+            }
+            if(nextToken->getTokenStringValue() != ")"){
+                cout<<"Forgot closing brackets in defining function "<<identifier->getIdentifierName()<<endl;
+                exit(-1);
+            }
+            lookAhead();
+            if(nextToken->getTokenStringValue() != ":"){
+                cout<<"Forgot : in defining function "<<identifier->getIdentifierName()<<endl;
+                exit(-1);
+            }
+            lookAhead();
+            if(nextToken->getTokenType() == Lexer::Token::TOK_EOF){
+                cout<<"Forgot returning type of function "<<identifier->getIdentifierName()<<endl;
+                exit(-1);
+            }
+            lookAhead();
+            Type type = parseType();
+            if(nextToken->getTokenStringValue() != "{"){
+                cout<<"forgot block of function definition"<<endl;
+                exit(-1);
+            }
+            lookAhead();
+            ASTBlockStatementNode* block = parseBlockStatement();
+            return new ASTFuncDeclStatementNode(identifier,fp,type,block);
+        }else{
+            cout<<"Forgot opening brackets when defining function "<<identifier->getIdentifierName()<<endl;
+            exit(-1);
+        }
+    }else{
+        cout<<"Function was not given a name"<<endl;
         exit(-1);
     }
 }
