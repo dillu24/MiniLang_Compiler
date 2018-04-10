@@ -16,20 +16,6 @@ int main() {
     PredictiveParser *parser = new PredictiveParser(
             new LexerImplementation(R"(C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Lexer\SourceCodeInput)"));
     parser->parse();
-    /*Token *nextToken;
-    LexerImplementation *lexer = new LexerImplementation(
-            R"(C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Lexer\SourceCodeInput)");
-    while(true){
-        nextToken = lexer->getNextToken();
-        //cout<<nextToken->getTokenName();
-        nextToken->printToken();
-        cout<<" ";
-        if(nextToken->getTokenType() == Token::TOK_EOF || nextToken->getTokenType() == Token::TOK_INVALID){
-            break;
-        }
-    }
-    delete(lexer);*/
     delete(parser);
-
     return 0;
 }
