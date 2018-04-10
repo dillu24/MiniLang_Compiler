@@ -28,6 +28,7 @@ vector<ASTNode *>* Parser::PredictiveParser::parse() {
     nextToken = lexer->getNextToken();
     while(nextToken->getTokenType() != Lexer::Token::TOK_EOF){
         lookAhead();
+        //ASTStatementNode* answer = parseStatement(); //for testing purposes only ,put answer instaead of parse statement for test check
         tree->push_back(parseStatement());
     }
     cout<<tree->size()<<endl;
