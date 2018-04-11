@@ -7,7 +7,7 @@
 
 AST::ASTNumberExprNode::ASTNumberExprNode(double val) {
     value=val;
-    this->expressionType = NUMBER_EXP;
+    this->expressionType = NUMBER_EXP; //give appropiate type
 }
 
 AST::ASTNumberExprNode::~ASTNumberExprNode() = default;
@@ -21,5 +21,5 @@ double AST::ASTNumberExprNode::getValue() {
 }
 
 void AST::ASTNumberExprNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

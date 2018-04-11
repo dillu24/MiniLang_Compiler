@@ -9,7 +9,7 @@
 
 ASTStringLiteralExprNode::ASTStringLiteralExprNode(string sentence) {
     this->sentence= std::move(sentence);
-    this->expressionType = STRING_LITERAL_EXP;
+    this->expressionType = STRING_LITERAL_EXP; //give required type
 }
 
 ASTStringLiteralExprNode::~ASTStringLiteralExprNode() = default;
@@ -23,6 +23,6 @@ string ASTStringLiteralExprNode::getValue() {
 }
 
 void ASTStringLiteralExprNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }
 

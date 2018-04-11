@@ -7,14 +7,14 @@
 
 ASTFnCallExprNode::ASTFnCallExprNode(ASTIdentifierExprNode *identifier) {
     this->identifier = &* identifier;
-    parameters = vector<ASTExprNode*>();
-    this->expressionType = ExpressionType::FNCALL_EXP;
+    parameters = vector<ASTExprNode*>(); //initialize empty list of parameters
+    this->expressionType = ExpressionType::FNCALL_EXP; // give appropriate expression type
 }
 
 ASTFnCallExprNode::~ASTFnCallExprNode() {
     delete(identifier);
-    for(unsigned int i=0;i<parameters.size();i++){
-        delete parameters.at(i);
+    for (auto &parameter : parameters) { //delete all paramters from the heap
+        delete parameter;
     }
 }
 
@@ -26,9 +26,6 @@ void ASTFnCallExprNode::addParameters(ASTExprNode *params) {
     parameters.push_back(params);
 }
 
-void ASTFnCallExprNode::removeParameter(int index) {
-    parameters.erase(parameters.begin()+index);
-}
 
 vector<ASTExprNode *> ASTFnCallExprNode::getParameters() {
     return parameters;
@@ -38,6 +35,6 @@ ASTIdentifierExprNode *ASTFnCallExprNode::getIdentifier() {
     return identifier;
 }
 
-void ASTFnCallExprNode::accept(Visitor *v) {
+void ASTFnCallExprNode::accept(Visitor *v) { //call the visitor's implementation when visiting such node.
     v->visit(this);
 }

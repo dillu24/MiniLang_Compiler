@@ -8,7 +8,7 @@
 ASTUnaryExprNode::ASTUnaryExprNode(NegationOperator op, ASTExprNode *expression) {
     this->op = op;
     this->expression = &* expression;
-    this->expressionType = UNARY_EXP;
+    this->expressionType = UNARY_EXP; //give required type
 }
 
 ASTUnaryExprNode::~ASTUnaryExprNode() {
@@ -32,5 +32,5 @@ ASTExprNode *ASTUnaryExprNode::getExpression() {
 }
 
 void ASTUnaryExprNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

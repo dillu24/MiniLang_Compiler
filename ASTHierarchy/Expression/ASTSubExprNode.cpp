@@ -7,7 +7,7 @@
 
 AST::ASTSubExprNode::ASTSubExprNode(AST::ASTExprNode *exp) {
     expression =&*exp;
-    this->expressionType = SUB_EXP;
+    this->expressionType = SUB_EXP; //give required type
 }
 
 AST::ASTSubExprNode::~ASTSubExprNode() {
@@ -23,5 +23,5 @@ AST::ASTExprNode *AST::ASTSubExprNode::getSubExpr() {
 }
 
 void AST::ASTSubExprNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this);//call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }
