@@ -8,6 +8,7 @@
 
 ASTReturnStatementNode::ASTReturnStatementNode(ASTExprNode *expr) {
     expression = &*expr;
+    this->statementType = RETURN_STMT;
 }
 
 ASTReturnStatementNode::~ASTReturnStatementNode() {

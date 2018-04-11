@@ -14,6 +14,7 @@ ASTFuncDeclStatementNode::ASTFuncDeclStatementNode(AST::ASTIdentifierExprNode* i
     this->fp = &*fp;
     this->type = type;
     this->block =&*block;
+    this->statementType = FUNC_DECL_STMT;
 }
 
 ASTFuncDeclStatementNode::~ASTFuncDeclStatementNode() {

@@ -7,6 +7,7 @@
 
 AST::ASTSubExprNode::ASTSubExprNode(AST::ASTExprNode *exp) {
     expression =&*exp;
+    this->expressionType = SUB_EXP;
 }
 
 AST::ASTSubExprNode::~ASTSubExprNode() {

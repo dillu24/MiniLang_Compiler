@@ -7,6 +7,7 @@
 
 ASTBlockStatementNode::ASTBlockStatementNode(vector<ASTStatementNode *>* statements) {
     this->statements = &*statements;
+    this->statementType = BLOCK_STMT;
 }
 
 ASTBlockStatementNode::~ASTBlockStatementNode() {

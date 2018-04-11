@@ -8,6 +8,7 @@
 ASTWhileStatementNode::ASTWhileStatementNode(ASTExprNode *expr, ASTBlockStatementNode *block) {
     expression = &*expr;
     this->block = &*block;
+    this->statementType = WHILE_STMT;
 }
 
 ASTWhileStatementNode::~ASTWhileStatementNode() {

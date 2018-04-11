@@ -9,6 +9,7 @@
 
 ASTStringLiteralExprNode::ASTStringLiteralExprNode(string sentence) {
     this->sentence= std::move(sentence);
+    this->expressionType = STRING_LITERAL_EXP;
 }
 
 ASTStringLiteralExprNode::~ASTStringLiteralExprNode() = default;

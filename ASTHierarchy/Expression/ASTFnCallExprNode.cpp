@@ -8,6 +8,7 @@
 ASTFnCallExprNode::ASTFnCallExprNode(ASTIdentifierExprNode *identifier) {
     this->identifier = &* identifier;
     parameters = vector<ASTExprNode*>();
+    this->expressionType = ExpressionType::FNCALL_EXP;
 }
 
 ASTFnCallExprNode::~ASTFnCallExprNode() {

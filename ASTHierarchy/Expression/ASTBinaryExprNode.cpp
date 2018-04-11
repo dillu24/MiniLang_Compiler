@@ -10,6 +10,7 @@ ASTBinaryExprNode::ASTBinaryExprNode(ASTExprNode *left, ASTExprNode *right, Oper
     Lhs = &*left;
     Rhs = &*right;
     op = oper;
+    this->expressionType = ExpressionType::BINARY_EXP;
 }
 
 ASTBinaryExprNode::~ASTBinaryExprNode() { //remove heap data

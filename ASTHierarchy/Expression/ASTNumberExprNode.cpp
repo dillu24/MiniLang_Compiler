@@ -7,6 +7,7 @@
 
 AST::ASTNumberExprNode::ASTNumberExprNode(double val) {
     value=val;
+    this->expressionType = NUMBER_EXP;
 }
 
 AST::ASTNumberExprNode::~ASTNumberExprNode() = default;

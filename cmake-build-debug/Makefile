@@ -122,6 +122,60 @@ CompilersAssignment/fast:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/build
 .PHONY : CompilersAssignment/fast
 
+ASTHierarchy/ASTExprNode.obj: ASTHierarchy/ASTExprNode.cpp.obj
+
+.PHONY : ASTHierarchy/ASTExprNode.obj
+
+# target to build an object file
+ASTHierarchy/ASTExprNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.obj
+.PHONY : ASTHierarchy/ASTExprNode.cpp.obj
+
+ASTHierarchy/ASTExprNode.i: ASTHierarchy/ASTExprNode.cpp.i
+
+.PHONY : ASTHierarchy/ASTExprNode.i
+
+# target to preprocess a source file
+ASTHierarchy/ASTExprNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.i
+.PHONY : ASTHierarchy/ASTExprNode.cpp.i
+
+ASTHierarchy/ASTExprNode.s: ASTHierarchy/ASTExprNode.cpp.s
+
+.PHONY : ASTHierarchy/ASTExprNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/ASTExprNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.s
+.PHONY : ASTHierarchy/ASTExprNode.cpp.s
+
+ASTHierarchy/ASTStatementNode.obj: ASTHierarchy/ASTStatementNode.cpp.obj
+
+.PHONY : ASTHierarchy/ASTStatementNode.obj
+
+# target to build an object file
+ASTHierarchy/ASTStatementNode.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.obj
+.PHONY : ASTHierarchy/ASTStatementNode.cpp.obj
+
+ASTHierarchy/ASTStatementNode.i: ASTHierarchy/ASTStatementNode.cpp.i
+
+.PHONY : ASTHierarchy/ASTStatementNode.i
+
+# target to preprocess a source file
+ASTHierarchy/ASTStatementNode.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.i
+.PHONY : ASTHierarchy/ASTStatementNode.cpp.i
+
+ASTHierarchy/ASTStatementNode.s: ASTHierarchy/ASTStatementNode.cpp.s
+
+.PHONY : ASTHierarchy/ASTStatementNode.s
+
+# target to generate assembly for a file
+ASTHierarchy/ASTStatementNode.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.s
+.PHONY : ASTHierarchy/ASTStatementNode.cpp.s
+
 ASTHierarchy/Expression/ASTBinaryExprNode.obj: ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj
 
 .PHONY : ASTHierarchy/Expression/ASTBinaryExprNode.obj
@@ -752,6 +806,12 @@ help:
 	@echo ... edit_cache
 	@echo ... CompilersAssignment
 	@echo ... rebuild_cache
+	@echo ... ASTHierarchy/ASTExprNode.obj
+	@echo ... ASTHierarchy/ASTExprNode.i
+	@echo ... ASTHierarchy/ASTExprNode.s
+	@echo ... ASTHierarchy/ASTStatementNode.obj
+	@echo ... ASTHierarchy/ASTStatementNode.i
+	@echo ... ASTHierarchy/ASTStatementNode.s
 	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.obj
 	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.i
 	@echo ... ASTHierarchy/Expression/ASTBinaryExprNode.s

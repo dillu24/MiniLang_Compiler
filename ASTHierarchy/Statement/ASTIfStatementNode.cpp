@@ -9,6 +9,7 @@ ASTIfStatementNode::ASTIfStatementNode(ASTExprNode *expr, ASTBlockStatementNode 
     expression = &*expr;
     trueBlock = &* tBlock;
     elseBlock = &* eBlock;
+    this->statementType = IF_STMT;
 }
 
 ASTIfStatementNode::~ASTIfStatementNode() {

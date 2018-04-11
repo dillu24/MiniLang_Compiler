@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.cpp">
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h">

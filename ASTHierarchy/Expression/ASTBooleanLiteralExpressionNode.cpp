@@ -7,6 +7,7 @@
 
 AST::ASTBooleanLiteralExpressionNode::ASTBooleanLiteralExpressionNode(bool value) {
     this->value=value;
+    this->expressionType = ExpressionType::BOOLEAN_LITERAL_EXP;
 }
 
 void AST::ASTBooleanLiteralExpressionNode::setValue(bool value) {

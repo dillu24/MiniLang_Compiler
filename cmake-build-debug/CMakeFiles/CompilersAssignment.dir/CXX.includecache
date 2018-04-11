@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.cpp
+ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
 ASTNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.cpp
+ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
 ASTNode.h

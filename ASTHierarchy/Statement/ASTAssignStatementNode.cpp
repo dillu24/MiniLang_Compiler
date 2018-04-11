@@ -10,6 +10,7 @@
 ASTAssignStatementNode::ASTAssignStatementNode(ASTIdentifierExprNode* ident, ASTExprNode *expr) {
     identifier = &*ident;
     expression = &*expr;
+    this->statementType = ASSIGN_STMT;
 }
 
 ASTAssignStatementNode::~ASTAssignStatementNode() {

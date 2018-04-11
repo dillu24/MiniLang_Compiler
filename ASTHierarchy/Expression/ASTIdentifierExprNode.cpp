@@ -7,10 +7,13 @@
 #include <utility>
 #include "../../Visitors/Visitor.h"
 
-ASTIdentifierExprNode::ASTIdentifierExprNode() = default;
+ASTIdentifierExprNode::ASTIdentifierExprNode(){
+    this->expressionType = IDENTIFIER_EXP;
+}
 
 AST::ASTIdentifierExprNode::ASTIdentifierExprNode(string identifier) {
     identifierName = std::move(identifier);
+    this->expressionType = IDENTIFIER_EXP;
 }
 
 void AST::ASTIdentifierExprNode::setIdentifierName(string value) {

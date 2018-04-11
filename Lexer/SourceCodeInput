@@ -12,5 +12,5 @@ def funcGreaterThan (x : real , y : real) : bool {
 var x : real = 2.4;
 var y : real = funcSquare(2.5);
 print y ;
-print funcGaterThan(x,2.3);
+print funcGreaterThan(x,2.3);
 print funcGreaterThan (x,funcSquare(1.555));

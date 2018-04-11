@@ -7,6 +7,7 @@
 
 ASTPrintStatementNode::ASTPrintStatementNode(ASTExprNode *expr) {
     expression = &*expr;
+    this->statementType = PRINT_STMT;
 }
 
 ASTPrintStatementNode::~ASTPrintStatementNode() {

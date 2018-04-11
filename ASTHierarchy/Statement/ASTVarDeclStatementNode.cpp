@@ -15,6 +15,7 @@ ASTVarDeclStatementNode::ASTVarDeclStatementNode(AST::ASTIdentifierExprNode *ide
     this->identifier = &*identifier;
     this->type = type;
     this->expression = &*expr;
+    this->statementType = VAR_DECL_STMT;
 }
 
 ASTVarDeclStatementNode::~ASTVarDeclStatementNode() {
