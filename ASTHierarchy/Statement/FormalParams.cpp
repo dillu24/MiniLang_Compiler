@@ -11,8 +11,8 @@ AST::FormalParams::FormalParams(AST::FormalParam *fp) {
 
 AST::FormalParams::~FormalParams() {
     delete formalParam;
-    for(unsigned int i=0;i<parameters.size();i++){
-        delete parameters.at(i);
+    for (auto &parameter : parameters) {
+        delete parameter;
     }
 }
 

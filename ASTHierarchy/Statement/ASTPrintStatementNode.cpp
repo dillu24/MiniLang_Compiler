@@ -7,7 +7,7 @@
 
 ASTPrintStatementNode::ASTPrintStatementNode(ASTExprNode *expr) {
     expression = &*expr;
-    this->statementType = PRINT_STMT;
+    this->statementType = PRINT_STMT; //give required type
 }
 
 ASTPrintStatementNode::~ASTPrintStatementNode() {
@@ -23,5 +23,5 @@ ASTExprNode *ASTPrintStatementNode::getExpr() {
 }
 
 void ASTPrintStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

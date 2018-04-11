@@ -8,7 +8,7 @@
 
 ASTReturnStatementNode::ASTReturnStatementNode(ASTExprNode *expr) {
     expression = &*expr;
-    this->statementType = RETURN_STMT;
+    this->statementType = RETURN_STMT; //give the required type
 }
 
 ASTReturnStatementNode::~ASTReturnStatementNode() {
@@ -24,5 +24,5 @@ ASTExprNode *ASTReturnStatementNode::getExpression() {
 }
 
 void ASTReturnStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

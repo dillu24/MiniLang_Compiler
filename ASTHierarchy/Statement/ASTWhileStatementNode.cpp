@@ -8,7 +8,7 @@
 ASTWhileStatementNode::ASTWhileStatementNode(ASTExprNode *expr, ASTBlockStatementNode *block) {
     expression = &*expr;
     this->block = &*block;
-    this->statementType = WHILE_STMT;
+    this->statementType = WHILE_STMT; //give required type
 }
 
 ASTWhileStatementNode::~ASTWhileStatementNode() {
@@ -32,5 +32,5 @@ ASTBlockStatementNode *ASTWhileStatementNode::getBlock() {
 }
 
 void ASTWhileStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this);//call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

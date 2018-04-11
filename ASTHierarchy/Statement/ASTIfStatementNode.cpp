@@ -9,7 +9,7 @@ ASTIfStatementNode::ASTIfStatementNode(ASTExprNode *expr, ASTBlockStatementNode 
     expression = &*expr;
     trueBlock = &* tBlock;
     elseBlock = &* eBlock;
-    this->statementType = IF_STMT;
+    this->statementType = IF_STMT; //give the required type
 }
 
 ASTIfStatementNode::~ASTIfStatementNode() {
@@ -41,5 +41,5 @@ ASTBlockStatementNode *ASTIfStatementNode::getElseBlock() {
 }
 
 void ASTIfStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

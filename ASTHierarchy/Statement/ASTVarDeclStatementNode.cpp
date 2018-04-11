@@ -15,7 +15,7 @@ ASTVarDeclStatementNode::ASTVarDeclStatementNode(AST::ASTIdentifierExprNode *ide
     this->identifier = &*identifier;
     this->type = type;
     this->expression = &*expr;
-    this->statementType = VAR_DECL_STMT;
+    this->statementType = VAR_DECL_STMT; //give the required type
 }
 
 ASTVarDeclStatementNode::~ASTVarDeclStatementNode() {
@@ -47,5 +47,5 @@ ASTExprNode *ASTVarDeclStatementNode::getExpr() {
 }
 
 void ASTVarDeclStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

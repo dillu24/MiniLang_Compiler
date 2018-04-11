@@ -11,7 +11,7 @@ Parser::PredictiveParser::PredictiveParser(LexerImplementation *lex) {
     lexer = &*lex;
     currentToken = new Token();
     nextToken = new Token();
-    tree = new vector<AST::ASTNode*>();
+    tree = new vector<AST::ASTStatementNode*>();
 }
 
 Parser::PredictiveParser::~PredictiveParser() {
@@ -24,7 +24,7 @@ Parser::PredictiveParser::~PredictiveParser() {
     delete tree;
 }
 
-vector<ASTNode *>* Parser::PredictiveParser::parse() {
+vector<ASTStatementNode *>* Parser::PredictiveParser::parse() {
     nextToken = lexer->getNextToken();
     while(nextToken->getTokenType() != Lexer::Token::TOK_EOF){
         lookAhead();
@@ -37,6 +37,10 @@ vector<ASTNode *>* Parser::PredictiveParser::parse() {
 
 
 void Parser::PredictiveParser::lookAhead() {
+    if(nextToken->getTokenType() == Token::TOK_EOF){
+        cout<<"Lexer has run out of tokens , there must be something wrong syntactically with the program"<<endl;
+        exit(-1);
+    }
     currentToken = &*nextToken;
     nextToken = &*lexer->getNextToken();
 }

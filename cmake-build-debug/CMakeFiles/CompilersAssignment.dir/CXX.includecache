@@ -163,10 +163,6 @@ vector
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp
-minwindef.h
--
-utility
--
 ASTFuncDeclStatementNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
 ../../Visitors/Visitor.h

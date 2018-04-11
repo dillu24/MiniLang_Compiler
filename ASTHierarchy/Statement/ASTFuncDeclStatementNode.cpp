@@ -2,9 +2,7 @@
 // Created by Dylan Galea on 06/04/2018.
 //
 
-#include <minwindef.h>
 
-#include <utility>
 #include "ASTFuncDeclStatementNode.h"
 #include "../../Visitors/Visitor.h"
 
@@ -14,7 +12,7 @@ ASTFuncDeclStatementNode::ASTFuncDeclStatementNode(AST::ASTIdentifierExprNode* i
     this->fp = &*fp;
     this->type = type;
     this->block =&*block;
-    this->statementType = FUNC_DECL_STMT;
+    this->statementType = FUNC_DECL_STMT; //give the required type
 }
 
 ASTFuncDeclStatementNode::~ASTFuncDeclStatementNode() {
@@ -54,5 +52,5 @@ ASTBlockStatementNode *ASTFuncDeclStatementNode::getBlock() {
 }
 
 void ASTFuncDeclStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

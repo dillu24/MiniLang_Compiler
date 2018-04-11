@@ -7,7 +7,7 @@
 
 ASTBlockStatementNode::ASTBlockStatementNode(vector<ASTStatementNode *>* statements) {
     this->statements = &*statements;
-    this->statementType = BLOCK_STMT;
+    this->statementType = BLOCK_STMT; //give the required type
 }
 
 ASTBlockStatementNode::~ASTBlockStatementNode() {
@@ -25,10 +25,6 @@ vector<ASTStatementNode *>* ASTBlockStatementNode::getStatements() {
     return statements;
 }
 
-void ASTBlockStatementNode::removeStatement(int index) {
-    statements->erase(statements->begin()+index);
-}
-
 void ASTBlockStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this);//call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }

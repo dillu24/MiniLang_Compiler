@@ -2,6 +2,11 @@
 // Created by Dylan Galea on 04/04/2018.
 //
 
+/**
+ * This class is used to implement the Recursive Descendt Predictive parser , each EBNF non terminal thus must be parsed
+ * and a parse method is created for each ,in order to create the respective nodes.
+ */
+
 #ifndef COMPILERSASSIGNMENT_PREDICTIVEPARSER_H
 #define COMPILERSASSIGNMENT_PREDICTIVEPARSER_H
 
@@ -30,13 +35,36 @@ using namespace AST;
 namespace Parser{
     class PredictiveParser {
     private:
-        LexerImplementation *lexer;
-        Token *currentToken;
-        Token *nextToken;
-        vector<ASTNode*> *tree;
+        LexerImplementation *lexer; // Stores the address of the Lexer
+        Token *currentToken; // Stores the address of the current token being parsed
+        Token *nextToken; // stores the address of the next token to be parsed.
+        vector<ASTStatementNode*> *tree; //stores the AST that was outputted from the list of tokens .. the root node is the vector pointer itself
+                                         // where the content is the different branches
+        /**
+         * This method is used to switch the value of this->currentToken to this->nextToken , and the value of this->nextToken
+         * is assigned to the value returned by the Lexer::getNextToken() method in order to parse more tokens.
+         */
         void lookAhead();
+        /**
+         * This method is used to parse a statement according to the EBND given in the specification sheet
+         * @return
+         * An ASTStatementNode pointer which points to a branch of the syntax tree representing the syntax tree for
+         * that statement only. Note each statement has a branch in the AST.
+         */
         ASTStatementNode* parseStatement();
+        /**
+         * This method is used to parse a literal according to the EBNF given in the specification sheet
+         * @return
+         * An ASTLiteralExprNode pointer which points to a branch of the syntax tree representing the syntax tree for
+         * that statement only.
+         */
         ASTLiteralExprNode * parseLiteral();
+        /**
+         * This method is used to parse a variable declaration according to the EBNF given in the specification sheet
+         * @return
+         * An ASTVarDeclStatementNode pointer which points to a branch of the syntax tree representing the syntax tree for
+         * that statement only.
+         */
         ASTVarDeclStatementNode* parseVarDecl();
         ASTIdentifierExprNode* parseIdentifier();
         ASTExprNode* parseExpression();
@@ -62,7 +90,7 @@ namespace Parser{
     public :
         explicit PredictiveParser(LexerImplementation *lex);
         ~PredictiveParser();
-        vector<ASTNode*>* parse();
+        vector<ASTStatementNode*>* parse();
     };
 }
 
