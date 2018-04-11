@@ -10,7 +10,7 @@
 ASTAssignStatementNode::ASTAssignStatementNode(ASTIdentifierExprNode* ident, ASTExprNode *expr) {
     identifier = &*ident;
     expression = &*expr;
-    this->statementType = ASSIGN_STMT;
+    this->statementType = ASSIGN_STMT; //give required type
 }
 
 ASTAssignStatementNode::~ASTAssignStatementNode() {
@@ -34,5 +34,5 @@ ASTIdentifierExprNode* ASTAssignStatementNode::getIdentifier() {
 }
 
 void ASTAssignStatementNode::accept(Visitor *v) {
-    v->visit(this);
+    v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }
