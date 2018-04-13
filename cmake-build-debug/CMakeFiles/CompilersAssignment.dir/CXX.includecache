@@ -6,6 +6,278 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.cpp
+ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ASTNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.cpp
+ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+ASTNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.cpp
+ASTBinaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+../Operators.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Operators.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp
+ASTBooleanLiteralExpressionNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ASTLiteralExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.cpp
+ASTFnCallExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
+vector
+-
+ASTIdentifierExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.cpp
+ASTIdentifierExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+utility
+-
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+string
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.cpp
+ASTNumberExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ASTLiteralExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.cpp
+ASTStringLiteralExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+utility
+-
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+string
+-
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ASTLiteralExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.cpp
+ASTSubExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.cpp
+ASTUnaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
+../NegationOperator.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/NegationOperator.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/NegationOperator.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Operators.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.cpp
+ASTAssignStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
+utility
+-
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+../Expression/ASTIdentifierExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+string
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.cpp
+ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+vector
+-
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp
+ASTFuncDeclStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+../Type.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+FormalParams.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+string
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.cpp
+ASTIfStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.cpp
+ASTPrintStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.cpp
+ASTReturnStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp
+minwindef.h
+-
+utility
+-
+ASTVarDeclStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+string
+-
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+../Type.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+../Expression/ASTIdentifierExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.cpp
+ASTWhileStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
+../../Visitors/Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
+../ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+../ASTExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.cpp
+FormalParam.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
+string
+-
+../Type.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+../Expression/ASTIdentifierExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.cpp
+FormalParams.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+vector
+-
+FormalParam.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp
 Keywords.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
@@ -54,9 +326,93 @@ iostream
 State.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp
+PredictiveParser.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+../ASTHierarchy/Expression/ASTBinaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+../Lexer/LexerImplementation.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
+../ASTHierarchy/ASTNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+../ASTHierarchy/ASTStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+../ASTHierarchy/Expression/ASTNumberExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h
+../ASTHierarchy/Statement/ASTPrintStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
+../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+../ASTHierarchy/Operators.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Operators.h
+../ASTHierarchy/Expression/ASTFnCallExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
+../ASTHierarchy/Expression/ASTSubExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
+../ASTHierarchy/Expression/ASTUnaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
+../ASTHierarchy/Statement/ASTAssignStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
+../ASTHierarchy/Statement/ASTReturnStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
+../ASTHierarchy/Statement/ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+../ASTHierarchy/Statement/ASTIfStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
+../ASTHierarchy/Statement/ASTWhileStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
+../ASTHierarchy/Statement/FormalParam.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
+../ASTHierarchy/Statement/FormalParams.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+../ASTHierarchy/Expression/ASTBinaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
+../ASTHierarchy/Statement/ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+../ASTHierarchy/Statement/ASTIfStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
+../ASTHierarchy/Statement/ASTPrintStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
+../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+../ASTHierarchy/Statement/ASTWhileStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
+../ASTHierarchy/Statement/ASTAssignStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
+../ASTHierarchy/Expression/ASTNumberExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h
+../ASTHierarchy/Statement/ASTReturnStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
+../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+../ASTHierarchy/Expression/ASTSubExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
+../ASTHierarchy/Expression/ASTUnaryExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
+../ASTHierarchy/Expression/ASTFnCallExprNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp
 iostream
 -
 Lexer/LexerImplementation.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
+Parser/PredictiveParser.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
 
