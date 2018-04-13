@@ -1,9 +1,11 @@
 #include <iostream>
 #include "Lexer/LexerImplementation.h"
 #include "Parser/PredictiveParser.h"
+#include "Visitors/XMLGenerator.h"
 
 using namespace Lexer;
 using namespace Parser;
+using namespace Visitors;
 
 /*
  * This is the main.cpp file and is used to call the compiler.
@@ -15,7 +17,8 @@ using namespace Parser;
 int main() {
     PredictiveParser *parser = new PredictiveParser(
             new LexerImplementation(R"(C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Lexer\SourceCodeInput)"));
-    parser->parse();
+    XMLGenerator xml = XMLGenerator();
+    xml.visitTree(parser->parse());
     delete(parser);
     return 0;
 }

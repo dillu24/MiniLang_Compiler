@@ -25,6 +25,8 @@ ASTNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.cpp
+iostream
+-
 ASTBinaryExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
 ../../Visitors/Visitor.h
@@ -117,6 +119,8 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/A
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.cpp
+iostream
+-
 ASTUnaryExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
 ../../Visitors/Visitor.h
@@ -408,6 +412,16 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/A
 ../ASTHierarchy/Expression/ASTFnCallExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.cpp
+iostream
+-
+XMLGenerator.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
+Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp
 iostream
 -
@@ -415,4 +429,6 @@ Lexer/LexerImplementation.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
 Parser/PredictiveParser.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+Visitors/XMLGenerator.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
 

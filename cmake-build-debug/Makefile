@@ -770,6 +770,33 @@ Parser/PredictiveParser.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.s
 .PHONY : Parser/PredictiveParser.cpp.s
 
+Visitors/XMLGenerator.obj: Visitors/XMLGenerator.cpp.obj
+
+.PHONY : Visitors/XMLGenerator.obj
+
+# target to build an object file
+Visitors/XMLGenerator.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj
+.PHONY : Visitors/XMLGenerator.cpp.obj
+
+Visitors/XMLGenerator.i: Visitors/XMLGenerator.cpp.i
+
+.PHONY : Visitors/XMLGenerator.i
+
+# target to preprocess a source file
+Visitors/XMLGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.i
+.PHONY : Visitors/XMLGenerator.cpp.i
+
+Visitors/XMLGenerator.s: Visitors/XMLGenerator.cpp.s
+
+.PHONY : Visitors/XMLGenerator.s
+
+# target to generate assembly for a file
+Visitors/XMLGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.s
+.PHONY : Visitors/XMLGenerator.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -878,6 +905,9 @@ help:
 	@echo ... Parser/PredictiveParser.obj
 	@echo ... Parser/PredictiveParser.i
 	@echo ... Parser/PredictiveParser.s
+	@echo ... Visitors/XMLGenerator.obj
+	@echo ... Visitors/XMLGenerator.i
+	@echo ... Visitors/XMLGenerator.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

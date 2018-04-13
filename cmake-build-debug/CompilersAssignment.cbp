@@ -245,6 +245,12 @@
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp">
 			<Option target="CompilersAssignment"/>
 		</Unit>
