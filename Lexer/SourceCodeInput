@@ -1,4 +1,4 @@
-def funcSquare (x : real) : real{
+def funcSquare (x:real) : real{
     return x*x;
 }
 

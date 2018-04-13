@@ -14,25 +14,10 @@
     <list default="true" id="17033030-dfd1-48ad-b3c7-f221036d4fe5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Dylan_Galea.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Dylan_Galea.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTBlockStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTBlockStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTBlockStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTBlockStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTIfStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTIfStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTIfStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTIfStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTPrintStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTPrintStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTPrintStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTPrintStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTReturnStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTReturnStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTReturnStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTReturnStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTWhileStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTWhileStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTWhileStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTWhileStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParam.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParam.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParams.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParams.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParams.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParams.h" />
+      <change beforePath="$PROJECT_DIR$/Lexer/SourceCodeInput" afterPath="$PROJECT_DIR$/Lexer/SourceCodeInput" />
       <change beforePath="$PROJECT_DIR$/Parser/PredictiveParser.cpp" afterPath="$PROJECT_DIR$/Parser/PredictiveParser.cpp" />
       <change beforePath="$PROJECT_DIR$/Parser/PredictiveParser.h" afterPath="$PROJECT_DIR$/Parser/PredictiveParser.h" />
+      <change beforePath="$PROJECT_DIR$/Visitors/Visitor.h" afterPath="$PROJECT_DIR$/Visitors/Visitor.h" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBinaryExprNode.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj" />
@@ -49,10 +34,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTReturnStatementNode.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/main.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/objects.a" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CompilersAssignment.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/CompilersAssignment.exe" />
@@ -67,50 +49,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PredictiveParser.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Parser/PredictiveParser.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PredictiveParser.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Parser/PredictiveParser.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#48#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SourceCodeInput" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -139,7 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Lexer/LexerImplementation.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/ASTHierarchy/ASTNode.h" />
         <option value="$PROJECT_DIR$/ASTHierarchy/NegationOperator.h" />
@@ -185,11 +123,12 @@
         <option value="$PROJECT_DIR$/ASTHierarchy/Statement/ASTWhileStatementNode.cpp" />
         <option value="$PROJECT_DIR$/ASTHierarchy/Statement/ASTWhileStatementNode.h" />
         <option value="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParam.h" />
-        <option value="$PROJECT_DIR$/Lexer/SourceCodeInput" />
         <option value="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParams.h" />
         <option value="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParams.cpp" />
-        <option value="$PROJECT_DIR$/Parser/PredictiveParser.cpp" />
         <option value="$PROJECT_DIR$/Parser/PredictiveParser.h" />
+        <option value="$PROJECT_DIR$/Visitors/Visitor.h" />
+        <option value="$PROJECT_DIR$/Parser/PredictiveParser.cpp" />
+        <option value="$PROJECT_DIR$/Lexer/SourceCodeInput" />
       </list>
     </option>
   </component>
@@ -253,6 +192,11 @@
               <item name="CompilersAssignment" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="CompilersAssignment" type="462c0819:PsiDirectoryNode" />
               <item name="Parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CompilersAssignment" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="CompilersAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Visitors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,28 +270,27 @@
       <workItem from="1523103080114" duration="13937000" />
       <workItem from="1523177765553" duration="13516000" />
       <workItem from="1523284771644" duration="12100000" />
-      <workItem from="1523349293894" duration="40891000" />
+      <workItem from="1523349293894" duration="46676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174887000" />
+    <option name="totallyTimeSpent" value="180672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22474378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38985738" sideWeight="0.8477306" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38985738" sideWeight="0.8038067" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29160064" sideWeight="0.20278184" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.340729" sideWeight="0.59297216" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340729" sideWeight="0.4297218" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.340729" sideWeight="0.4070278" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29160064" sideWeight="0.79721814" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29160064" sideWeight="0.8931186" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -406,14 +349,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lexer/Token.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lexer/State.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
@@ -800,10 +735,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
+    <entry file="file://$PROJECT_DIR$/Parser/PredictiveParser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        <state relative-caret-position="289">
+          <caret line="227" column="70" lean-forward="false" selection-start-line="227" selection-start-column="70" selection-end-line="227" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visitors/Visitor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="126" column="53" lean-forward="false" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -818,18 +761,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parser/PredictiveParser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="2533">
+          <caret line="572" column="66" lean-forward="false" selection-start-line="572" selection-start-column="66" selection-end-line="572" selection-end-column="66" />
           <folding>
             <element signature="e#48#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/PredictiveParser.h">
+    <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="14" />
           <folding />
         </state>
       </provider>
