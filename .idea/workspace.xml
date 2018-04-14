@@ -12,20 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17033030-dfd1-48ad-b3c7-f221036d4fe5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.h" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParam.cpp" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParam.cpp" />
-      <change beforePath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParam.h" afterPath="$PROJECT_DIR$/ASTHierarchy/Statement/FormalParam.h" />
-      <change beforePath="$PROJECT_DIR$/Lexer/LexerImplementation.cpp" afterPath="$PROJECT_DIR$/Lexer/LexerImplementation.cpp" />
-      <change beforePath="$PROJECT_DIR$/Lexer/SourceCodeInput" afterPath="$PROJECT_DIR$/Lexer/SourceCodeInput" />
-      <change beforePath="$PROJECT_DIR$/Visitors/XMLGenerator.cpp" afterPath="$PROJECT_DIR$/Visitors/XMLGenerator.cpp" />
-      <change beforePath="$PROJECT_DIR$/Visitors/XMLGenerator.h" afterPath="$PROJECT_DIR$/Visitors/XMLGenerator.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/objects.a" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CompilersAssignment.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/CompilersAssignment.exe" />
     </list>
@@ -44,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -290,15 +276,16 @@
       <workItem from="1523103080114" duration="13937000" />
       <workItem from="1523177765553" duration="13516000" />
       <workItem from="1523284771644" duration="12100000" />
-      <workItem from="1523349293894" duration="66969000" />
+      <workItem from="1523349293894" duration="67156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200965000" />
+    <option name="totallyTimeSpent" value="201152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22474378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -797,7 +784,7 @@
     <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
         </state>
       </provider>
