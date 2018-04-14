@@ -24,6 +24,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.obj"
+  "CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj"
   "CompilersAssignment.pdb"
   "CompilersAssignment.exe"
   "CompilersAssignment.exe.manifest"

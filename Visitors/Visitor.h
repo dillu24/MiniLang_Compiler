@@ -127,6 +127,13 @@ namespace Visitors{
         * Stores the address of the ASTFnCallExprNode to be visited
         */
         virtual void visit(ASTFnCallExprNode* node)=0;
+
+        /**
+         * This method is used by the visitor in order to start visiting the AST
+         * @param tree
+         * Stores the address of the AST to be visited.
+         */
+        virtual void visitTree(vector<ASTStatementNode*>* tree)=0;
     };
 }
 

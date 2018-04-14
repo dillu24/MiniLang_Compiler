@@ -78,6 +78,12 @@ namespace AST {
          * Stores the address of the visitor that is visiting the node.
          */
         void accept(Visitor *v) override;
+
+        /**
+         * This method is used so that in the visitor classes whenever the operator needs to be printed it can
+         * be printed using this function according to the enum name.
+         */
+        void printOperator();
     };
 }
 

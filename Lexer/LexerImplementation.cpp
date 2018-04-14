@@ -51,7 +51,7 @@ Lexer::Token* Lexer::LexerImplementation::getNextToken() {
         current_input_index++; // go to the next character for next iteration
         if(lexeme.length()==0){ //to handle spaces when a token has been read , note that this was done this way
                                 // in order not to interfere with white spaces in string literals
-            if(next_character == ' '){ // if next is a space skip the character since it is not in a string literal,
+            if(next_character == ' ' || next_character == '\t'){ // if next is a space skip the character since it is not in a string literal,
                                        // if it where in a string literal the lexeme length would be greater than zero
                                        // since the first character is ""
                 continue;
