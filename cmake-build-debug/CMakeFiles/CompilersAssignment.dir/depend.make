@@ -517,6 +517,46 @@ CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Lexer/Tok
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Parser/PredictiveParser.cpp
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Parser/PredictiveParser.h
 
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/ASTExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTBinaryExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Expression/ASTUnaryExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/NegationOperator.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Operators.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTAssignStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTBlockStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTIfStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTPrintStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTReturnStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/ASTWhileStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/SemanticAnalysis.cpp
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/SemanticAnalysis.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/Types/SymbolTable.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/Types/TypeBinder.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/Visitor.h
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../Visitors/Types/SymbolTable.cpp
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../Visitors/Types/SymbolTable.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../Visitors/Types/TypeBinder.h
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../Visitors/Types/TypeBinder.cpp
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../Visitors/Types/TypeBinder.h
+
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj: ../ASTHierarchy/ASTExprNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj: ../ASTHierarchy/ASTNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
@@ -575,6 +615,9 @@ CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/LexerImplementation.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/State.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/Token.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Parser/PredictiveParser.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/SemanticAnalysis.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Types/SymbolTable.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Types/TypeBinder.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Visitor.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/XMLGenerator.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../main.cpp

@@ -680,6 +680,78 @@ CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj.provides: CMake
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj
 
 
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/SemanticAnalysis.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\Visitors\SemanticAnalysis.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\SemanticAnalysis.cpp"
+
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\SemanticAnalysis.cpp" > CMakeFiles\CompilersAssignment.dir\Visitors\SemanticAnalysis.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\SemanticAnalysis.cpp" -o CMakeFiles\CompilersAssignment.dir\Visitors\SemanticAnalysis.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../Visitors/Types/TypeBinder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\Visitors\Types\TypeBinder.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\Types\TypeBinder.cpp"
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\Types\TypeBinder.cpp" > CMakeFiles\CompilersAssignment.dir\Visitors\Types\TypeBinder.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\Types\TypeBinder.cpp" -o CMakeFiles\CompilersAssignment.dir\Visitors\Types\TypeBinder.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj
+
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../Visitors/Types/SymbolTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\Visitors\Types\SymbolTable.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\Types\SymbolTable.cpp"
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\Types\SymbolTable.cpp" > CMakeFiles\CompilersAssignment.dir\Visitors\Types\SymbolTable.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Visitors\Types\SymbolTable.cpp" -o CMakeFiles\CompilersAssignment.dir\Visitors\Types\SymbolTable.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj
+
+
 # Object files for target CompilersAssignment
 CompilersAssignment_OBJECTS = \
 "CMakeFiles/CompilersAssignment.dir/main.cpp.obj" \
@@ -707,7 +779,10 @@ CompilersAssignment_OBJECTS = \
 "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Expression/ASTFnCallExprNode.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.obj" \
-"CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj"
+"CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj"
 
 # External object files for target CompilersAssignment
 CompilersAssignment_EXTERNAL_OBJECTS =
@@ -738,11 +813,14 @@ CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Express
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/build.make
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/linklibs.rsp
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/objects1.rsp
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable CompilersAssignment.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable CompilersAssignment.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CompilersAssignment.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -776,6 +854,9 @@ CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTExprNode.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/ASTHierarchy/ASTStatementNode.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj.requires
 
 .PHONY : CMakeFiles/CompilersAssignment.dir/requires
 

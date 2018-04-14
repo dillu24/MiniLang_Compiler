@@ -242,6 +242,24 @@
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>

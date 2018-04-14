@@ -517,6 +517,46 @@ CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/NegationOperator.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Operators.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.cpp
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.cpp
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
@@ -576,6 +616,9 @@ CMakeFiles/CompilersAssignment.dir/main.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp

@@ -770,6 +770,87 @@ Parser/PredictiveParser.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.s
 .PHONY : Parser/PredictiveParser.cpp.s
 
+Visitors/SemanticAnalysis.obj: Visitors/SemanticAnalysis.cpp.obj
+
+.PHONY : Visitors/SemanticAnalysis.obj
+
+# target to build an object file
+Visitors/SemanticAnalysis.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj
+.PHONY : Visitors/SemanticAnalysis.cpp.obj
+
+Visitors/SemanticAnalysis.i: Visitors/SemanticAnalysis.cpp.i
+
+.PHONY : Visitors/SemanticAnalysis.i
+
+# target to preprocess a source file
+Visitors/SemanticAnalysis.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.i
+.PHONY : Visitors/SemanticAnalysis.cpp.i
+
+Visitors/SemanticAnalysis.s: Visitors/SemanticAnalysis.cpp.s
+
+.PHONY : Visitors/SemanticAnalysis.s
+
+# target to generate assembly for a file
+Visitors/SemanticAnalysis.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.s
+.PHONY : Visitors/SemanticAnalysis.cpp.s
+
+Visitors/Types/SymbolTable.obj: Visitors/Types/SymbolTable.cpp.obj
+
+.PHONY : Visitors/Types/SymbolTable.obj
+
+# target to build an object file
+Visitors/Types/SymbolTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj
+.PHONY : Visitors/Types/SymbolTable.cpp.obj
+
+Visitors/Types/SymbolTable.i: Visitors/Types/SymbolTable.cpp.i
+
+.PHONY : Visitors/Types/SymbolTable.i
+
+# target to preprocess a source file
+Visitors/Types/SymbolTable.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.i
+.PHONY : Visitors/Types/SymbolTable.cpp.i
+
+Visitors/Types/SymbolTable.s: Visitors/Types/SymbolTable.cpp.s
+
+.PHONY : Visitors/Types/SymbolTable.s
+
+# target to generate assembly for a file
+Visitors/Types/SymbolTable.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.s
+.PHONY : Visitors/Types/SymbolTable.cpp.s
+
+Visitors/Types/TypeBinder.obj: Visitors/Types/TypeBinder.cpp.obj
+
+.PHONY : Visitors/Types/TypeBinder.obj
+
+# target to build an object file
+Visitors/Types/TypeBinder.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj
+.PHONY : Visitors/Types/TypeBinder.cpp.obj
+
+Visitors/Types/TypeBinder.i: Visitors/Types/TypeBinder.cpp.i
+
+.PHONY : Visitors/Types/TypeBinder.i
+
+# target to preprocess a source file
+Visitors/Types/TypeBinder.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.i
+.PHONY : Visitors/Types/TypeBinder.cpp.i
+
+Visitors/Types/TypeBinder.s: Visitors/Types/TypeBinder.cpp.s
+
+.PHONY : Visitors/Types/TypeBinder.s
+
+# target to generate assembly for a file
+Visitors/Types/TypeBinder.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.s
+.PHONY : Visitors/Types/TypeBinder.cpp.s
+
 Visitors/XMLGenerator.obj: Visitors/XMLGenerator.cpp.obj
 
 .PHONY : Visitors/XMLGenerator.obj
@@ -905,6 +986,15 @@ help:
 	@echo ... Parser/PredictiveParser.obj
 	@echo ... Parser/PredictiveParser.i
 	@echo ... Parser/PredictiveParser.s
+	@echo ... Visitors/SemanticAnalysis.obj
+	@echo ... Visitors/SemanticAnalysis.i
+	@echo ... Visitors/SemanticAnalysis.s
+	@echo ... Visitors/Types/SymbolTable.obj
+	@echo ... Visitors/Types/SymbolTable.i
+	@echo ... Visitors/Types/SymbolTable.s
+	@echo ... Visitors/Types/TypeBinder.obj
+	@echo ... Visitors/Types/TypeBinder.i
+	@echo ... Visitors/Types/TypeBinder.s
 	@echo ... Visitors/XMLGenerator.obj
 	@echo ... Visitors/XMLGenerator.i
 	@echo ... Visitors/XMLGenerator.s

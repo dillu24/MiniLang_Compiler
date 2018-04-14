@@ -384,6 +384,40 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/Fo
 ../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp
+cmath
+-
+SemanticAnalysis.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
+Visitor.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+Types/SymbolTable.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+vector
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.cpp
+SymbolTable.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+map
+-
+TypeBinder.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.cpp
+TypeBinder.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+../../ASTHierarchy/Type.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+iostream
+-
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
 ../ASTHierarchy/Expression/ASTBinaryExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
@@ -437,4 +471,6 @@ Parser/PredictiveParser.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
 Visitors/XMLGenerator.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
+Visitors/SemanticAnalysis.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
 
