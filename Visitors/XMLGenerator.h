@@ -11,8 +11,12 @@ namespace Visitors{
     class XMLGenerator:Visitor {
     public:
         /**
-         * This constructor creates a new XMLGenerator visitor class and declares the identation level to "" since
-         * we have no indentations so far.
+         * This constructor creates a new XMLGenerator visitor class and declares the indentation level to "" since
+         * we have no indentations so far. In this xml generation , when a child is met in a tree , automatically the xml
+         * output is indented . For example if we have a function definition with parameters , the function parameters
+         * and name of the function are both on the same indentation level since both are children of function definition
+         * node . This could have been done in a way such the the node stores a string storing the identifier , however
+         * this was not done this way in order to show the importance of variables in the language.
          */
         XMLGenerator();
         /**

@@ -88,6 +88,11 @@ namespace AST{
          * Stores the address of the visitor visiting this node.
          */
         void accept(Visitor *v) override;
+        /**
+         * This method is used by the visitor classes in order to print the character representing the enum equivalent
+         * of the type.
+         */
+        void printType();
     };
 }
 

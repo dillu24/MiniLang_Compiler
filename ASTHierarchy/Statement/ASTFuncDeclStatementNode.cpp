@@ -3,6 +3,7 @@
 //
 
 
+#include <iostream>
 #include "ASTFuncDeclStatementNode.h"
 #include "../../Visitors/Visitor.h"
 
@@ -53,4 +54,22 @@ ASTBlockStatementNode *ASTFuncDeclStatementNode::getBlock() {
 
 void ASTFuncDeclStatementNode::accept(Visitor *v) {
     v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
+}
+
+void ASTFuncDeclStatementNode::printType() {
+    switch(type){
+
+        case Type::REAL:
+            cout<<"real";
+            break;
+        case Type::INT:
+            cout<<"int";
+            break;
+        case Type::BOOL:
+            cout<<"bool";
+            break;
+        case Type::STRING:
+            cout<<"string";
+            break;
+    }
 }

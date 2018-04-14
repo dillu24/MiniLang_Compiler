@@ -100,6 +100,11 @@ namespace AST{
          * Stores the address of the visitor visiting this node.
          */
         void accept(Visitor *v) override;
+        /**
+         * Used by the visitor function to print the type character representation.
+         */
+        void printType();
+
     };
 }
 

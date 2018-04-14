@@ -54,6 +54,12 @@ namespace AST{
          * The value in type of Type.
          */
         Type getType();
+
+        /**
+         * Used by the visitor class to print parameters
+         */
+
+        void printType();
     };
 }
 #endif //COMPILERSASSIGNMENT_FORMALPARAM_H
