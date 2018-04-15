@@ -13,17 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="17033030-dfd1-48ad-b3c7-f221036d4fe5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Lexer/SourceCodeInput" afterPath="$PROJECT_DIR$/Lexer/SourceCodeInput" />
-      <change beforePath="$PROJECT_DIR$/Visitors/SemanticAnalysis.cpp" afterPath="$PROJECT_DIR$/Visitors/SemanticAnalysis.cpp" />
-      <change beforePath="$PROJECT_DIR$/Visitors/Types/SymbolTable.cpp" afterPath="$PROJECT_DIR$/Visitors/Types/SymbolTable.cpp" />
-      <change beforePath="$PROJECT_DIR$/Visitors/Types/SymbolTable.h" afterPath="$PROJECT_DIR$/Visitors/Types/SymbolTable.h" />
-      <change beforePath="$PROJECT_DIR$/Visitors/Types/TypeBinder.cpp" afterPath="$PROJECT_DIR$/Visitors/Types/TypeBinder.cpp" />
-      <change beforePath="$PROJECT_DIR$/Visitors/Types/TypeBinder.h" afterPath="$PROJECT_DIR$/Visitors/Types/TypeBinder.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/main.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CompilersAssignment.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/CompilersAssignment.exe" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,20 +25,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SourceCodeInput" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SourceCodeInput" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SemanticAnalysis.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SemanticAnalysis.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Visitors/SemanticAnalysis.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="5661">
               <caret line="333" column="0" lean-forward="false" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
               <folding>
                 <element signature="e#48#64#0" expanded="true" />
@@ -58,71 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ASTVarDeclStatementNode.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ASTHierarchy/Statement/ASTVarDeclStatementNode.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ASTFnCallExprNode.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ASTHierarchy/Expression/ASTFnCallExprNode.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SymbolTable.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Visitors/Types/SymbolTable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="79" lean-forward="false" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeBinder.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Visitors/Types/TypeBinder.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeBinder.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Visitors/Types/TypeBinder.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SemanticAnalysis.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Visitors/SemanticAnalysis.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="255">
               <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -366,12 +295,12 @@
       <workItem from="1523103080114" duration="13937000" />
       <workItem from="1523177765553" duration="13516000" />
       <workItem from="1523284771644" duration="12100000" />
-      <workItem from="1523349293894" duration="103288000" />
+      <workItem from="1523349293894" duration="103521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237284000" />
+    <option name="totallyTimeSpent" value="237517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -383,7 +312,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4786054" sideWeight="0.49707174" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23771791" sideWeight="0.50292826" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23771791" sideWeight="0.50292826" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -797,14 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Visitors/SemanticAnalysis.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ASTHierarchy/Statement/ASTFuncDeclStatementNode.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -817,14 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -855,11 +768,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Visitors/SemanticAnalysis.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="5661">
           <caret line="333" column="0" lean-forward="false" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
           <folding>
             <element signature="e#48#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visitors/SemanticAnalysis.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lexer/SourceCodeInput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
