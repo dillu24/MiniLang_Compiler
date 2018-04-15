@@ -548,11 +548,21 @@ CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitor
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/Types/TypeBinder.h
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/Visitor.h
 
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../ASTHierarchy/ASTExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../ASTHierarchy/Type.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../Visitors/Types/SymbolTable.cpp
 CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../Visitors/Types/SymbolTable.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj: ../Visitors/Types/TypeBinder.h
 
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../ASTHierarchy/ASTExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../ASTHierarchy/Type.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../Visitors/Types/TypeBinder.cpp
 CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj: ../Visitors/Types/TypeBinder.h

@@ -38,3 +38,4 @@ string Visitors::TypeBinder::getStringRepresentationOfPrimitiveType() {
     }
 }
 
+

@@ -415,6 +415,8 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
 ../../ASTHierarchy/Type.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+../../ASTHierarchy/Statement/FormalParams.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
 iostream
 -
 

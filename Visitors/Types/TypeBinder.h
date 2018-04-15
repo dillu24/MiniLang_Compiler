@@ -5,6 +5,8 @@
 #ifndef COMPILERSASSIGNMENT_TYPEBINDER_H
 #define COMPILERSASSIGNMENT_TYPEBINDER_H
 #include "../../ASTHierarchy/Type.h"
+#include "../../ASTHierarchy/Statement/FormalParams.h"
+
 using namespace AST;
 #include <iostream>
 using namespace std;

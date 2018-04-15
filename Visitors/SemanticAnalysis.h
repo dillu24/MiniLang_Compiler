@@ -15,6 +15,7 @@ namespace Visitors{
     private:
         vector<SymbolTable*> ScopedTable;
         Type typeToBeChecked;
+        FormalParams* functionParameters;
     public:
         /**
          * This constructor is used to create a new semantic analysis instance with an empty scope of symbol tables.
