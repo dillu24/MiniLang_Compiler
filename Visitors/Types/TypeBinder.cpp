@@ -7,6 +7,7 @@
 Visitors::TypeBinder::TypeBinder(Type primitiveType, Visitors::TypeBinder::IdentifierType identifierType) {
     this->primitiveType = primitiveType;
     this->identifierType = identifierType;
+    this->parameterTypes = vector<Type >();
 }
 
 Type Visitors::TypeBinder::getPrimitiveType() {
@@ -37,5 +38,6 @@ string Visitors::TypeBinder::getStringRepresentationOfPrimitiveType() {
             return "string";
     }
 }
+
 
 

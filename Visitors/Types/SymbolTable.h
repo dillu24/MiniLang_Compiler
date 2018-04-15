@@ -11,11 +11,11 @@
 namespace Visitors{
     class SymbolTable {
     private:
-        map<string,TypeBinder> contents;
+        multimap<string,TypeBinder> contents;
     public:
         SymbolTable();
         void addToSymbolTable(string identifier , TypeBinder type);
-        bool checkIfInSymbolTable(string identifier);
+        bool checkIfInSymbolTable(string identifier,TypeBinder::IdentifierType type);
         TypeBinder getTypeBinder(string identifier);
     };
 }

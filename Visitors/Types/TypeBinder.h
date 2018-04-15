@@ -14,6 +14,7 @@ using namespace std;
 namespace Visitors{
     class TypeBinder {
     public:
+        vector<Type> parameterTypes;
         enum IdentifierType{
             FUNCTION,
             VARIABLE

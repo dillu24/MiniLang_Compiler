@@ -25,24 +25,32 @@ void SemanticAnalysis::visit(ASTAssignStatementNode *node) { //this was done suc
 
 void SemanticAnalysis::visit(ASTBlockStatementNode *node) { //in function declaration must do the parameters handler
     ScopedTable.push_back(new SymbolTable());
+    bool functionBlock = false;
     if(functionParameters != nullptr){
         if(functionParameters->getFormalParam() != nullptr){
             ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(functionParameters->getFormalParam()->getIdentifier()->getIdentifierName(),
                                                                    TypeBinder(functionParameters->getFormalParam()->getType(),
-                                                                              TypeBinder::IdentifierType::FUNCTION));
+                                                                              TypeBinder::IdentifierType::VARIABLE));
+            functionBlock = true;
         }
         for (auto &parameter : functionParameters->parameters) {
+            if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(parameter->getIdentifier()->getIdentifierName(),TypeBinder::VARIABLE)){
+                cout<<"A variable with name "<<parameter->getIdentifier()->getIdentifierName()<<" has already been declared in this scope "<<endl;
+                exit(-1);
+            }
             ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(parameter->getIdentifier()->getIdentifierName(),
                                                                    TypeBinder(parameter->getType(),
-                                                                              TypeBinder::IdentifierType::FUNCTION));
+                                                                              TypeBinder::IdentifierType::VARIABLE));
         }
     }
+    functionParameters = nullptr;
     vector<ASTStatementNode*> statements = *node->getStatements();
     for (auto &statement : statements) {
         statement->accept(this);
     }
-    ScopedTable.pop_back();
-    functionParameters = nullptr;
+    if(!functionBlock){
+        ScopedTable.pop_back(); //to not loose scope due to return check
+    }
 }
 
 void SemanticAnalysis::visit(ASTIfStatementNode *node) {
@@ -62,9 +70,7 @@ void SemanticAnalysis::visit(ASTPrintStatementNode *node) {
 }
 
 void SemanticAnalysis::visit(ASTVarDeclStatementNode *node) {
-    if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName()) &&
-            ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).
-                    getIdentifierType() == TypeBinder::VARIABLE){
+    if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::VARIABLE)){
         cout<<"A variable with name "<<node->getIdentifier()->getIdentifierName()<<" has already been declared in this scope "<<endl;
         exit(-1);
     }
@@ -92,17 +98,42 @@ void SemanticAnalysis::visit(ASTReturnStatementNode *node) {
 }
 
 void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
-    if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName()) &&
-       ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).
-               getIdentifierType() == TypeBinder::FUNCTION){
+    if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION)){
         cout<<"A function with name "<<node->getIdentifier()->getIdentifierName()<<" has already been declared in this scope "<<endl;
         exit(-1);
     }
     functionParameters = &*node->getFormalParams();
-    ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(node->getIdentifier()->getIdentifierName(),
-    TypeBinder(node->getType(),TypeBinder::FUNCTION));
+    auto tb = TypeBinder(node->getType(),TypeBinder::FUNCTION);
+    if(functionParameters->getFormalParam() != nullptr){
+        tb.parameterTypes.push_back(functionParameters->getFormalParam()->getType());
+        for (auto &parameter : functionParameters->parameters) {
+            tb.parameterTypes.push_back(parameter->getType());
+        }
+    }
+    ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(node->getIdentifier()->getIdentifierName(),tb);
     node->getBlock()->accept(this);
-    //ToDo Return type if there and match them
+    vector<ASTStatementNode*> statements = *node->getBlock()->getStatements();
+    bool returnPresent = false;
+    unsigned int returnStatementIndex = 0;
+    for (unsigned int i=0;i<statements.size();i++) {
+        if(statements.at(i)->getStatementType() == ASTStatementNode::RETURN_STMT){
+            returnPresent = true;
+            returnStatementIndex = i;
+            break;
+        }
+    }
+    if(returnPresent){
+        statements.at(returnStatementIndex)->accept(this);
+        if(typeToBeChecked != node->getType()){
+            cout<<"The type signature of function "<<node->getIdentifier()->getIdentifierName()<<" is not equal to the return type"<<endl;
+            exit(-1);
+        }
+    }else{
+        cout<<"Function "<<node->getIdentifier()->getIdentifierName()<<" does not have a return statements , all mini "
+                "lang functions must have one"<<endl;
+        exit(-1);
+    }
+    ScopedTable.pop_back();
 }
 
 void SemanticAnalysis::visit(ASTBinaryExprNode *node) { //check binary operators while doing expressions for all sub part of expression
@@ -233,7 +264,7 @@ void SemanticAnalysis::visit(ASTStringLiteralExprNode*) {
 
 void SemanticAnalysis::visit(ASTIdentifierExprNode *node) {
     for(int i=0;i<ScopedTable.size();i++){
-        if(ScopedTable.at(ScopedTable.size()-i-1)->checkIfInSymbolTable(node->getIdentifierName())){
+        if(ScopedTable.at(ScopedTable.size()-i-1)->checkIfInSymbolTable(node->getIdentifierName(),TypeBinder::VARIABLE)){
             typeToBeChecked = ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifierName()).getPrimitiveType();
             return;
         }
@@ -264,8 +295,33 @@ void SemanticAnalysis::visit(ASTUnaryExprNode *node) { //assumptions of operator
     }
 }
 
-void SemanticAnalysis::visit(ASTFnCallExprNode *node) { //be careful in funciton clal to check parametres , for number and type
-
+void SemanticAnalysis::visit(ASTFnCallExprNode *node) { //be careful in funciton cll to check parameteres , for number and type
+    bool functionFound = false;
+    unsigned int tableIndex =0;
+    for(unsigned int i=0;i<ScopedTable.size();i++){
+        if(ScopedTable.at(ScopedTable.size()-i-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION)){
+            functionFound = true;
+            tableIndex = ScopedTable.size()-i-1;
+            break;
+        }
+    }
+    if(functionFound){
+        if(node->getParameters().size() != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.size()){
+            cout<<"parameter numbers mismatch in function "<<node->getIdentifier()->getIdentifierName()<<endl;
+            exit(-1);
+        }
+        for(unsigned int i=0;i<node->getParameters().size();i++){
+            node->getParameters().at(i)->accept(this);
+            if(typeToBeChecked != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.at(i)){
+                cout<<"Parameter type mismatch in function "<<node->getIdentifier()->getIdentifierName()<<endl;
+                exit(-1);
+            }
+        }
+        typeToBeChecked = ScopedTable.at(ScopedTable.size()-tableIndex-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).getPrimitiveType();
+    }else{
+        cout<<"Function "<< node->getIdentifier()->getIdentifierName()<<" was not declared"<<endl;
+        exit(-1);
+    }
 }
 
 void SemanticAnalysis::visitTree(vector<ASTStatementNode *> *tree) {
