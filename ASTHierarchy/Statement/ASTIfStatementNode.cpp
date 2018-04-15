@@ -25,7 +25,7 @@ void ASTIfStatementNode::setTrueBlock(ASTBlockStatementNode *tBlock) {
 }
 
 void ASTIfStatementNode::setElseBlock(ASTBlockStatementNode *elseBlock) {
-    elseBlock = &* elseBlock;
+    this->elseBlock = &* elseBlock;
 }
 
 ASTExprNode *ASTIfStatementNode::getExpression() {

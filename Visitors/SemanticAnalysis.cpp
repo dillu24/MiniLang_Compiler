@@ -5,8 +5,9 @@
 #include <cmath>
 #include "SemanticAnalysis.h"
 
-SemanticAnalysis::SemanticAnalysis() {
+SemanticAnalysis::SemanticAnalysis(){
     ScopedTable = vector<SymbolTable*>();
+    typeToBeChecked = Type::BOOL; //as start
 }
 
 void SemanticAnalysis::visit(ASTAssignStatementNode *node) { //this was done such that reals cannot be typecaster to ints , as secpfied
@@ -21,12 +22,25 @@ void SemanticAnalysis::visit(ASTAssignStatementNode *node) { //this was done suc
     }
 }
 
-void SemanticAnalysis::visit(ASTBlockStatementNode *node) {
-
+void SemanticAnalysis::visit(ASTBlockStatementNode *node) { //in function declaration must do the parameters handler
+    ScopedTable.push_back(new SymbolTable());
+    vector<ASTStatementNode*> statements = *node->getStatements();
+    for (auto &statement : statements) {
+        statement->accept(this);
+    }
+    ScopedTable.pop_back();
 }
 
 void SemanticAnalysis::visit(ASTIfStatementNode *node) {
-
+    node->getExpression()->accept(this);
+    if(typeToBeChecked != Type::BOOL){
+        cout<<"The if statement condition must be a predicate"<<endl;
+        exit(-1);
+    }
+    node->getTrueBlock()->accept(this);
+    if(node->getElseBlock() != nullptr){
+        node->getElseBlock()->accept(this);
+    }
 }
 
 void SemanticAnalysis::visit(ASTPrintStatementNode *node) {
@@ -51,7 +65,12 @@ void SemanticAnalysis::visit(ASTVarDeclStatementNode *node) {
 }
 
 void SemanticAnalysis::visit(ASTWhileStatementNode *node) {
-
+    node->getExpression()->accept(this);
+    if(typeToBeChecked != Type::BOOL){
+        cout<<"The while statement condition must be a predicate"<<endl;
+        exit(-1);
+    }
+    node->getBlock()->accept(this);
 }
 
 void SemanticAnalysis::visit(ASTReturnStatementNode *node) {
@@ -63,7 +82,112 @@ void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
 }
 
 void SemanticAnalysis::visit(ASTBinaryExprNode *node) { //check binary operators while doing expressions for all sub part of expression
-
+    node->getLhs()->accept(this);
+    Type lhsType = typeToBeChecked;
+    node->getRhs()->accept(this);
+    Type rhsType = typeToBeChecked;
+    if(lhsType != rhsType){
+        cout<<"Binary operators can be only applied to expressions of the same type"<<endl;
+        exit(-1);
+    }
+    switch(node->getOperator()){
+        case Operators::PLUS:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The + operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = lhsType;
+            }
+            break;
+        case Operators::MINUS:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The - operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = lhsType;
+            }
+            break;
+        case Operators::OR:
+            if(lhsType != Type::BOOL){
+                cout<<"The or operator can only be used for bools"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = lhsType;
+            }
+            break;
+        case Operators::LESSTHAN:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The < operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = Type::BOOL;
+            }
+            break;
+        case Operators::GREATERTHAN:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The > operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = Type::BOOL;
+            }
+            break;
+        case Operators::LESSTHANEQUAL:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The <= operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = Type::BOOL;
+            }
+            break;
+        case Operators::GREATERTHANEQUAL:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The >= operator can only be used for number types"<<endl;
+            }else{
+                typeToBeChecked = Type::BOOL;
+            }
+            break;
+        case Operators::EQUALTO:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The == operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = Type::BOOL;
+            }
+            break;
+        case Operators::NOTEQUAL:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The != operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = Type::BOOL;
+            }
+            break;
+        case Operators::TIMES:
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The * operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = lhsType;
+            }
+            break;
+        case Operators::DIVISION: //division always gets real types to be safe , therefore programmer must be careful
+                                  // of this.
+            if(lhsType == Type::STRING || lhsType == Type::BOOL){
+                cout<<"The / operator can only be used for number types"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = Type::REAL;
+            }
+            break;
+        case Operators::AND:
+            if(lhsType != Type::BOOL){
+                cout<<"The and operator can only be used for bools"<<endl;
+                exit(-1);
+            }else{
+                typeToBeChecked = lhsType;
+            }
+            break;
+    }
 }
 
 void SemanticAnalysis::visit(ASTNumberExprNode *node) {
@@ -75,11 +199,11 @@ void SemanticAnalysis::visit(ASTNumberExprNode *node) {
     }
 }
 
-void SemanticAnalysis::visit(ASTBooleanLiteralExpressionNode *node) {
+void SemanticAnalysis::visit(ASTBooleanLiteralExpressionNode*) {
     typeToBeChecked = Type::BOOL;
 }
 
-void SemanticAnalysis::visit(ASTStringLiteralExprNode *node) {
+void SemanticAnalysis::visit(ASTStringLiteralExprNode*) {
     typeToBeChecked = Type::STRING;
 }
 
@@ -116,7 +240,7 @@ void SemanticAnalysis::visit(ASTUnaryExprNode *node) { //assumptions of operator
     }
 }
 
-void SemanticAnalysis::visit(ASTFnCallExprNode *node) {
+void SemanticAnalysis::visit(ASTFnCallExprNode *node) { //be careful in funciton clal to check parametres , for number and type
 
 }
 
