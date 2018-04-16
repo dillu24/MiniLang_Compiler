@@ -2,20 +2,29 @@
 // Created by Dylan Galea on 14/04/2018.
 //
 
+/**
+ * This class is used to semantically analyze the inputted program. Thus it checks that the inputted valid statements
+ * by the programmer make sense .
+ */
+
 #ifndef COMPILERSASSIGNMENT_SEMANTICANALYSIS_H
 #define COMPILERSASSIGNMENT_SEMANTICANALYSIS_H
 
 #include "Visitor.h"
-#include "Types/SymbolTable.h"
+#include "Utilities/SymbolTable.h"
 #include <vector>
 using namespace std;
 
 namespace Visitors{
     class SemanticAnalysis:public Visitor {
     private:
-        vector<SymbolTable*> ScopedTable;
-        Type typeToBeChecked;
-        FormalParams* functionParameters;
+        vector<SymbolTable*> ScopedTable; //Stores a scoped symbol table , where whenever a new block is met a new scope is
+                                          //added , whenever a scope is closed , the last scope table in the vector will
+                                          // be popped
+        Type typeToBeChecked; //This stores the type of the expression that has been last evaluated so that it is matched
+                              // for semantic type checking
+        FormalParams* functionParameters;// this is used whenever a function is declared so that whenever a block is met
+                                         // the function parameters are added to the next new scope .
     public:
         /**
          * This constructor is used to create a new semantic analysis instance with an empty scope of symbol tables.

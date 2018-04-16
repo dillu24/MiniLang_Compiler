@@ -797,59 +797,59 @@ Visitors/SemanticAnalysis.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.s
 .PHONY : Visitors/SemanticAnalysis.cpp.s
 
-Visitors/Types/SymbolTable.obj: Visitors/Types/SymbolTable.cpp.obj
+Visitors/Utilities/SymbolTable.obj: Visitors/Utilities/SymbolTable.cpp.obj
 
-.PHONY : Visitors/Types/SymbolTable.obj
-
-# target to build an object file
-Visitors/Types/SymbolTable.cpp.obj:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj
-.PHONY : Visitors/Types/SymbolTable.cpp.obj
-
-Visitors/Types/SymbolTable.i: Visitors/Types/SymbolTable.cpp.i
-
-.PHONY : Visitors/Types/SymbolTable.i
-
-# target to preprocess a source file
-Visitors/Types/SymbolTable.cpp.i:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.i
-.PHONY : Visitors/Types/SymbolTable.cpp.i
-
-Visitors/Types/SymbolTable.s: Visitors/Types/SymbolTable.cpp.s
-
-.PHONY : Visitors/Types/SymbolTable.s
-
-# target to generate assembly for a file
-Visitors/Types/SymbolTable.cpp.s:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.s
-.PHONY : Visitors/Types/SymbolTable.cpp.s
-
-Visitors/Types/TypeBinder.obj: Visitors/Types/TypeBinder.cpp.obj
-
-.PHONY : Visitors/Types/TypeBinder.obj
+.PHONY : Visitors/Utilities/SymbolTable.obj
 
 # target to build an object file
-Visitors/Types/TypeBinder.cpp.obj:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj
-.PHONY : Visitors/Types/TypeBinder.cpp.obj
+Visitors/Utilities/SymbolTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj
+.PHONY : Visitors/Utilities/SymbolTable.cpp.obj
 
-Visitors/Types/TypeBinder.i: Visitors/Types/TypeBinder.cpp.i
+Visitors/Utilities/SymbolTable.i: Visitors/Utilities/SymbolTable.cpp.i
 
-.PHONY : Visitors/Types/TypeBinder.i
+.PHONY : Visitors/Utilities/SymbolTable.i
 
 # target to preprocess a source file
-Visitors/Types/TypeBinder.cpp.i:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.i
-.PHONY : Visitors/Types/TypeBinder.cpp.i
+Visitors/Utilities/SymbolTable.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.i
+.PHONY : Visitors/Utilities/SymbolTable.cpp.i
 
-Visitors/Types/TypeBinder.s: Visitors/Types/TypeBinder.cpp.s
+Visitors/Utilities/SymbolTable.s: Visitors/Utilities/SymbolTable.cpp.s
 
-.PHONY : Visitors/Types/TypeBinder.s
+.PHONY : Visitors/Utilities/SymbolTable.s
 
 # target to generate assembly for a file
-Visitors/Types/TypeBinder.cpp.s:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.s
-.PHONY : Visitors/Types/TypeBinder.cpp.s
+Visitors/Utilities/SymbolTable.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.s
+.PHONY : Visitors/Utilities/SymbolTable.cpp.s
+
+Visitors/Utilities/TypeBinder.obj: Visitors/Utilities/TypeBinder.cpp.obj
+
+.PHONY : Visitors/Utilities/TypeBinder.obj
+
+# target to build an object file
+Visitors/Utilities/TypeBinder.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj
+.PHONY : Visitors/Utilities/TypeBinder.cpp.obj
+
+Visitors/Utilities/TypeBinder.i: Visitors/Utilities/TypeBinder.cpp.i
+
+.PHONY : Visitors/Utilities/TypeBinder.i
+
+# target to preprocess a source file
+Visitors/Utilities/TypeBinder.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.i
+.PHONY : Visitors/Utilities/TypeBinder.cpp.i
+
+Visitors/Utilities/TypeBinder.s: Visitors/Utilities/TypeBinder.cpp.s
+
+.PHONY : Visitors/Utilities/TypeBinder.s
+
+# target to generate assembly for a file
+Visitors/Utilities/TypeBinder.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.s
+.PHONY : Visitors/Utilities/TypeBinder.cpp.s
 
 Visitors/XMLGenerator.obj: Visitors/XMLGenerator.cpp.obj
 
@@ -989,12 +989,12 @@ help:
 	@echo ... Visitors/SemanticAnalysis.obj
 	@echo ... Visitors/SemanticAnalysis.i
 	@echo ... Visitors/SemanticAnalysis.s
-	@echo ... Visitors/Types/SymbolTable.obj
-	@echo ... Visitors/Types/SymbolTable.i
-	@echo ... Visitors/Types/SymbolTable.s
-	@echo ... Visitors/Types/TypeBinder.obj
-	@echo ... Visitors/Types/TypeBinder.i
-	@echo ... Visitors/Types/TypeBinder.s
+	@echo ... Visitors/Utilities/SymbolTable.obj
+	@echo ... Visitors/Utilities/SymbolTable.i
+	@echo ... Visitors/Utilities/SymbolTable.s
+	@echo ... Visitors/Utilities/TypeBinder.obj
+	@echo ... Visitors/Utilities/TypeBinder.i
+	@echo ... Visitors/Utilities/TypeBinder.s
 	@echo ... Visitors/XMLGenerator.obj
 	@echo ... Visitors/XMLGenerator.i
 	@echo ... Visitors/XMLGenerator.s

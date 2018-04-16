@@ -1,13 +1,15 @@
+var buffu : bool = true;
 def funcSquare (x:real) : real {
 	return x*x ;
 }
-def funcGreaterThan(x:real , y:real ) : bool {
+def funcGreaterThan(x:bool , y:bool ) : bool {
 	var ans : bool = true ;
-	if ( y > x ) { set ans = false ; }
+	if ( buffu != x ) { set ans = false ; }
 	return ans ;
 }
 var x : real = 2.4;
 var y : real = funcSquare(2.5);
 print y ;
-print funcGreaterThan(x,2.3);
-print funcGreaterThan(x,funcSquare(1.555));
+print funcGreaterThan(true,true);
+print funcGreaterThan(true,true);
+var buffu1 : string = - "hey";

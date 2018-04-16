@@ -393,26 +393,26 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
 Visitor.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
-Types/SymbolTable.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+Utilities/SymbolTable.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
 vector
 -
 
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.cpp
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.cpp
 SymbolTable.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
 
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
 map
 -
 TypeBinder.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.h
 
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.cpp
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.cpp
 TypeBinder.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.h
 
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.h
 ../../ASTHierarchy/Type.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
 ../../ASTHierarchy/Statement/FormalParams.h

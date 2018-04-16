@@ -7,7 +7,7 @@
 Visitors::TypeBinder::TypeBinder(Type primitiveType, Visitors::TypeBinder::IdentifierType identifierType) {
     this->primitiveType = primitiveType;
     this->identifierType = identifierType;
-    this->parameterTypes = vector<Type >();
+    this->parameterTypes = vector<Type>();
 }
 
 Type Visitors::TypeBinder::getPrimitiveType() {
@@ -26,7 +26,7 @@ void Visitors::TypeBinder::setPrimitiveType(Type type) {
     this->primitiveType = type;
 }
 
-string Visitors::TypeBinder::getStringRepresentationOfPrimitiveType() {
+string Visitors::TypeBinder::getStringRepresentationOfPrimitiveType() { //return the keyword related to each value of the enum
     switch(primitiveType){
         case Type::REAL:
             return "real";

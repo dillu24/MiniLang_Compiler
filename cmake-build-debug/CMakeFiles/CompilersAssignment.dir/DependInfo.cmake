@@ -29,8 +29,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj"
-  "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/SymbolTable.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/Types/SymbolTable.cpp.obj"
-  "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Types/TypeBinder.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/Types/TypeBinder.cpp.obj"
+  "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj"
+  "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/main.cpp.obj"
   )
