@@ -28,6 +28,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj"
+  "CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj"
   "CompilersAssignment.pdb"
   "CompilersAssignment.exe"
   "CompilersAssignment.exe.manifest"

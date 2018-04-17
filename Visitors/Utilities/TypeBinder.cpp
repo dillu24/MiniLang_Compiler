@@ -4,10 +4,13 @@
 
 #include "TypeBinder.h"
 
+#include <utility>
+
 Visitors::TypeBinder::TypeBinder(Type primitiveType, Visitors::TypeBinder::IdentifierType identifierType) {
     this->primitiveType = primitiveType;
     this->identifierType = identifierType;
     this->parameterTypes = vector<Type>();
+    value = new valueInIdentifier();
 }
 
 Type Visitors::TypeBinder::getPrimitiveType() {
@@ -37,6 +40,26 @@ string Visitors::TypeBinder::getStringRepresentationOfPrimitiveType() { //return
         case Type::STRING:
             return "string";
     }
+}
+
+void TypeBinder::setIntValue(int value) {
+    this->value->intValue = value;
+}
+
+void TypeBinder::setRealValue(double value) {
+    this->value->realValue = value;
+}
+
+void TypeBinder::setStringValue(string value) {
+    this->value->stringValue = std::move(value);
+}
+
+void TypeBinder::setBoolValue(bool value) {
+    this->value->boolValue = value;
+}
+
+TypeBinder::valueInIdentifier* TypeBinder::getValueInIdentifier() {
+    return value;
 }
 
 

@@ -517,6 +517,38 @@ CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Lexer/Tok
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Parser/PredictiveParser.cpp
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Parser/PredictiveParser.h
 
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/ASTExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTBinaryExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Expression/ASTUnaryExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/NegationOperator.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Operators.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTAssignStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTBlockStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTIfStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTPrintStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTReturnStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/ASTWhileStatementNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../Visitors/InterpreterExecutionPass.cpp
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../Visitors/InterpreterExecutionPass.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../Visitors/SemanticAnalysis.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../Visitors/Utilities/SymbolTable.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../Visitors/Utilities/TypeBinder.h
+CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj: ../Visitors/Visitor.h
+
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/ASTExprNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/ASTNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
@@ -625,6 +657,7 @@ CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/LexerImplementation.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/State.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/Token.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Parser/PredictiveParser.h
+CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/InterpreterExecutionPass.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/SemanticAnalysis.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Utilities/SymbolTable.h
 CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Utilities/TypeBinder.h

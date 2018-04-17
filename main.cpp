@@ -3,6 +3,7 @@
 #include "Parser/PredictiveParser.h"
 #include "Visitors/XMLGenerator.h"
 #include "Visitors/SemanticAnalysis.h"
+#include "Visitors/InterpreterExecutionPass.h"
 
 using namespace Lexer;
 using namespace Parser;
@@ -18,8 +19,8 @@ using namespace Visitors;
 int main() {
     PredictiveParser *parser = new PredictiveParser(
             new LexerImplementation(R"(C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Lexer\SourceCodeInput)"));
-    SemanticAnalysis semanticAnalysis = SemanticAnalysis();
-    semanticAnalysis.visitTree(parser->parse());
+    auto * interpreter = new InterpreterExecutionPass();
+    interpreter->visitTree(parser->parse());
     delete(parser);
     return 0;
 }

@@ -770,6 +770,33 @@ Parser/PredictiveParser.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.s
 .PHONY : Parser/PredictiveParser.cpp.s
 
+Visitors/InterpreterExecutionPass.obj: Visitors/InterpreterExecutionPass.cpp.obj
+
+.PHONY : Visitors/InterpreterExecutionPass.obj
+
+# target to build an object file
+Visitors/InterpreterExecutionPass.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj
+.PHONY : Visitors/InterpreterExecutionPass.cpp.obj
+
+Visitors/InterpreterExecutionPass.i: Visitors/InterpreterExecutionPass.cpp.i
+
+.PHONY : Visitors/InterpreterExecutionPass.i
+
+# target to preprocess a source file
+Visitors/InterpreterExecutionPass.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.i
+.PHONY : Visitors/InterpreterExecutionPass.cpp.i
+
+Visitors/InterpreterExecutionPass.s: Visitors/InterpreterExecutionPass.cpp.s
+
+.PHONY : Visitors/InterpreterExecutionPass.s
+
+# target to generate assembly for a file
+Visitors/InterpreterExecutionPass.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.s
+.PHONY : Visitors/InterpreterExecutionPass.cpp.s
+
 Visitors/SemanticAnalysis.obj: Visitors/SemanticAnalysis.cpp.obj
 
 .PHONY : Visitors/SemanticAnalysis.obj
@@ -986,6 +1013,9 @@ help:
 	@echo ... Parser/PredictiveParser.obj
 	@echo ... Parser/PredictiveParser.i
 	@echo ... Parser/PredictiveParser.s
+	@echo ... Visitors/InterpreterExecutionPass.obj
+	@echo ... Visitors/InterpreterExecutionPass.i
+	@echo ... Visitors/InterpreterExecutionPass.s
 	@echo ... Visitors/SemanticAnalysis.obj
 	@echo ... Visitors/SemanticAnalysis.i
 	@echo ... Visitors/SemanticAnalysis.s

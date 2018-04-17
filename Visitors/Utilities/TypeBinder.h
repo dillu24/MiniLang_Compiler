@@ -24,6 +24,12 @@ using namespace std;
 namespace Visitors{
     class TypeBinder {
     public:
+        struct valueInIdentifier{
+            bool boolValue;
+            int intValue;
+            double realValue;
+            string stringValue;
+        };
         vector<Type> parameterTypes; //This vector stores the parameter types , if a function is binded to the identifier name
         enum IdentifierType{ // this enum indicates whether the identifier name is binded to a function or to a variable
             FUNCTION,
@@ -67,9 +73,16 @@ namespace Visitors{
          * A string value representing the keyword of the primitive type.
          */
         string getStringRepresentationOfPrimitiveType();
+
+        void setIntValue(int value);
+        void setRealValue(double value);
+        void setStringValue(string value);
+        void setBoolValue(bool value);
+        valueInIdentifier* getValueInIdentifier();
     private:
         Type primitiveType; //Stores the identifier's declared type in minilang
         IdentifierType identifierType; // stores whether the identifier name is set to a function or a variable.
+        valueInIdentifier *value;
     };
 }
 
