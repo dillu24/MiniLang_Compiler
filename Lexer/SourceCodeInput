@@ -15,4 +15,9 @@ def funcPow ( x : real , n : int ) : real{
 	return y ;
 }
 
+def hello() :string{
+    return "hello";
+}
+
 print funcPow(2.0,-2);
+print hello();

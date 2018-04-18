@@ -1,7 +1,13 @@
 //
 // Created by Dylan Galea on 17/04/2018.
 //
-
+/**
+ * This class is used to create an interpreter execution pass , this class is a child of Visitor , thus it must implement
+ * all the virtual methods in the interface class. The purpose of this class is so that the parse tree created by the predictive
+ * parser , is used so that the program can be executed . Note that this class was implemented in a way such that first the program
+ * is checked if it is valid or not , since if it is not valid , then the program cannot be evaluated . Also this made it
+ * easier to focus more on the evaluation , rather than focusing on reporting errors,since this has already been done.
+ */
 #ifndef COMPILERSASSIGNMENT_INTERPRETEREXECUTIONPASS_H
 #define COMPILERSASSIGNMENT_INTERPRETEREXECUTIONPASS_H
 
@@ -12,19 +18,33 @@
 namespace Visitors{
     class InterpreterExecutionPass : Visitors::Visitor {
     private:
-        SemanticAnalysis* validator;
-        vector<SymbolTable*> ScopedTable;
-        vector<int> integerVals;
-        vector<string> stringVals;
-        vector<bool> boolVals;
-        vector<double> realVals;
-        bool returnStatementExecuted;
-        bool inIfstatement;
-        bool inWhileStatement;
-        Type lastEvaluatedType;
-        FormalParams* functionParameters;
-        queue<TypeBinder::valueInIdentifier*> queueOfParams ;
+        SemanticAnalysis* validator; //This is used as to check whether the inputted program is valid , if not then
+                                     // there is no use for executing the program.
+        vector<SymbolTable*> ScopedTable; //this vector is used as to store the different scopes the program is in, whenever
+                                          // a block is met a new scope is added at the end of the vector , then whenever
+                                          // that block is ready , the last element from the vector is popped.
+        vector<int> integerVals; // This vector is used to store the integer value that is currently being evaluated ,
+                                 // one vector could have been used for all types to be more efficient , however this is easier
+        vector<string> stringVals;//This vector is used to store the string value that is currently being evaluated
+        vector<bool> boolVals; // This vector is used to store the bool value that is currently being evaluated
+        vector<double> realVals; //This vector is used to store the real value that is currently being evaluated.
+        bool returnStatementExecuted; // This boolean variable is used to indicate that a return statement has been executed
+                                      // this is needed since , at a return the remaining statements must not be evaluated.
+        bool inIfstatement; // this boolean variable is used to indicate that we are in an if statement , thus a return
+                            // in the if statement pops the current scope and does not execute further statements in that scope
+        bool inWhileStatement;// this boolean variable is used to indicate that we are in while statement , thus a return
+                              // in the while statement pops the current scope and does not execute further statements in that scope
+        Type lastEvaluatedType; // This field is used to identify the type of the last expression that has been evaluated
+                                // so that the value can be pushed on the correct vector.
+        FormalParams* functionParameters; // This field is used to store the formal parameters , to be added to the scope
+        queue<TypeBinder::valueInIdentifier*> queueOfParams ; // This queue is used to add the value of the parameters ,
+        // so that when the scope is opened , these parameters values are stored in the mapped value of the hash map ..i.e
+        // the mapped TypeBinder instance.
     public:
+        /**
+         * This constructor is used to create a new InterpreterExecutionPass object instance , initializing all the
+         * fields to default values , and give memory to the queue and vectors.
+         */
         InterpreterExecutionPass();
         /**
          * This method is the implementation of the virtual method in the base class

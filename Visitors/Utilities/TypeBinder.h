@@ -25,6 +25,11 @@ using namespace std;
 namespace Visitors{
     class TypeBinder {
     public:
+        /**
+         * The valueInIdentifier struct was created , so that in the interpreter execution pass , the value associated
+         * with an identifier can be stored. Thus if the identifier is of type 'a' , then the container of type 'a'
+         * in the struct would contain that value.
+         */
         struct valueInIdentifier{
             bool boolValue;
             int intValue;
@@ -74,22 +79,67 @@ namespace Visitors{
          * A string value representing the keyword of the primitive type.
          */
         string getStringRepresentationOfPrimitiveType();
-
+        /**
+         * This method is used to give a value to the integer field in the private struct valueInIdentifier
+         * @param value
+         * Stores the integer value to be assigned to the integer field in the private struct valueInIdentifier
+         */
         void setIntValue(int value);
+        /**
+         * This method is used to give a value to the function block associated with a function identifier
+         * @param value
+         * Stores the address of the function block that will be assigned to this->FnDefnBlock
+         */
         void setFnDefnBlock(ASTBlockStatementNode* value);
+        /**
+         * This method is used to give a value to the real field in the private struct valueInIdentifier
+         * @param value
+         * Stores the real value to be assigned to the real field in the private struct valueInIdentifier.
+         */
         void setRealValue(double value);
+        /**
+         * This method is used to give a value to the string field in the private struct valueInIdentifier
+         * @param value
+         * Stores the string value to be assigned to the string field in the private struct valueInIdentifier
+         */
         void setStringValue(string value);
+        /**
+         * This method is used to give a value to the bool field in the private struct valueInIdentifier
+         * @param value
+         * Stores the bool value to be assigned to the string field in the private struct valueInIdentifier
+         */
         void setBoolValue(bool value);
+        /**
+         * This method is used to get the pointer pointing to the valueInIdentifier struct instance.
+         * @return
+         * The pointer of type valueInIdentifier that stores the address of the struct instance storing the value corresponding
+         * to the identifier.
+         */
         valueInIdentifier* getValueInIdentifier();
+        /**
+         * This method is used to get the pointer pointing to the block associated with the function identifier
+         * @return
+         * The pointer pointing to the block associated with the function identifier.
+         */
         ASTBlockStatementNode* getFnDefnBlock();
+        /**
+         * This method is used to give a value of type FormalParams to the private field this->formalParams
+         * @param fp
+         * Stores the address of the FormalParam value that will be pointed to this.formalParams.
+         */
         void setFormalParams(FormalParams* fp);
+        /**
+         * This method is used to return the pointer this.formalParams
+         * @return
+         * The pointer of type FormalParams , this->formalParams.
+         */
         FormalParams* getFormalParams();
     private:
         Type primitiveType; //Stores the identifier's declared type in minilang
         IdentifierType identifierType; // stores whether the identifier name is set to a function or a variable.
-        valueInIdentifier *value;
-        ASTBlockStatementNode *FnDefnBlock;
-        FormalParams* formalParams;
+        valueInIdentifier *value; //stores the address of the value struct
+        ASTBlockStatementNode *FnDefnBlock; // stores the address of the function block associated with an identifier
+        FormalParams* formalParams; // stores the address of the parameters associated with the function declaration
     };
 }
 
