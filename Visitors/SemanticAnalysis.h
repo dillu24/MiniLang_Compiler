@@ -25,6 +25,8 @@ namespace Visitors{
                               // for semantic type checking
         FormalParams* functionParameters;// this is used whenever a function is declared so that whenever a block is met
                                          // the function parameters are added to the next new scope .
+        bool isReturnPresent = false; //this method is used to check if a return statement is present in a function
+        Type returnType = Type::BOOL; //this method is used to check if the return statements are according to the signature of the function.
     public:
         /**
          * This constructor is used to create a new semantic analysis instance with an empty scope of symbol tables.

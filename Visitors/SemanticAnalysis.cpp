@@ -26,14 +26,11 @@ void SemanticAnalysis::visit(ASTAssignStatementNode *node) {
 
 void SemanticAnalysis::visit(ASTBlockStatementNode *node) {
     ScopedTable.push_back(new SymbolTable()); //create new scope since we met a new block
-    bool functionBlock = false; // stores whether we met a function , since then we need to pop back in the function
-                                // declaration node , in order to handle parameters first before popping.
     if(functionParameters != nullptr){ //if the function has parameters add them to symbol table
         if(functionParameters->getFormalParam() != nullptr){
             ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(functionParameters->getFormalParam()->getIdentifier()->getIdentifierName(),
                                                                    TypeBinder(functionParameters->getFormalParam()->getType(),
                                                                               TypeBinder::IdentifierType::VARIABLE));
-            functionBlock = true; //indicate that we have met a function
         }
         for (auto &parameter : functionParameters->parameters) { //if we have parameters with the same name we have a semantic error,
                                                                  // otherwise add them to the symbol table.
@@ -51,24 +48,46 @@ void SemanticAnalysis::visit(ASTBlockStatementNode *node) {
     vector<ASTStatementNode*> statements = *node->getStatements(); //stores the statements making up the block
     for (auto &statement : statements) { // visit each statement in the block.
         statement->accept(this);
+        //check whether the statement is a return statement , if it is and no return statements have be incurred , then
+        // save the type and indicate we met a return statement
+        if(statement->getStatementType() == ASTStatementNode::StatementType::RETURN_STMT && !isReturnPresent){
+            isReturnPresent = true;
+            returnType = typeToBeChecked;
+        }else if(statement->getStatementType() == ASTReturnStatementNode::StatementType::RETURN_STMT && returnType != typeToBeChecked){
+            //if there is a bad return statement inform the programmer;
+            cout<<"Bad type return in function "<<endl;
+            exit(-1);
+        }
     }
-    if(!functionBlock){ // if we met a function , pop it in the function declaration node since more handling is needed
-                       // to check if we have a return statement in the block.
-        ScopedTable.pop_back();// otherwise pop as usual.
-    }
+    ScopedTable.pop_back();//remove scope since we are ready
 }
 
 void SemanticAnalysis::visit(ASTIfStatementNode *node) {
+    bool ifReturn = false;
+    bool elseReturn = false;
     node->getExpression()->accept(this); //visit the expression predicate
     if(typeToBeChecked != Type::BOOL){ // if the type is not a boolean we cannot determine if the condition is true or false
                                        // hence we get a semantic error
         cout<<"The if statement condition must be a predicate"<<endl;
         exit(-1);
     }
+    auto* trueblock = node->getTrueBlock();
+    auto* elseblock = node->getElseBlock();
+    for (auto &i : *trueblock->getStatements()) {// check if we have return statements , if yes set it true
+        if(i->getStatementType() == ASTStatementNode::StatementType::RETURN_STMT){
+            ifReturn = true;
+        }
+    }
     node->getTrueBlock()->accept(this); // visit true block
     if(node->getElseBlock() != nullptr){ // if an else block exists visit it.
+        for (auto &i : *elseblock->getStatements()) {
+            if(i->getStatementType() == ASTStatementNode::StatementType::RETURN_STMT){
+                elseReturn = true; //indicate there is return in else
+            }
+        }
         node->getElseBlock()->accept(this);
     }
+    isReturnPresent = ifReturn && elseReturn; //set accordingly , for returns
 }
 
 void SemanticAnalysis::visit(ASTPrintStatementNode *node) {
@@ -108,7 +127,6 @@ void SemanticAnalysis::visit(ASTReturnStatementNode *node) {
 }
 
 void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
-    bool hasParameters = false; // to indicate that function has parameters to this method
     //if a function with the name stored in the ASTFuncDeclStatementNode  has already been declared then we get a semantic error
     if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION)){
         cout<<"A function with name "<<node->getIdentifier()->getIdentifierName()<<" has already been declared in this scope "<<endl;
@@ -118,7 +136,6 @@ void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
     auto tb = TypeBinder(node->getType(),TypeBinder::FUNCTION);
     if(functionParameters != nullptr){ //if we have parameters add them to the type binder parameters types
                                                          // in order to check them we have a function call
-        hasParameters = true; //indicate that we have parameters
         tb.parameterTypes.push_back(functionParameters->getFormalParam()->getType());
         for (auto &parameter : functionParameters->parameters) { //add remaining parameters if there exists
             tb.parameterTypes.push_back(parameter->getType());
@@ -127,31 +144,15 @@ void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
     ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(node->getIdentifier()->getIdentifierName(),tb); // add function name to symbol table
     node->getBlock()->accept(this); //visit the block
     vector<ASTStatementNode*> statements = *node->getBlock()->getStatements(); //stores the statements in the function block
-    bool returnPresent = false; //stores whether a return statement is present
-    unsigned int returnStatementIndex = 0; // gives the index in the parameters vectors of the return statement
-    for (unsigned int i=0;i<statements.size();i++) {
-        if(statements.at(i)->getStatementType() == ASTStatementNode::RETURN_STMT){ // record the first return statement you find
-                                                                                   // since everything after it is zombie
-            returnPresent = true;
-            returnStatementIndex = i;
-            break;
-        }
-    }
-    if(returnPresent){ // if there exists a return statement check if the return statement type is of the same type as function signature
-        statements.at(returnStatementIndex)->accept(this);
-        if(typeToBeChecked != node->getType()){ //if not the same type we have a semantic error
-            cout<<"The type signature of function "<<node->getIdentifier()->getIdentifierName()<<" is not equal to the return type"<<endl;
-            exit(-1);
-        }
-    }else{ // if return statement is not present we have a semantic error since all functions must have a return statement
-        cout<<"Function "<<node->getIdentifier()->getIdentifierName()<<" does not have a return statements , all mini "
-                "lang functions must have one"<<endl;
+    if(!isReturnPresent){ //if we met no returns notify the user
+        cout<<"You forgot return in "<<node->getIdentifier()->getIdentifierName()<<endl;
         exit(-1);
     }
-    if(hasParameters) { // if we handled parameters , then in the block we did not pop the scope since we needed further
-                        // handling , thus pop it here
-        ScopedTable.pop_back();
+    if(node->getType() != returnType){ // if we have a bad return type notify the user
+        cout<<"The return type and signature type of function "<<node->getIdentifier()->getIdentifierName()<<" do not match"<<endl;
+        exit(-1);
     }
+    isReturnPresent = false; //set back to false
 }
 
 void SemanticAnalysis::visit(ASTBinaryExprNode *node) {

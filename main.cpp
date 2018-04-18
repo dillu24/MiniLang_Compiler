@@ -18,8 +18,10 @@ using namespace Visitors;
 int main() {
     PredictiveParser *parser = new PredictiveParser(
             new LexerImplementation(R"(C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Lexer\SourceCodeInput)"));
-    auto * interpreter = new InterpreterExecutionPass();
-    interpreter->visitTree(parser->parse());
+    SemanticAnalysis sa = SemanticAnalysis();
+    sa.visitTree(parser->parse());
+    //auto * interpreter = new InterpreterExecutionPass();
+    //interpreter->visitTree(parser->parse());
     delete(parser);
     return 0;
 }
