@@ -582,7 +582,9 @@ CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitor
 
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/ASTExprNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Statement/ASTBlockStatementNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Type.h
@@ -592,7 +594,9 @@ CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../Vi
 
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/ASTExprNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/Statement/ASTBlockStatementNode.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj: ../ASTHierarchy/Type.h

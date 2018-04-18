@@ -16,9 +16,11 @@
 
 namespace AST{
     class ASTNumberExprNode:public ASTLiteralExprNode {
-    private:
-        double value; //Stores the value of the literal in the expression
     public:
+        enum numberType{ //indicates whether the stored value is a real or int , used in visitor classes
+            REAL,
+            INT
+        };
         /**
          * This constructor is used to initialize a new ASTNumberExprNode storing the value in @param val
          * @param val
@@ -47,6 +49,22 @@ namespace AST{
          * Stored a pointer to a visitor that is visiting this node.
          */
         void accept(Visitor *v) override;
+
+        /**
+         * This method is used to give a value to the private variable type
+         * @param type
+         * Stores the value of type number type to be assigned to the private variable this->numberType
+         */
+        void setNumberType(numberType type);
+        /**
+         * This method is used to return the value stored in number type
+         * @return
+         * A value of type numberType stored in numberType.
+         */
+        numberType getNumberType();
+    private:
+        double value; //Stores the value of the literal in the expression
+        numberType type; // stores whether the value is a real or int , used in visitor classes.
     };
 }
 

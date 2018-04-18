@@ -97,7 +97,13 @@ ASTLiteralExprNode *Parser::PredictiveParser::parseLiteral() {
     *However if none are matches the program expects a literal , thus there must be an error with the syntax of the
     *source input , thus the parser must stop parsing*/
     if(currentToken->getTokenType() == Lexer::Token::TOK_NUMBER){
-        return new ASTNumberExprNode(currentToken->getTokenValue());
+        auto *numbNode = new ASTNumberExprNode(currentToken->getTokenValue());
+        if(currentToken->getTokenName() == "REAL NUMBER"){ //store the type of the number accordingly
+            numbNode->setNumberType(ASTNumberExprNode::REAL);
+        }else if(currentToken->getTokenName() == "INTEGER NUMBER"){
+            numbNode->setNumberType(ASTNumberExprNode::INT);
+        }
+        return numbNode;
     }else if(currentToken->getTokenStringValue() =="true"){
         return new ASTBooleanLiteralExpressionNode(true);
     }else if(currentToken->getTokenStringValue() =="false"){

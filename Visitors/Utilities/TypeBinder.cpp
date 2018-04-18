@@ -62,5 +62,21 @@ TypeBinder::valueInIdentifier* TypeBinder::getValueInIdentifier() {
     return value;
 }
 
+void TypeBinder::setFnDefnBlock(ASTBlockStatementNode *value) {
+    this->FnDefnBlock = &*value;
+}
+
+ASTBlockStatementNode *TypeBinder::getFnDefnBlock() {
+    return FnDefnBlock;
+}
+
+void TypeBinder::setFormalParams(FormalParams *fp) {
+    this->formalParams = &*fp;
+}
+
+FormalParams *TypeBinder::getFormalParams() {
+    return formalParams;
+}
+
 
 

@@ -395,6 +395,8 @@ Visitor.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
 SemanticAnalysis.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
+queue
+-
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp
 cmath
@@ -431,6 +433,8 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBi
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
 ../../ASTHierarchy/Statement/FormalParams.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+../../ASTHierarchy/Statement/ASTBlockStatementNode.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
 iostream
 -
 
@@ -487,8 +491,6 @@ Parser/PredictiveParser.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
 Visitors/XMLGenerator.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
-Visitors/SemanticAnalysis.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
 Visitors/InterpreterExecutionPass.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.h
 

@@ -583,7 +583,9 @@ CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
@@ -593,7 +595,9 @@ CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h

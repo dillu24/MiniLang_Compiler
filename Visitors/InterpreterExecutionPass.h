@@ -7,6 +7,7 @@
 
 #include "Visitor.h"
 #include "SemanticAnalysis.h"
+#include <queue>
 
 namespace Visitors{
     class InterpreterExecutionPass : Visitors::Visitor {
@@ -18,8 +19,11 @@ namespace Visitors{
         vector<bool> boolVals;
         vector<double> realVals;
         bool returnStatementExecuted;
+        bool inIfstatement;
+        bool inWhileStatement;
         Type lastEvaluatedType;
         FormalParams* functionParameters;
+        queue<TypeBinder::valueInIdentifier*> queueOfParams ;
     public:
         InterpreterExecutionPass();
         /**

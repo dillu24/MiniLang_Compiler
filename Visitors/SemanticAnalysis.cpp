@@ -257,11 +257,10 @@ void SemanticAnalysis::visit(ASTBinaryExprNode *node) {
 }
 
 void SemanticAnalysis::visit(ASTNumberExprNode *node) {
-    double integerPart = 0.0; //stores the integer part of the number
-    if(modf(node->getValue(),&integerPart)==0.0){ //if the remainder part is 0 return int , otherwise real
-        typeToBeChecked =  Type::INT;
-    }else{
+    if(node->getNumberType() == ASTNumberExprNode::REAL){
         typeToBeChecked = Type::REAL;
+    }else if(node->getNumberType() == ASTNumberExprNode::INT){
+        typeToBeChecked = Type::INT;
     }
 }
 

@@ -16,6 +16,7 @@
 #define COMPILERSASSIGNMENT_TYPEBINDER_H
 #include "../../ASTHierarchy/Type.h"
 #include "../../ASTHierarchy/Statement/FormalParams.h"
+#include "../../ASTHierarchy/Statement/ASTBlockStatementNode.h"
 
 using namespace AST;
 #include <iostream>
@@ -75,14 +76,20 @@ namespace Visitors{
         string getStringRepresentationOfPrimitiveType();
 
         void setIntValue(int value);
+        void setFnDefnBlock(ASTBlockStatementNode* value);
         void setRealValue(double value);
         void setStringValue(string value);
         void setBoolValue(bool value);
         valueInIdentifier* getValueInIdentifier();
+        ASTBlockStatementNode* getFnDefnBlock();
+        void setFormalParams(FormalParams* fp);
+        FormalParams* getFormalParams();
     private:
         Type primitiveType; //Stores the identifier's declared type in minilang
         IdentifierType identifierType; // stores whether the identifier name is set to a function or a variable.
         valueInIdentifier *value;
+        ASTBlockStatementNode *FnDefnBlock;
+        FormalParams* formalParams;
     };
 }
 

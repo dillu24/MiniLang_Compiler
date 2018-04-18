@@ -15,6 +15,9 @@ InterpreterExecutionPass::InterpreterExecutionPass() {
     integerVals = vector<int>();
     lastEvaluatedType = Type::BOOL;
     functionParameters = nullptr;
+    inIfstatement = false;
+    inWhileStatement = false;
+    queueOfParams = queue<TypeBinder::valueInIdentifier*>();
 }
 
 void InterpreterExecutionPass::visit(ASTAssignStatementNode *node) {
@@ -55,18 +58,68 @@ void InterpreterExecutionPass::visit(ASTBlockStatementNode *node) {
             ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(functionParameters->getFormalParam()->getIdentifier()->getIdentifierName(),
                                                                    TypeBinder(functionParameters->getFormalParam()->getType(),
                                                                               TypeBinder::IdentifierType::VARIABLE));
+            switch(functionParameters->getFormalParam()->getType()){
+                case Type::REAL:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(functionParameters->getFormalParam()->getIdentifier()->
+                            getIdentifierName()).setRealValue(queueOfParams.front()->realValue);
+                    queueOfParams.pop();
+                    break;
+                case Type::INT:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(functionParameters->getFormalParam()->getIdentifier()->
+                            getIdentifierName()).setIntValue(queueOfParams.front()->intValue);
+                    queueOfParams.pop();
+                    break;
+                case Type::BOOL:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(functionParameters->getFormalParam()->getIdentifier()->
+                            getIdentifierName()).setBoolValue(queueOfParams.front()->boolValue);
+                    queueOfParams.pop();
+                    break;
+                case Type::STRING:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(functionParameters->getFormalParam()->getIdentifier()->
+                            getIdentifierName()).setStringValue(queueOfParams.front()->stringValue);
+                    queueOfParams.pop();
+                    break;
+            }
             functionBlock = true;
         }
         for (auto &parameter : functionParameters->parameters) {
             ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(parameter->getIdentifier()->getIdentifierName(),
                                                                    TypeBinder(parameter->getType(),
                                                                               TypeBinder::IdentifierType::VARIABLE));
+            switch(parameter->getType()){
+                case Type::REAL:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(parameter->getIdentifier()->
+                            getIdentifierName()).setRealValue(queueOfParams.front()->realValue);
+                    queueOfParams.pop();
+                    break;
+                case Type::INT:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(parameter->getIdentifier()->
+                            getIdentifierName()).setIntValue(queueOfParams.front()->intValue);
+                    queueOfParams.pop();
+                    break;
+                case Type::BOOL:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(parameter->getIdentifier()->
+                            getIdentifierName()).setBoolValue(queueOfParams.front()->boolValue);
+                    queueOfParams.pop();
+                    break;
+                case Type::STRING:
+                    ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(parameter->getIdentifier()->
+                            getIdentifierName()).setStringValue(queueOfParams.front()->stringValue);
+                    queueOfParams.pop();
+                    break;
+            }
         }
     }
     functionParameters = nullptr;
     vector<ASTStatementNode*> statements = *node->getStatements();
     for (auto &statement : statements) {
         statement->accept(this);
+        if(returnStatementExecuted && (inIfstatement||inWhileStatement)){
+            exit(0);
+        }else if(returnStatementExecuted){
+            returnStatementExecuted = false;
+            return;
+        }
     }
     if(!functionBlock){
         ScopedTable.pop_back();
@@ -75,6 +128,7 @@ void InterpreterExecutionPass::visit(ASTBlockStatementNode *node) {
 
 void InterpreterExecutionPass::visit(ASTIfStatementNode *node) {
     node->getExpression()->accept(this);
+    inIfstatement = true;
     if(boolVals.at(boolVals.size()-1)){
         node->getTrueBlock()->accept(this);
     }else{
@@ -82,6 +136,7 @@ void InterpreterExecutionPass::visit(ASTIfStatementNode *node) {
             node->getElseBlock()->accept(this);
         }
     }
+    inIfstatement = false;
     boolVals.pop_back();
 }
 
@@ -140,19 +195,36 @@ void InterpreterExecutionPass::visit(ASTVarDeclStatementNode *node) {
 
 void InterpreterExecutionPass::visit(ASTWhileStatementNode *node) {
     node->getExpression()->accept(this);
+    inWhileStatement = true;
     while(boolVals.at(boolVals.size()-1)) {
         node->getBlock()->accept(this);
         node->getExpression()->accept(this);
     }
+    inWhileStatement =false;
     boolVals.pop_back();
 }
 
 void InterpreterExecutionPass::visit(ASTReturnStatementNode *node) {
-
+    node->getExpression()->accept(this);
+    returnStatementExecuted = true;
+    ScopedTable.pop_back();
+    if(ScopedTable.empty()) {
+        exit(0);
+    }
 }
 
 void InterpreterExecutionPass::visit(ASTFuncDeclStatementNode *node) {
-
+    functionParameters = &*node->getFormalParams();
+    auto tb = TypeBinder(node->getType(),TypeBinder::FUNCTION);
+    if(functionParameters != nullptr){
+        tb.parameterTypes.push_back(functionParameters->getFormalParam()->getType());
+        for (auto &parameter : functionParameters->parameters) {
+            tb.parameterTypes.push_back(parameter->getType());
+        }
+    }
+    tb.setFormalParams(functionParameters);
+    tb.setFnDefnBlock(node->getBlock());
+    ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(node->getIdentifier()->getIdentifierName(),tb);
 }
 
 void InterpreterExecutionPass::visit(ASTBinaryExprNode *node) {
@@ -369,14 +441,21 @@ void InterpreterExecutionPass::visit(ASTBinaryExprNode *node) {
 }
 
 void InterpreterExecutionPass::visit(ASTNumberExprNode *node) {
-    double integerPart = 0.0; //stores the integer part of the number
+    if(node->getNumberType() == ASTNumberExprNode::REAL){
+        lastEvaluatedType = Type::REAL;
+        realVals.push_back(node->getValue());
+    }else if(node->getNumberType() == ASTNumberExprNode::INT){
+        lastEvaluatedType = Type::INT;
+        integerVals.push_back((int)node->getValue());
+    }
+    /*double integerPart = 0.0; //stores the integer part of the number
     if(modf(node->getValue(),&integerPart)==0.0){ //if the remainder part is 0 return int , otherwise real
         lastEvaluatedType = Type::INT;
         integerVals.push_back((int)integerPart);
     }else{
         lastEvaluatedType = Type::REAL;
         realVals.push_back(node->getValue());
-    }
+    }*/
 }
 
 void InterpreterExecutionPass::visit(ASTBooleanLiteralExpressionNode *node) {
@@ -430,7 +509,72 @@ void InterpreterExecutionPass::visit(ASTUnaryExprNode *node) {
 }
 
 void InterpreterExecutionPass::visit(ASTFnCallExprNode *node) {
-
+    unsigned int tableIndex =0;
+    for(unsigned int i=0;i<ScopedTable.size();i++){
+        if(ScopedTable.at(ScopedTable.size()-i-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION)){
+            if(ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.size()
+               != node->getParameters().size()){
+                continue;
+            }
+            bool badTypes = false;
+            for(unsigned int j=0;j<node->getParameters().size();j++){
+                auto *vi = new TypeBinder::valueInIdentifier();
+                node->getParameters().at(j)->accept(this);
+                switch(lastEvaluatedType){
+                    case Type::REAL:
+                        vi->realValue = realVals.at(realVals.size()-1);
+                        realVals.pop_back();
+                        queueOfParams.push(vi);
+                        break;
+                    case Type::INT:
+                        vi->intValue = integerVals.at(integerVals.size()-1);
+                        integerVals.pop_back();
+                        queueOfParams.push(vi);
+                        break;
+                    case Type::BOOL:
+                        vi->boolValue = boolVals.at(boolVals.size()-1);
+                        boolVals.pop_back();
+                        queueOfParams.push(vi);
+                        break;
+                    case Type::STRING:
+                        vi->stringValue = stringVals.at(stringVals.size()-1);
+                        stringVals.pop_back();
+                        queueOfParams.push(vi);
+                        break;
+                }
+                if(lastEvaluatedType != ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.at(j)){
+                    badTypes =true;
+                    break;
+                }
+            }
+            if(badTypes){
+                continue;
+            }
+            tableIndex = ScopedTable.size()-i-1;
+            break;
+        }
+    }
+    functionParameters = &*ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).getFormalParams();
+    ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).getFnDefnBlock()->accept(this);
+    switch(lastEvaluatedType){
+        case Type::REAL:
+            ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).setRealValue(realVals.at(realVals.size()-1));
+            realVals.pop_back();
+            break;
+        case Type::INT:
+            ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).setIntValue(integerVals.at(integerVals.size()-1));
+            integerVals.pop_back();
+            break;
+        case Type::BOOL:
+            ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).setBoolValue(boolVals.at(boolVals.size()-1));
+            boolVals.pop_back();
+            break;
+        case Type::STRING:
+            ScopedTable.at(ScopedTable.size()-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).setStringValue(stringVals.at(stringVals.size()-1));
+            stringVals.pop_back();
+            break;
+    }
+    node->getIdentifier()->accept(this);
 }
 
 void InterpreterExecutionPass::visitTree(vector<ASTStatementNode *> *tree) {

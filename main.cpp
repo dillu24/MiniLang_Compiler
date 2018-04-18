@@ -2,7 +2,6 @@
 #include "Lexer/LexerImplementation.h"
 #include "Parser/PredictiveParser.h"
 #include "Visitors/XMLGenerator.h"
-#include "Visitors/SemanticAnalysis.h"
 #include "Visitors/InterpreterExecutionPass.h"
 
 using namespace Lexer;
