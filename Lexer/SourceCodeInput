@@ -7,26 +7,9 @@ def funcGreaterThan(x:real , y:real ) : bool {
 	return ans ;
 }
 var x : real = 2.4;
-var y : real = funcSquare(2.5);
-print y ;
-print funcGreaterThan(x,2.3);
-print funcGreaterThan(x,funcSquare(1.555));
+print funcGreaterThan(x,funcSquare(2.0));
 
-def funcPow ( x : real , n : int ) : real{
-	var y : real = 1.0 ;
-	if (n>0){
-		while ( n>0){
-			set y = y * x ;
-			set n = n - 1 ;
-		}
-	}
-	else{
-		while (n<0){
-			set y = y / x ;
-			set n = n + 1 ;
-		}
-	}
-	return y ;
-}
+//check why this program does not work .. most probably due to function call modification.
+//also check why recursion does not work.
+//Most probably error in function call and identifier node
 
-print funcPow(2.0,-2);

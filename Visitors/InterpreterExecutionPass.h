@@ -28,18 +28,13 @@ namespace Visitors{
         vector<string> stringVals;//This vector is used to store the string value that is currently being evaluated
         vector<bool> boolVals; // This vector is used to store the bool value that is currently being evaluated
         vector<double> realVals; //This vector is used to store the real value that is currently being evaluated.
-        bool returnStatementExecuted; // This boolean variable is used to indicate that a return statement has been executed
-                                      // this is needed since , at a return the remaining statements must not be evaluated.
-        bool inIfstatement; // this boolean variable is used to indicate that we are in an if statement , thus a return
-                            // in the if statement pops the current scope and does not execute further statements in that scope
-        bool inWhileStatement;// this boolean variable is used to indicate that we are in while statement , thus a return
-                              // in the while statement pops the current scope and does not execute further statements in that scope
         Type lastEvaluatedType; // This field is used to identify the type of the last expression that has been evaluated
                                 // so that the value can be pushed on the correct vector.
         FormalParams* functionParameters; // This field is used to store the formal parameters , to be added to the scope
         queue<TypeBinder::valueInIdentifier*> queueOfParams ; // This queue is used to add the value of the parameters ,
         // so that when the scope is opened , these parameters values are stored in the mapped value of the hash map ..i.e
         // the mapped TypeBinder instance.
+        bool isReturnPresent = false; //this method is used to check if a return statement is present in a function
     public:
         /**
          * This constructor is used to create a new InterpreterExecutionPass object instance , initializing all the
