@@ -28,10 +28,8 @@ vector<ASTStatementNode *>* Parser::PredictiveParser::parse() {
     nextToken = lexer->getNextToken();
     while(nextToken->getTokenType() != Lexer::Token::TOK_EOF){ //untill all tokens have been parsed
         lookAhead(); //get next token
-        //ASTStatementNode* answer = parseStatement(); //for testing purposes only ,put answer instaead of parse statement for test check
         tree->push_back(parseStatement()); // parse the statement related to that token
     }
-    cout<<tree->size()<<endl; //just for testing to see the number of branches
     return tree;
 }
 
@@ -97,7 +95,13 @@ ASTLiteralExprNode *Parser::PredictiveParser::parseLiteral() {
     *However if none are matches the program expects a literal , thus there must be an error with the syntax of the
     *source input , thus the parser must stop parsing*/
     if(currentToken->getTokenType() == Lexer::Token::TOK_NUMBER){
-        return new ASTNumberExprNode(currentToken->getTokenValue());
+        auto *numbNode = new ASTNumberExprNode(currentToken->getTokenValue());
+        if(currentToken->getTokenName() == "REAL NUMBER"){ //store the type of the number accordingly
+            numbNode->setNumberType(ASTNumberExprNode::REAL);
+        }else if(currentToken->getTokenName() == "INTEGER NUMBER"){
+            numbNode->setNumberType(ASTNumberExprNode::INT);
+        }
+        return numbNode;
     }else if(currentToken->getTokenStringValue() =="true"){
         return new ASTBooleanLiteralExpressionNode(true);
     }else if(currentToken->getTokenStringValue() =="false"){

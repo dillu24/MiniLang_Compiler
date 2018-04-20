@@ -23,3 +23,11 @@ double AST::ASTNumberExprNode::getValue() {
 void AST::ASTNumberExprNode::accept(Visitor *v) {
     v->visit(this); //call the visitor's visit implementation to know what to do whenever a visitor visit this node.
 }
+
+void ASTNumberExprNode::setNumberType(ASTNumberExprNode::numberType type) {
+    this->type = type;
+}
+
+ASTNumberExprNode::numberType ASTNumberExprNode::getNumberType() {
+    return type;
+}
