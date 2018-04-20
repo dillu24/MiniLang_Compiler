@@ -6,7 +6,7 @@ def fact(n:int):int{
     }
 }
 
-print fact(2);
+print fact(5);
 
 
 

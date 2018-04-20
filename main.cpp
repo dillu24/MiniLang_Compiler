@@ -8,7 +8,7 @@ using namespace Lexer;
 using namespace Parser;
 using namespace Visitors;
 
-/*
+/**
  * This is the main.cpp file and is used to call the compiler.
  * @return
  * 0 if correct execution , some error if no correct execution.
