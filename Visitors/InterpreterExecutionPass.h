@@ -14,6 +14,7 @@
 #include "Visitor.h"
 #include "SemanticAnalysis.h"
 #include <queue>
+#include <stack>
 
 namespace Visitors{
     class InterpreterExecutionPass : Visitors::Visitor {

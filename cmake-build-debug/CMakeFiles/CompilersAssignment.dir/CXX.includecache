@@ -397,6 +397,8 @@ SemanticAnalysis.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
 queue
 -
+stack
+-
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp
 cmath

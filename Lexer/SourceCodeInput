@@ -1,15 +1,12 @@
-def funcSquare (x:real) : real {
-	return x*x ;
+def fact(n:int):int{
+    if((n==0) or (n==1)){
+        return n;
+    }else{
+        return n*fact(n-1);
+    }
 }
-def funcGreaterThan(x:real , y:real ) : bool {
-	var ans : bool = true ;
-	if ( y > x ) { set ans = false ; }
-	return ans ;
-}
-var x : real = 2.4;
-print funcGreaterThan(x,funcSquare(2.0));
 
-//check why this program does not work .. most probably due to function call modification.
-//also check why recursion does not work.
-//Most probably error in function call and identifier node
+print fact(2);
+
+
 

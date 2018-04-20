@@ -28,10 +28,8 @@ vector<ASTStatementNode *>* Parser::PredictiveParser::parse() {
     nextToken = lexer->getNextToken();
     while(nextToken->getTokenType() != Lexer::Token::TOK_EOF){ //untill all tokens have been parsed
         lookAhead(); //get next token
-        //ASTStatementNode* answer = parseStatement(); //for testing purposes only ,put answer instaead of parse statement for test check
         tree->push_back(parseStatement()); // parse the statement related to that token
     }
-    cout<<tree->size()<<endl; //just for testing to see the number of branches
     return tree;
 }
 
