@@ -136,6 +136,13 @@ namespace Visitors{
         * Stores the address of the AST to be visited.
         */
         void visitTree(vector<ASTStatementNode*>* tree) override;
+
+        /**
+         * This method is used to return the private symbol table
+         * @return
+         * The vector of type SymbolTable pointer , that contains the scoped symbol table instance
+         */
+        vector<SymbolTable*> getScopedTable();
     };
 }
 

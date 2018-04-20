@@ -11,7 +11,6 @@
 using namespace Exception;
 
 Lexer::LexerImplementation::LexerImplementation() {
-    initialize_input_characters("SourceCodeInput.txt"); //get from default file
     current_state = State::S0; //initialize start state
     current_input_index =0; //initialize current state in the source program
     lineNumber = 1; // started from line 1
@@ -223,6 +222,17 @@ bool Lexer::LexerImplementation::isBinaryOperator(char c) {
 
 bool Lexer::LexerImplementation::isPunct(char c) {
     return c == '{' || c == '}' || c == '(' || c == ')' || c == ',' || c == ';' || c == ':';
+}
+
+void Lexer::LexerImplementation::initializeCharactersWithString(string input) {
+    for (char i : input) {
+        input_characters.push_back(i);
+    }
+    input_characters.push_back(EOF);
+}
+
+void Lexer::LexerImplementation::clearCharactersContainer() {
+    input_characters.clear();
 }
 
 

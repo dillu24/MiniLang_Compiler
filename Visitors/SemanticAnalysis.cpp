@@ -340,3 +340,7 @@ void SemanticAnalysis::visitTree(vector<ASTStatementNode *> *tree) {
     ScopedTable.pop_back(); //close the global branch
     cout<<"Valid Program"<<endl; // if the visitor class arrives here , then the supplied program is valid.
 }
+
+vector<SymbolTable *> SemanticAnalysis::getScopedTable() {
+    return ScopedTable;
+}

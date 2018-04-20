@@ -32,7 +32,7 @@ namespace Lexer{
          * @param file_name
          * Stores the file path the lexer is to read from
          */
-        LexerImplementation(string file_name);
+        explicit LexerImplementation(string file_name);
         ~LexerImplementation(); //default destructer
         /**
          * This method is used to get the next token that the lexer has identified
@@ -40,6 +40,18 @@ namespace Lexer{
          * A pointer to the next token the lexer has identified
          */
         Token* getNextToken();
+
+        /**
+         * This method is used to give the character array the string to be tokenized .. this is mostly used by the REPL
+         * @param input
+         * Stores the input to be parsed into characters
+         */
+        void initializeCharactersWithString(string input);
+        /**
+         * This method is used by the interpreter in interective mode to clear the characters that have been inputted
+         * in the console.
+         */
+        void clearCharactersContainer();
     private:
         int lineNumber; // This stores the line number the lexer is in , in order to report lexing errors
         vector<char> input_characters; // stores the characters identified in the input file
