@@ -36,7 +36,8 @@ int main() {
     string input;
     getline(cin,input);
     double ans;
-    //ToDo .. problem in getting next token in parser or lexer .. ma nafx ghad fejni l problema .. lewwel statement ok mbad fuck up
+    //ToDo problem in current input index in lexer .. starting from other index .. most probably do setter.
+    //ToDo In handler be careful of that branch that was exited.ghax ikollok partial tree , u ghamel l-ans
     while(true){
         try{
             if(input == "#help"){
