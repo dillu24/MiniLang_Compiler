@@ -472,9 +472,13 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj: 
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj: ../ASTHierarchy/Type.h
 
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj: ../Exceptions/CompilingErrorException.cpp
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj: ../Exceptions/CompilingErrorException.h
+
 CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj: ../Lexer/Keywords.cpp
 CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj: ../Lexer/Keywords.h
 
+CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj: ../Exceptions/CompilingErrorException.h
 CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj: ../Lexer/Keywords.h
 CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj: ../Lexer/LexerImplementation.cpp
 CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj: ../Lexer/LexerImplementation.h
@@ -485,6 +489,44 @@ CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj: ../Lexer/Keywords.h
 CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj: ../Lexer/State.h
 CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj: ../Lexer/Token.cpp
 CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj: ../Lexer/Token.h
+
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/ASTExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/ASTNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTBinaryExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Expression/ASTUnaryExprNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/NegationOperator.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Operators.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTAssignStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTBlockStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTIfStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTPrintStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTReturnStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/ASTWhileStatementNode.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Exceptions/CompilingErrorException.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Lexer/LexerImplementation.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Lexer/State.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Lexer/Token.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../MiniLangI.cpp
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Parser/PredictiveParser.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/InterpreterExecutionPass.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/SemanticAnalysis.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/Utilities/SymbolTable.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/Utilities/TypeBinder.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/Visitor.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/XMLGenerator.h
 
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/ASTExprNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/ASTNode.h
@@ -511,6 +553,7 @@ CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierar
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Exceptions/CompilingErrorException.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Lexer/LexerImplementation.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Lexer/State.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../Lexer/Token.h
@@ -574,6 +617,7 @@ CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHier
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Exceptions/CompilingErrorException.h
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/SemanticAnalysis.cpp
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/SemanticAnalysis.h
 CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj: ../Visitors/Utilities/SymbolTable.h
@@ -631,41 +675,4 @@ CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj: ../ASTHierarch
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj: ../Visitors/Visitor.h
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj: ../Visitors/XMLGenerator.cpp
 CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj: ../Visitors/XMLGenerator.h
-
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/ASTExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/ASTNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/ASTStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTBinaryExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTFnCallExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTIdentifierExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTLiteralExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTNumberExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTStringLiteralExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTSubExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Expression/ASTUnaryExprNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/NegationOperator.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Operators.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTAssignStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTBlockStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTIfStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTPrintStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTReturnStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTVarDeclStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/ASTWhileStatementNode.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../ASTHierarchy/Type.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/LexerImplementation.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/State.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Lexer/Token.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Parser/PredictiveParser.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/InterpreterExecutionPass.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/SemanticAnalysis.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Utilities/SymbolTable.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Utilities/TypeBinder.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/Visitor.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../Visitors/XMLGenerator.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../main.cpp
 

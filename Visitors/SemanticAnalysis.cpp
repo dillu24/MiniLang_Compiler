@@ -4,7 +4,9 @@
 
 #include <cmath>
 #include "SemanticAnalysis.h"
+#include "../Exceptions/CompilingErrorException.h"
 
+using namespace Exception;
 SemanticAnalysis::SemanticAnalysis(){
     ScopedTable = vector<SymbolTable*>(); //create memory for scoped symbol table
     typeToBeChecked = Type::BOOL; //give any dummy value
@@ -18,9 +20,8 @@ void SemanticAnalysis::visit(ASTAssignStatementNode *node) {
     Type expressionType = typeToBeChecked; //store type
     if(identifierType != expressionType){ // if variable type and it's assigned expression are not the same we have a semantic error
                                           // note int and reals are different types and are not automatically type casted as specified
-        cout<<"The identifier "<<node->getIdentifier()->getIdentifierName()
-            <<" does not have the same type as expression"<<endl;
-        exit(-1);
+        throw CompilingErrorException("The identifier "+node->getIdentifier()->getIdentifierName()+" does not have the "
+                " same type as expression");
     }
 }
 
@@ -35,8 +36,7 @@ void SemanticAnalysis::visit(ASTBlockStatementNode *node) {
         for (auto &parameter : functionParameters->parameters) { //if we have parameters with the same name we have a semantic error,
                                                                  // otherwise add them to the symbol table.
             if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(parameter->getIdentifier()->getIdentifierName(),TypeBinder::VARIABLE)){
-                cout<<"A variable with name "<<parameter->getIdentifier()->getIdentifierName()<<" has already been declared in this scope "<<endl;
-                exit(-1);
+                throw CompilingErrorException("A variable with name "+parameter->getIdentifier()->getIdentifierName()+" has already been declared in this scope ");
             }
             ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(parameter->getIdentifier()->getIdentifierName(),
                                                                    TypeBinder(parameter->getType(),
@@ -55,8 +55,7 @@ void SemanticAnalysis::visit(ASTBlockStatementNode *node) {
             returnType = typeToBeChecked;
         }else if(statement->getStatementType() == ASTReturnStatementNode::StatementType::RETURN_STMT && returnType != typeToBeChecked){
             //if there is a bad return statement inform the programmer;
-            cout<<"Bad type return in function "<<endl;
-            exit(-1);
+            throw CompilingErrorException("Bad return type in function ");
         }
     }
     ScopedTable.pop_back();//remove scope since we are ready
@@ -68,8 +67,7 @@ void SemanticAnalysis::visit(ASTIfStatementNode *node) {
     node->getExpression()->accept(this); //visit the expression predicate
     if(typeToBeChecked != Type::BOOL){ // if the type is not a boolean we cannot determine if the condition is true or false
                                        // hence we get a semantic error
-        cout<<"The if statement condition must be a predicate"<<endl;
-        exit(-1);
+        throw CompilingErrorException("If statement condition must be a predicate");
     }
     auto* trueblock = node->getTrueBlock();
     auto* elseblock = node->getElseBlock();
@@ -98,8 +96,7 @@ void SemanticAnalysis::visit(ASTVarDeclStatementNode *node) {
     //if in the same scope the variable is being declared we have a variable that has already been declared with the same
     // name , we have a semantic error , (notelast scope is last element in vector).
     if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::VARIABLE)){
-        cout<<"A variable with name "<<node->getIdentifier()->getIdentifierName()<<" has already been declared in this scope "<<endl;
-        exit(-1);
+        throw CompilingErrorException("A variable with name "+node->getIdentifier()->getIdentifierName()+" has already been declared in this scope ");
     }
     node->getExpr()->accept(this); //visit expression
     if(typeToBeChecked == node->getType()){ //if type of expression is equal to type of variable to be stored in ,
@@ -107,8 +104,7 @@ void SemanticAnalysis::visit(ASTVarDeclStatementNode *node) {
         TypeBinder tb = TypeBinder(typeToBeChecked,TypeBinder::IdentifierType::VARIABLE);
         ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(node->getIdentifier()->getIdentifierName(),tb);
     }else{ //otherwise , we have a semantic error
-        cout<<"Type of variable "<<node->getIdentifier()->getIdentifierName()<<" does not match with expression"<<endl;
-        exit(-1);
+        throw CompilingErrorException("Type of variable "+node->getIdentifier()->getIdentifierName()+" does not match with expression");
     }
 }
 
@@ -116,8 +112,7 @@ void SemanticAnalysis::visit(ASTWhileStatementNode *node) {
     node->getExpression()->accept(this); //visit expression , if type is not a boolean we cannot determine if the condition
                                          // is met or not , thus return semantic error
     if(typeToBeChecked != Type::BOOL){
-        cout<<"The while statement condition must be a predicate"<<endl;
-        exit(-1);
+        throw CompilingErrorException("The while statement condition must be a predicate");
     }
     node->getBlock()->accept(this); //visit block
 }
@@ -129,8 +124,7 @@ void SemanticAnalysis::visit(ASTReturnStatementNode *node) {
 void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
     //if a function with the name stored in the ASTFuncDeclStatementNode  has already been declared then we get a semantic error
     if(ScopedTable.at(ScopedTable.size()-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION)){
-        cout<<"A function with name "<<node->getIdentifier()->getIdentifierName()<<" has already been declared in this scope "<<endl;
-        exit(-1);
+        throw CompilingErrorException("A function with name "+node->getIdentifier()->getIdentifierName()+" has already been declared in this scope ");
     }
     functionParameters = &*node->getFormalParams(); //store function parameters
     auto tb = TypeBinder(node->getType(),TypeBinder::FUNCTION);
@@ -145,12 +139,10 @@ void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
     node->getBlock()->accept(this); //visit the block
     vector<ASTStatementNode*> statements = *node->getBlock()->getStatements(); //stores the statements in the function block
     if(!isReturnPresent){ //if we met no returns notify the user
-        cout<<"You forgot return in "<<node->getIdentifier()->getIdentifierName()<<endl;
-        exit(-1);
+        throw CompilingErrorException("You forgot return in "+node->getIdentifier()->getIdentifierName());
     }
     if(node->getType() != returnType){ // if we have a bad return type notify the user
-        cout<<"The return type and signature type of function "<<node->getIdentifier()->getIdentifierName()<<" do not match"<<endl;
-        exit(-1);
+        throw CompilingErrorException("The return type and signature type of function "+node->getIdentifier()->getIdentifierName()+" do not match");
     }
     isReturnPresent = false; //set back to false
 }
@@ -163,61 +155,54 @@ void SemanticAnalysis::visit(ASTBinaryExprNode *node) {
     if(lhsType != rhsType){ // if their types are not equal we cannot apply operators , since according to specification
                             // operators must be applied to the same types , no exception also for reals and int since
                             // minilang does not perform automatic type cast
-        cout<<"Binary operators can be only applied to expressions of the same type"<<endl;
-        exit(-1);
+        throw CompilingErrorException("Binary operators can only be applied to expressions of the same type");
     }
     switch(node->getOperator()){
         case Operators::PLUS:
             if(lhsType == Type::STRING || lhsType == Type::BOOL){ //plus can only be done for number types , otherwise semantic error
-                cout<<"The + operator can only be used for number types"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The + operator can only be used for number types");
             }else{
                 typeToBeChecked = lhsType;
             }
             break;
         case Operators::MINUS: //minus can only be done for number types , otherwise semantic error
             if(lhsType == Type::STRING || lhsType == Type::BOOL){
-                cout<<"The - operator can only be used for number types"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The - operator can only be used for number types");
             }else{
                 typeToBeChecked = lhsType;
             }
             break;
         case Operators::OR: //or can only be done to bools otherwise semantic error
             if(lhsType != Type::BOOL){
-                cout<<"The or operator can only be used for bools"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The or operator can only be used for bools");
             }else{
                 typeToBeChecked = lhsType;
             }
             break;
         case Operators::LESSTHAN: //less than can only be done for number types
             if(lhsType == Type::STRING || lhsType == Type::BOOL){
-                cout<<"The < operator can only be used for number types"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The < operator can only be used for number types");
             }else{
                 typeToBeChecked = Type::BOOL;
             }
             break;
         case Operators::GREATERTHAN: //greater than can only be done for number types
             if(lhsType == Type::STRING || lhsType == Type::BOOL){
-                cout<<"The > operator can only be used for number types"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The > operator can only be used for number types");
             }else{
                 typeToBeChecked = Type::BOOL;
             }
             break;
         case Operators::LESSTHANEQUAL: //only done for number types
             if(lhsType == Type::STRING || lhsType == Type::BOOL){
-                cout<<"The <= operator can only be used for number types"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The <= operator can only be used for number types");
             }else{
                 typeToBeChecked = Type::BOOL;
             }
             break;
         case Operators::GREATERTHANEQUAL://only done for number types
             if(lhsType == Type::STRING || lhsType == Type::BOOL){
-                cout<<"The >= operator can only be used for number types"<<endl;
+                throw CompilingErrorException("The >= operator can only be used for number types");
             }else{
                 typeToBeChecked = Type::BOOL;
             }
@@ -230,8 +215,7 @@ void SemanticAnalysis::visit(ASTBinaryExprNode *node) {
             break;
         case Operators::TIMES: //can only be done for number types
             if(lhsType == Type::STRING || lhsType == Type::BOOL){
-                cout<<"The * operator can only be used for number types"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The * operator can only be used for number types");
             }else{
                 typeToBeChecked = lhsType;
             }
@@ -240,16 +224,14 @@ void SemanticAnalysis::visit(ASTBinaryExprNode *node) {
                                   // may be a real , for example 3/4. This is a small defect in this implementation
                                   // also can only be used for number types
             if(lhsType == Type::STRING || lhsType == Type::BOOL){
-                cout<<"The / operator can only be used for number types"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The / operator can only be used for number types");
             }else{
                 typeToBeChecked = Type::REAL;
             }
             break;
         case Operators::AND: //And can only be done for bools
             if(lhsType != Type::BOOL){
-                cout<<"The and operator can only be used for bools"<<endl;
-                exit(-1);
+                throw CompilingErrorException("The and operator can only be used for bools ");
             }else{
                 typeToBeChecked = lhsType;
             }
@@ -281,8 +263,7 @@ void SemanticAnalysis::visit(ASTIdentifierExprNode *node) {
             return;
         }
     }
-    cout<<"Variable "<<node->getIdentifierName()<<" was not declared"<<endl; // if not found we have a semantic error
-    exit(-1);
+    throw CompilingErrorException("Variable "+node->getIdentifierName()+" was not declared");
 }
 
 void SemanticAnalysis::visit(ASTSubExprNode *node) {
@@ -294,18 +275,15 @@ void SemanticAnalysis::visit(ASTUnaryExprNode *node) { //assumptions of operator
     node->getExpression()->accept(this); //check type of expression
     if(typeToBeChecked == Type::REAL || typeToBeChecked == Type::INT){ //if we get number types
         if(node->getOp() != NegationOperator::MINUS){ //only minus can be applied to number types , else semantic error
-            cout<<"not cannot be applied to number types , use minus instead"<<endl;
-            exit(-1);
+            throw CompilingErrorException("not cannot be applied to number types , use minus instead");
         }
     }else if(typeToBeChecked == Type::BOOL){ //if we get a bool type , only not can be applied as negation , therefore if
                                              // we find minus , we get a semantic error
         if(node->getOp() != NegationOperator::NOT){
-            cout<<"- cannot be applied to boolean expressions"<<endl;
-            exit(-1);
+            throw CompilingErrorException("- cannot be applied to boolean expressions");
         }
     }else{ //if a string is found we cannot apply -
-        cout<<"- and not cannot be applied to strings"<<endl;
-        exit(-1);
+        throw CompilingErrorException("- and not cannot be applied to strings");
     }
 }
 
@@ -340,20 +318,17 @@ void SemanticAnalysis::visit(ASTFnCallExprNode *node) {
     if(functionFound){ //if function found check that the number of parameters and the parameter types are correct,
                        // this was repeated so that an appropiate error message can be displayed to the user.
         if(node->getParameters().size() != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.size()){
-            cout<<"parameter numbers mismatch in function "<<node->getIdentifier()->getIdentifierName()<<endl;
-            exit(-1);
+            throw CompilingErrorException("parameters numbers mismatch in function "+node->getIdentifier()->getIdentifierName());
         }
         for(unsigned int i=0;i<node->getParameters().size();i++){
             node->getParameters().at(i)->accept(this);
             if(typeToBeChecked != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.at(i)){
-                cout<<"Parameter type mismatch in function "<<node->getIdentifier()->getIdentifierName()<<endl;
-                exit(-1);
+                throw CompilingErrorException("Parameter type mismatch in function "+node->getIdentifier()->getIdentifierName());
             }
         }
         typeToBeChecked = ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).getPrimitiveType();
     }else{ // if not found , the user is notified.
-        cout<<"Function "<< node->getIdentifier()->getIdentifierName()<<" with given parameters was not declared"<<endl;
-        exit(-1);
+        throw CompilingErrorException("Function "+node->getIdentifier()->getIdentifierName()+" with given parameters was not declared");
     }
 }
 
