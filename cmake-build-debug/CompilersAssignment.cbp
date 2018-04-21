@@ -215,6 +215,12 @@
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h">
 			<Option target="CompilersAssignment"/>
 		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.cpp">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp">
 			<Option target="CompilersAssignment"/>
 		</Unit>
@@ -234,6 +240,9 @@
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h">
+			<Option target="CompilersAssignment"/>
+		</Unit>
+		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/MiniLangI.cpp">
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp">
@@ -273,9 +282,6 @@
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h">
-			<Option target="CompilersAssignment"/>
-		</Unit>
-		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp">
 			<Option target="CompilersAssignment"/>
 		</Unit>
 		<Unit filename="C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/CMakeLists.txt">

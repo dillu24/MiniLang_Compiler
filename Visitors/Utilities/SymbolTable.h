@@ -54,6 +54,13 @@ namespace Visitors{
          * The mapped value associated to the key stored in @param identifier , which is of type TypeBinder.
          */
         TypeBinder getTypeBinder(string identifier);
+
+        /**
+         * This method is used to get the private field multimap
+         * @return
+         * The private field multimap
+         */
+        multimap<string,TypeBinder> getMultimap();
     };
 }
 

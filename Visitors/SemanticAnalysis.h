@@ -33,6 +33,10 @@ namespace Visitors{
          */
         SemanticAnalysis();
         /**
+         * This destructor is used to remove the global scope , had to be done this way due to the repl.
+         */
+        ~SemanticAnalysis();
+        /**
          * This method is the implementation of the virtual method in the base class
          * @param node
          * Stores the address of the ASTAssignStatementNode to be visited
@@ -136,6 +140,13 @@ namespace Visitors{
         * Stores the address of the AST to be visited.
         */
         void visitTree(vector<ASTStatementNode*>* tree) override;
+
+        /**
+         * This method is used to return the private symbol table
+         * @return
+         * The vector of type SymbolTable pointer , that contains the scoped symbol table instance
+         */
+        vector<SymbolTable*> getScopedTable();
     };
 }
 

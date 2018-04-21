@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CompilersAssignment.dir/main.cpp.obj"
+  "CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj"
@@ -29,6 +29,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj"
   "CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj"
+  "CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj"
   "CompilersAssignment.pdb"
   "CompilersAssignment.exe"
   "CompilersAssignment.exe.manifest"

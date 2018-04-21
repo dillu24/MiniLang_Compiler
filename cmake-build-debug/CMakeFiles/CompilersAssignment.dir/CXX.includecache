@@ -288,6 +288,16 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/Fo
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.cpp
+CompilingErrorException.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
+utility
+-
+
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
+string
+-
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp
 Keywords.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
@@ -303,6 +313,8 @@ LexerImplementation.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
 Keywords.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
+../Exceptions/CompilingErrorException.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
 utility
 -
 stack
@@ -336,6 +348,20 @@ iostream
 State.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
 
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/MiniLangI.cpp
+iostream
+-
+Lexer/LexerImplementation.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
+Parser/PredictiveParser.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+Visitors/XMLGenerator.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
+Visitors/InterpreterExecutionPass.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.h
+Exceptions/CompilingErrorException.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
+
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp
 PredictiveParser.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
@@ -345,6 +371,8 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/A
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
 ../ASTHierarchy/Expression/ASTBinaryExprNode.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
+../Exceptions/CompilingErrorException.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
 ../Lexer/LexerImplementation.h
@@ -405,6 +433,8 @@ cmath
 -
 SemanticAnalysis.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
+../Exceptions/CompilingErrorException.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
 Visitor.h
@@ -483,16 +513,4 @@ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
 Visitor.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
-
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp
-iostream
--
-Lexer/LexerImplementation.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
-Parser/PredictiveParser.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
-Visitors/XMLGenerator.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
-Visitors/InterpreterExecutionPass.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.h
 

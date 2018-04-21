@@ -472,10 +472,14 @@ CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.cpp
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
 CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
 CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
@@ -486,6 +490,44 @@ CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/NegationOperator.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Operators.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/MiniLangI.cpp
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
@@ -512,6 +554,7 @@ CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
@@ -575,6 +618,7 @@ CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
@@ -632,40 +676,3 @@ CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBinaryExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTBooleanLiteralExpressionNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTFnCallExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTIdentifierExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTLiteralExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTNumberExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTStringLiteralExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTSubExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Expression/ASTUnaryExprNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/NegationOperator.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Operators.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTAssignStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTBlockStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTFuncDeclStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTIfStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTPrintStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTReturnStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTVarDeclStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/State.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
- C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp

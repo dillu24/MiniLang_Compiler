@@ -16,6 +16,7 @@ InterpreterExecutionPass::InterpreterExecutionPass() {
     lastEvaluatedType = Type::BOOL;
     queueOfParams = queue<TypeBinder::valueInIdentifier*>();
     functionParameters = nullptr;
+    createGlobalScope();
 }
 
 void InterpreterExecutionPass::visit(ASTAssignStatementNode *node) {
@@ -581,12 +582,26 @@ void InterpreterExecutionPass::visit(ASTFnCallExprNode *node) {
 
 void InterpreterExecutionPass::visitTree(vector<ASTStatementNode *> *tree) {
     validator->visitTree(tree); // check first that the tree is a valid program
-    ScopedTable.push_back(new SymbolTable()); //create the global scope
     for (auto &i : *tree) {
         if(isReturnPresent){ //if there is a return in the global scope , is return is true ..therefore all remaining statements are unreachable .. therefore exit
             exit(0);
         }
         i->accept(this); //visit each statement in the AST
     }
-    ScopedTable.pop_back(); //close the global scope
+}
+
+void InterpreterExecutionPass::createGlobalScope() {
+    ScopedTable.push_back(new SymbolTable());
+}
+
+void InterpreterExecutionPass::destroyGlobalScope() {
+    ScopedTable.pop_back();
+}
+
+InterpreterExecutionPass::~InterpreterExecutionPass() {
+    destroyGlobalScope();
+}
+
+SemanticAnalysis *InterpreterExecutionPass::getValidator() {
+    return validator;
 }

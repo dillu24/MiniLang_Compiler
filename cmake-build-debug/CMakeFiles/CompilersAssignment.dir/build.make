@@ -56,28 +56,28 @@ include CMakeFiles/CompilersAssignment.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CompilersAssignment.dir/flags.make
 
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CompilersAssignment.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\main.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\main.cpp"
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../MiniLangI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\MiniLangI.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\MiniLangI.cpp"
 
-CMakeFiles/CompilersAssignment.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\main.cpp" > CMakeFiles\CompilersAssignment.dir\main.cpp.i
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\MiniLangI.cpp" > CMakeFiles\CompilersAssignment.dir\MiniLangI.cpp.i
 
-CMakeFiles/CompilersAssignment.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\main.cpp" -o CMakeFiles\CompilersAssignment.dir\main.cpp.s
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\MiniLangI.cpp" -o CMakeFiles\CompilersAssignment.dir\MiniLangI.cpp.s
 
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj.requires:
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.requires:
 
-.PHONY : CMakeFiles/CompilersAssignment.dir/main.cpp.obj.requires
+.PHONY : CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.requires
 
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/main.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/main.cpp.obj.provides.build
-.PHONY : CMakeFiles/CompilersAssignment.dir/main.cpp.obj.provides
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.provides
 
-CMakeFiles/CompilersAssignment.dir/main.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/main.cpp.obj
+CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj
 
 
 CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
@@ -776,9 +776,33 @@ CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj.pro
 CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj
 
 
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj: CMakeFiles/CompilersAssignment.dir/flags.make
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj: ../Exceptions/CompilingErrorException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CompilersAssignment.dir\Exceptions\CompilingErrorException.cpp.obj -c "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Exceptions\CompilingErrorException.cpp"
+
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Exceptions\CompilingErrorException.cpp" > CMakeFiles\CompilersAssignment.dir\Exceptions\CompilingErrorException.cpp.i
+
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\Exceptions\CompilingErrorException.cpp" -o CMakeFiles\CompilersAssignment.dir\Exceptions\CompilingErrorException.cpp.s
+
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.requires:
+
+.PHONY : CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.requires
+
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.provides: CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.provides.build
+.PHONY : CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.provides
+
+CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.provides.build: CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj
+
+
 # Object files for target CompilersAssignment
 CompilersAssignment_OBJECTS = \
-"CMakeFiles/CompilersAssignment.dir/main.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj" \
@@ -807,12 +831,13 @@ CompilersAssignment_OBJECTS = \
 "CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj" \
 "CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj" \
-"CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj"
+"CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj" \
+"CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj"
 
 # External object files for target CompilersAssignment
 CompilersAssignment_EXTERNAL_OBJECTS =
 
-CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/main.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj
@@ -842,11 +867,12 @@ CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAna
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj
+CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/build.make
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/linklibs.rsp
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/objects1.rsp
 CompilersAssignment.exe: CMakeFiles/CompilersAssignment.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable CompilersAssignment.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Dylan Galea\ClionProjects\CompilersAssignment\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable CompilersAssignment.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CompilersAssignment.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -854,7 +880,7 @@ CMakeFiles/CompilersAssignment.dir/build: CompilersAssignment.exe
 
 .PHONY : CMakeFiles/CompilersAssignment.dir/build
 
-CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/main.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj.requires
@@ -884,6 +910,7 @@ CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj.requires
 CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj.requires
+CMakeFiles/CompilersAssignment.dir/requires: CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj.requires
 
 .PHONY : CMakeFiles/CompilersAssignment.dir/requires
 

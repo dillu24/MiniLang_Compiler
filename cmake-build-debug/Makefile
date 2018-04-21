@@ -662,6 +662,33 @@ ASTHierarchy/Statement/FormalParams.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.s
 .PHONY : ASTHierarchy/Statement/FormalParams.cpp.s
 
+Exceptions/CompilingErrorException.obj: Exceptions/CompilingErrorException.cpp.obj
+
+.PHONY : Exceptions/CompilingErrorException.obj
+
+# target to build an object file
+Exceptions/CompilingErrorException.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj
+.PHONY : Exceptions/CompilingErrorException.cpp.obj
+
+Exceptions/CompilingErrorException.i: Exceptions/CompilingErrorException.cpp.i
+
+.PHONY : Exceptions/CompilingErrorException.i
+
+# target to preprocess a source file
+Exceptions/CompilingErrorException.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.i
+.PHONY : Exceptions/CompilingErrorException.cpp.i
+
+Exceptions/CompilingErrorException.s: Exceptions/CompilingErrorException.cpp.s
+
+.PHONY : Exceptions/CompilingErrorException.s
+
+# target to generate assembly for a file
+Exceptions/CompilingErrorException.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.s
+.PHONY : Exceptions/CompilingErrorException.cpp.s
+
 Lexer/Keywords.obj: Lexer/Keywords.cpp.obj
 
 .PHONY : Lexer/Keywords.obj
@@ -742,6 +769,33 @@ Lexer/Token.s: Lexer/Token.cpp.s
 Lexer/Token.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.s
 .PHONY : Lexer/Token.cpp.s
+
+MiniLangI.obj: MiniLangI.cpp.obj
+
+.PHONY : MiniLangI.obj
+
+# target to build an object file
+MiniLangI.cpp.obj:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj
+.PHONY : MiniLangI.cpp.obj
+
+MiniLangI.i: MiniLangI.cpp.i
+
+.PHONY : MiniLangI.i
+
+# target to preprocess a source file
+MiniLangI.cpp.i:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.i
+.PHONY : MiniLangI.cpp.i
+
+MiniLangI.s: MiniLangI.cpp.s
+
+.PHONY : MiniLangI.s
+
+# target to generate assembly for a file
+MiniLangI.cpp.s:
+	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.s
+.PHONY : MiniLangI.cpp.s
 
 Parser/PredictiveParser.obj: Parser/PredictiveParser.cpp.obj
 
@@ -905,33 +959,6 @@ Visitors/XMLGenerator.cpp.s:
 	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.s
 .PHONY : Visitors/XMLGenerator.cpp.s
 
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\CompilersAssignment.dir\build.make CMakeFiles/CompilersAssignment.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1001,6 +1028,9 @@ help:
 	@echo ... ASTHierarchy/Statement/FormalParams.obj
 	@echo ... ASTHierarchy/Statement/FormalParams.i
 	@echo ... ASTHierarchy/Statement/FormalParams.s
+	@echo ... Exceptions/CompilingErrorException.obj
+	@echo ... Exceptions/CompilingErrorException.i
+	@echo ... Exceptions/CompilingErrorException.s
 	@echo ... Lexer/Keywords.obj
 	@echo ... Lexer/Keywords.i
 	@echo ... Lexer/Keywords.s
@@ -1010,6 +1040,9 @@ help:
 	@echo ... Lexer/Token.obj
 	@echo ... Lexer/Token.i
 	@echo ... Lexer/Token.s
+	@echo ... MiniLangI.obj
+	@echo ... MiniLangI.i
+	@echo ... MiniLangI.s
 	@echo ... Parser/PredictiveParser.obj
 	@echo ... Parser/PredictiveParser.i
 	@echo ... Parser/PredictiveParser.s
@@ -1028,9 +1061,6 @@ help:
 	@echo ... Visitors/XMLGenerator.obj
 	@echo ... Visitors/XMLGenerator.i
 	@echo ... Visitors/XMLGenerator.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 .PHONY : help
 
 

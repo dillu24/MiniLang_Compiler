@@ -24,16 +24,17 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/ASTWhileStatementNode.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/ASTWhileStatementNode.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParam.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/ASTHierarchy/Statement/FormalParams.cpp.obj"
+  "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Exceptions/CompilingErrorException.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Keywords.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Lexer/Keywords.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Lexer/LexerImplementation.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/Token.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Lexer/Token.cpp.obj"
+  "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/MiniLangI.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/InterpreterExecutionPass.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/SemanticAnalysis.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/SemanticAnalysis.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/TypeBinder.cpp.obj"
   "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/Visitors/XMLGenerator.cpp.obj"
-  "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/main.cpp" "C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/cmake-build-debug/CMakeFiles/CompilersAssignment.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -32,7 +32,7 @@ namespace Lexer{
          * @param file_name
          * Stores the file path the lexer is to read from
          */
-        LexerImplementation(string file_name);
+        explicit LexerImplementation(string file_name);
         ~LexerImplementation(); //default destructer
         /**
          * This method is used to get the next token that the lexer has identified
@@ -40,16 +40,35 @@ namespace Lexer{
          * A pointer to the next token the lexer has identified
          */
         Token* getNextToken();
-    private:
-        int lineNumber; // This stores the line number the lexer is in , in order to report lexing errors
-        vector<char> input_characters; // stores the characters identified in the input file
-        int current_input_index; //stores the current index the lexer is in in order to read the next character
+
+        /**
+         * This method is used to give the character array the string to be tokenized .. this is mostly used by the REPL
+         * @param input
+         * Stores the input to be parsed into characters
+         */
+        void initializeCharactersWithString(string input);
+        /**
+         * This method is used by the interpreter in interective mode to clear the characters that have been inputted
+         * in the console.
+         */
+        void clearCharactersContainer();
+
+        /**
+         * This method is used by the REPL in order to start reading again from the first character of the vector of characters
+         */
+        void restartCurrentInputIndex();
+
         /**
          * This method initialized the list of characters in the source input program supplied as parameter
          * @param file_name
          * Stores the path the lexer is to read from as input program
          */
         void initialize_input_characters(string file_name);
+    private:
+        int lineNumber; // This stores the line number the lexer is in , in order to report lexing errors
+        vector<char> input_characters; // stores the characters identified in the input file
+        int current_input_index; //stores the current index the lexer is in in order to read the next character
+
         State current_state; // Stores the current state in the DFSA the lexer is in
         /**
          * This is a function that determines the next state in the DFSA depending on the state the lexer is currently

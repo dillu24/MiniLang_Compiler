@@ -4,12 +4,13 @@
 
 #include "LexerImplementation.h"
 #include "Keywords.h"
+#include "../Exceptions/CompilingErrorException.h"
 
 #include <utility>
 #include <stack>
+using namespace Exception;
 
 Lexer::LexerImplementation::LexerImplementation() {
-    initialize_input_characters("SourceCodeInput.txt"); //get from default file
     current_state = State::S0; //initialize start state
     current_input_index =0; //initialize current state in the source program
     lineNumber = 1; // started from line 1
@@ -35,9 +36,8 @@ void Lexer::LexerImplementation::initialize_input_characters(string file_name) {
         input_characters.push_back(EOF); // push EOF marker as an indication that reading of characters is done
         input_file.close(); //close file
     }else{
-        cout<<"File could not be opened"<<endl; // if the file cannot be opened indicate to the user and stop program
         input_file.close();
-        exit(-1);
+        throw CompilingErrorException("Source file could not be opened"); // throw exception with corresponding error message
     }
 }
 
@@ -115,10 +115,7 @@ Lexer::Token* Lexer::LexerImplementation::getNextToken() {
         Token *token = new Token(lexeme,current_state); // if final a valid token is initialized
         return token;
     }else{ // otherwise we get an invalid token , therefore terminate lexer
-        //auto *token = new Token();
-        cout<<"Syntax error in line "<<lineNumber<<endl; // report error at that particular line
-        exit(-1);
-        //return token;
+        throw CompilingErrorException("syntax error in line "+to_string(lineNumber)); // throw exception with respective error message to signal error
     }
 }
 
@@ -225,6 +222,21 @@ bool Lexer::LexerImplementation::isBinaryOperator(char c) {
 
 bool Lexer::LexerImplementation::isPunct(char c) {
     return c == '{' || c == '}' || c == '(' || c == ')' || c == ',' || c == ';' || c == ':';
+}
+
+void Lexer::LexerImplementation::initializeCharactersWithString(string input) {
+    for (char i : input) {
+        input_characters.push_back(i);
+    }
+    input_characters.push_back(EOF);
+}
+
+void Lexer::LexerImplementation::clearCharactersContainer() {
+    input_characters.clear();
+}
+
+void Lexer::LexerImplementation::restartCurrentInputIndex() {
+    current_input_index = 0;
 }
 
 
