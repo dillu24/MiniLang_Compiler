@@ -12,9 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17033030-dfd1-48ad-b3c7-f221036d4fe5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Lexer/LexerImplementation.cpp" afterPath="$PROJECT_DIR$/Lexer/LexerImplementation.cpp" />
-      <change beforePath="$PROJECT_DIR$/MiniLangI.cpp" afterPath="$PROJECT_DIR$/MiniLangI.cpp" />
       <change beforePath="$PROJECT_DIR$/TestPrograms/Factorial" afterPath="$PROJECT_DIR$/TestPrograms/Factorial" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -38,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Factorial" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Factorial" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestPrograms/Factorial">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MiniLangI.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MiniLangI.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MiniLangI.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -149,8 +146,8 @@
         <option value="$PROJECT_DIR$/TestPrograms/PowerFunction" />
         <option value="$PROJECT_DIR$/Visitors/InterpreterExecutionPass.h" />
         <option value="$PROJECT_DIR$/Lexer/LexerImplementation.cpp" />
-        <option value="$PROJECT_DIR$/TestPrograms/Factorial" />
         <option value="$PROJECT_DIR$/MiniLangI.cpp" />
+        <option value="$PROJECT_DIR$/TestPrograms/Factorial" />
       </list>
     </option>
   </component>
@@ -296,12 +293,12 @@
       <workItem from="1523284771644" duration="12100000" />
       <workItem from="1523349293894" duration="109744000" />
       <workItem from="1523898717268" duration="217000" />
-      <workItem from="1523898959869" duration="94343000" />
+      <workItem from="1523898959869" duration="94448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338300000" />
+    <option name="totallyTimeSpent" value="338405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -751,18 +748,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestPrograms/Factorial">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MiniLangI.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="79" column="16" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestPrograms/Factorial">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
           <folding />
         </state>
       </provider>
