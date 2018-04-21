@@ -1,3 +1,18 @@
-/**
-This is the source code input , please enter source code here to be inputted to the compiler.
-**/
+def fact (n : int)  : int{
+    if ((n==0) or (n==1)){
+        return n;
+    }else{
+        return n*fact(n-1);
+    }
+}
+
+print fact(4);
+
+
+
+
+
+
+
+
+
