@@ -526,7 +526,6 @@ CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/SemanticAnalys
 CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/Utilities/SymbolTable.h
 CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/Utilities/TypeBinder.h
 CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/Visitor.h
-CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj: ../Visitors/XMLGenerator.h
 
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/ASTExprNode.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj: ../ASTHierarchy/ASTNode.h

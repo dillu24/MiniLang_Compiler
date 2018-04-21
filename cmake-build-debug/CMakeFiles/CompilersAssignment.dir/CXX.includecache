@@ -355,8 +355,6 @@ Lexer/LexerImplementation.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Lexer/LexerImplementation.h
 Parser/PredictiveParser.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.h
-Visitors/XMLGenerator.h
-C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
 Visitors/InterpreterExecutionPass.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.h
 Exceptions/CompilingErrorException.h
