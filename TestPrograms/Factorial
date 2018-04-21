@@ -1,5 +1,5 @@
 def fact (n : int)  : int{
-    if ((n==0) or (n==1)){
+    if ((#==0) or (n==1)){
         return n;
     }else{
         return n*fact(n-1);

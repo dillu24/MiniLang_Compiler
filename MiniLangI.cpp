@@ -70,6 +70,13 @@ int main() {
                 cout<<"MLI> ";
                 getline(cin,input); // get file name
                 lexer->initialize_input_characters("../TestPrograms/"+input); //initialize characters with file name
+
+                /*auto* token = lexer->getNextToken(); //for testing lexer only
+                while(token->getTokenType() != Token::TOK_EOF){ //for testing lexer only
+                    cout<<token->getTokenName()<<" "; //for testing lexer only
+                    token = lexer->getNextToken(); //for testing lexer only
+                } // for testing lexer only*/
+
                 interpreterExecutor->visitTree(parser->parse()); // create parse tree and call interpreter on it
                 lexer->clearCharactersContainer(); // clear characters to start from the beginning next time round
                 lexer->restartCurrentInputIndex(); // restart pointer from beginning
