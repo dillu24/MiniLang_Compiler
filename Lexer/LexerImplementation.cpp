@@ -235,5 +235,9 @@ void Lexer::LexerImplementation::clearCharactersContainer() {
     input_characters.clear();
 }
 
+void Lexer::LexerImplementation::restartCurrentInputIndex() {
+    current_input_index = 0;
+}
+
 
 

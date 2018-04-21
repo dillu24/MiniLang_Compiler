@@ -11,6 +11,7 @@ SemanticAnalysis::SemanticAnalysis(){
     ScopedTable = vector<SymbolTable*>(); //create memory for scoped symbol table
     typeToBeChecked = Type::BOOL; //give any dummy value
     functionParameters = nullptr; // since we have met no function till now
+    ScopedTable.push_back(new SymbolTable());
 }
 
 void SemanticAnalysis::visit(ASTAssignStatementNode *node) {
@@ -333,14 +334,15 @@ void SemanticAnalysis::visit(ASTFnCallExprNode *node) {
 }
 
 void SemanticAnalysis::visitTree(vector<ASTStatementNode *> *tree) {
-    ScopedTable.push_back(new SymbolTable()); //create the global scope
     for (auto &i : *tree) {
         i->accept(this); //visit each statement in the AST
     }
-    ScopedTable.pop_back(); //close the global branch
-    cout<<"Valid Program"<<endl; // if the visitor class arrives here , then the supplied program is valid.
 }
 
 vector<SymbolTable *> SemanticAnalysis::getScopedTable() {
     return ScopedTable;
+}
+
+SemanticAnalysis::~SemanticAnalysis() {
+    ScopedTable.pop_back();
 }

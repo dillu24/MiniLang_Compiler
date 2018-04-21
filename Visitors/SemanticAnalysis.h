@@ -33,6 +33,10 @@ namespace Visitors{
          */
         SemanticAnalysis();
         /**
+         * This destructor is used to remove the global scope , had to be done this way due to the repl.
+         */
+        ~SemanticAnalysis();
+        /**
          * This method is the implementation of the virtual method in the base class
          * @param node
          * Stores the address of the ASTAssignStatementNode to be visited

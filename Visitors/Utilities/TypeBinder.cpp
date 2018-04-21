@@ -78,5 +78,13 @@ FormalParams *TypeBinder::getFormalParams() {
     return formalParams;
 }
 
+string TypeBinder::getStringRepresentationOfIdentifierType() {
+    if(identifierType == FUNCTION){
+        return "function";
+    }else{
+        return "variable";
+    }
+}
+
 
 

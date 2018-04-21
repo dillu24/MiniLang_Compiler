@@ -228,6 +228,13 @@ namespace Parser{
          * and the elements in the vector are the branches of the AST.
          */
         vector<ASTStatementNode*>* parse();
+
+        /**
+         * This method is used to reset the AST to empty , so that the REPL can build a new AST for each statement input.
+         * Otherwise the InterpreterExecutor keeps on executing previously types expressions.
+         */
+
+        void resetAST();
     };
 }
 

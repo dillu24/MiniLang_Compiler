@@ -36,12 +36,27 @@ namespace Visitors{
         // so that when the scope is opened , these parameters values are stored in the mapped value of the hash map ..i.e
         // the mapped TypeBinder instance.
         bool isReturnPresent = false; //this method is used to check if a return statement is present in a function
+
+        /**
+         * These 2 methods create and destroy a new global scope , these had to be done separately for the REPL
+         */
+        void createGlobalScope();
+
+        void destroyGlobalScope();
+
     public:
         /**
          * This constructor is used to create a new InterpreterExecutionPass object instance , initializing all the
          * fields to default values , and give memory to the queue and vectors.
          */
         InterpreterExecutionPass();
+
+        /**
+         * This destructor is used to delete the global scope
+         */
+
+        ~InterpreterExecutionPass();
+
         /**
          * This method is the implementation of the virtual method in the base class
          * @param node
@@ -146,6 +161,12 @@ namespace Visitors{
         * Stores the address of the AST to be visited.
         */
         void visitTree(vector<ASTStatementNode*>* tree) override;
+
+        /**
+         * This method will be used in the REPL to get the validator and thus get it's symbol table for display
+         */
+
+        SemanticAnalysis* getValidator();
     };
 }
 

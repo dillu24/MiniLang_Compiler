@@ -134,6 +134,14 @@ namespace Visitors{
          * The pointer of type FormalParams , this->formalParams.
          */
         FormalParams* getFormalParams();
+
+        /**
+         * This method gets the string representation of the binded type .. thus it returns function or variable
+         * @return
+         * String which is "function" if we are binding a function , or "variable" if we are binded a variable
+         */
+
+        string getStringRepresentationOfIdentifierType();
     private:
         Type primitiveType; //Stores the identifier's declared type in minilang
         IdentifierType identifierType; // stores whether the identifier name is set to a function or a variable.

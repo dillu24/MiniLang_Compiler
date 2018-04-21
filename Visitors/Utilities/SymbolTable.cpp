@@ -26,3 +26,7 @@ bool Visitors::SymbolTable::checkIfInSymbolTable(string identifier,TypeBinder::I
 Visitors::TypeBinder Visitors::SymbolTable::getTypeBinder(string identifier) {
     return contents.find(identifier)->second;
 }
+
+multimap<string, TypeBinder> SymbolTable::getMultimap() {
+    return contents;
+}

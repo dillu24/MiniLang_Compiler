@@ -535,6 +535,10 @@ ASTFuncDeclStatementNode *Parser::PredictiveParser::parseFunctionDefinition() {
     }
 }
 
+void Parser::PredictiveParser::resetAST() {
+    tree->clear();
+}
+
 
 
 
