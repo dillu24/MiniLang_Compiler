@@ -527,6 +527,7 @@ CMakeFiles/CompilersAssignment.dir/MiniLangI.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Visitor.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
 CMakeFiles/CompilersAssignment.dir/Parser/PredictiveParser.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTExprNode.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/ASTNode.h

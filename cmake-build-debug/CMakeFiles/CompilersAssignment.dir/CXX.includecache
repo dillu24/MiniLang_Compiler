@@ -359,6 +359,8 @@ Visitors/InterpreterExecutionPass.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/InterpreterExecutionPass.h
 Exceptions/CompilingErrorException.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
+Visitors/XMLGenerator.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/XMLGenerator.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Parser/PredictiveParser.cpp
 PredictiveParser.h

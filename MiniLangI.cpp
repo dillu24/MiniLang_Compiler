@@ -18,6 +18,7 @@
 #include "Parser/PredictiveParser.h"
 #include "Visitors/InterpreterExecutionPass.h"
 #include "Exceptions/CompilingErrorException.h"
+#include "Visitors/XMLGenerator.h"
 
 using namespace Lexer;
 using namespace Parser;
@@ -43,6 +44,7 @@ void help(){
 int main() {
     auto * lexer = new LexerImplementation(); //instance of the lexer
     auto* parser = new PredictiveParser(lexer); // instance of the parser
+    auto* xml = new XMLGenerator();
     auto* interpreterExecutor = new InterpreterExecutionPass(); // instance of the exectuor which contains the semantic analyzer also
     cout<<"Minilang Interpreter running ,enter #help for command breakdown"<<endl;
     cout<<"MLI> ";
@@ -71,11 +73,15 @@ int main() {
                 getline(cin,input); // get file name
                 lexer->initialize_input_characters("../TestPrograms/"+input); //initialize characters with file name
 
-                /*auto* token = lexer->getNextToken(); //for testing lexer only
-                while(token->getTokenType() != Token::TOK_EOF){ //for testing lexer only
-                    cout<<token->getTokenName()<<" "; //for testing lexer only
-                    token = lexer->getNextToken(); //for testing lexer only
-                } // for testing lexer only*/
+                /* This was used to test the lexer only , to view test , just remove the comments
+                auto* token = lexer->getNextToken();
+                while(token->getTokenType() != Token::TOK_EOF){
+                    cout<<token->getTokenName()<<" ";
+                    token = lexer->getNextToken();
+                } */
+
+                /* This was used to test the parser and xml generator only , to view test , just remove the comments
+                xml->visitTree(parser->parse());*/
 
                 interpreterExecutor->visitTree(parser->parse()); // create parse tree and call interpreter on it
                 lexer->clearCharactersContainer(); // clear characters to start from the beginning next time round
