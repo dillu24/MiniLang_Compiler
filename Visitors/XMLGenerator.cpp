@@ -95,9 +95,10 @@ void Visitors::XMLGenerator::visit(ASTFuncDeclStatementNode *node) {
     cout<<"\">"<<endl;
     TabIn();//tab in since the ASTFnDeclStatement node has a child identifier node storing the function name
     node->getIdentifier()->accept(this); //visit identifier
-    FormalParams fps = *node->getFormalParams();
+    FormalParams *fps = node->getFormalParams();
     FormalParam *fp;
-    if((fp=fps.getFormalParam())!= nullptr){ //if we have parameters
+    if(fps!= nullptr){ //if we have parameters
+        fp = fps->getFormalParam();
         cout<<indentationLevel<<"<FormalParam Type=\""; //although the formal parameters are not a node , they have nodes attached to them , thus in order to make
                                                         // the output better visually , they were made on a different level than the ASTFnDeclStatementNode.
         fp->printType(); //print type of parameter on same level
@@ -106,7 +107,7 @@ void Visitors::XMLGenerator::visit(ASTFuncDeclStatementNode *node) {
         fp->getIdentifier()->accept(this); //print attached child identifer node on indented level
         TabOut();
         cout<<indentationLevel<<"</FormalParam>"<<endl; //finish sub branch
-        for (auto &parameter : fps.parameters) { //do the same if there are remaining parameters.
+        for (auto &parameter : fps->parameters) { //do the same if there are remaining parameters.
             cout<<indentationLevel<<"<FormalParam Type=\"";
             parameter->printType();
             cout<<"\">"<<endl;
