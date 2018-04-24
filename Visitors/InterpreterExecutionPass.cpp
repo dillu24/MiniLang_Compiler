@@ -605,3 +605,7 @@ InterpreterExecutionPass::~InterpreterExecutionPass() {
 SemanticAnalysis *InterpreterExecutionPass::getValidator() {
     return validator;
 }
+
+void InterpreterExecutionPass::setValidator(SemanticAnalysis* sa) {
+    this->validator = &*sa;
+}

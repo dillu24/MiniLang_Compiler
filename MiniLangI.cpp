@@ -50,6 +50,7 @@ int main() {
     cout<<"MLI> ";
     string input;
     getline(cin,input); //get input
+    //ToDo fix repl in terms of error function and display value and parse expressions
     while(true) { // keep iterating
         try {
             if (input == "#help") { // if help is entered display help screen menu

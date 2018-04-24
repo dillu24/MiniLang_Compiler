@@ -38,3 +38,4 @@ Visitors::TypeBinder Visitors::SymbolTable::getTypeBinder(string identifier,Type
 multimap<string, TypeBinder> SymbolTable::getMultimap() {
     return contents;
 }
+

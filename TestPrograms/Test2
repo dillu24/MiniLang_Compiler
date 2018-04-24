@@ -3,3 +3,13 @@ while(a>0){
     var a : int = 2;
     set a = a-1;
 }
+
+def func1():int{
+    return 2+2;
+}
+
+var func : int =2;
+
+def func():int{
+    return 2+2.0;
+}

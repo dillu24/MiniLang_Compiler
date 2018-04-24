@@ -3,6 +3,7 @@
 //
 
 #include <cmath>
+#include <utility>
 #include "SemanticAnalysis.h"
 #include "../Exceptions/CompilingErrorException.h"
 
@@ -139,7 +140,7 @@ void SemanticAnalysis::visit(ASTFuncDeclStatementNode *node) {
     ScopedTable.at(ScopedTable.size()-1)->addToSymbolTable(node->getIdentifier()->getIdentifierName(),tb); // add function name to symbol table
     node->getBlock()->accept(this); //visit the block
     vector<ASTStatementNode*> statements = *node->getBlock()->getStatements(); //stores the statements in the function block
-    if(!isReturnPresent){ //if we met no returns notify the user
+    if(!isReturnPresent){ //if we met no returns notify the user and remove function from added scope
         throw CompilingErrorException("You forgot return in "+node->getIdentifier()->getIdentifierName());
     }
     if(node->getType() != returnType){ // if we have a bad return type notify the user
@@ -346,4 +347,8 @@ vector<SymbolTable *> SemanticAnalysis::getScopedTable() {
 
 SemanticAnalysis::~SemanticAnalysis() {
     ScopedTable.pop_back();
+}
+
+void SemanticAnalysis::setScopedTable(vector<SymbolTable *> st) {
+    this->ScopedTable = std::move(st);
 }

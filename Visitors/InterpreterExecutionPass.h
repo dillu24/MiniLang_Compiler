@@ -167,6 +167,8 @@ namespace Visitors{
          */
 
         SemanticAnalysis* getValidator();
+
+        void setValidator(SemanticAnalysis* sa);
     };
 }
 

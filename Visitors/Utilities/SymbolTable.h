@@ -61,6 +61,7 @@ namespace Visitors{
          * The private field multimap
          */
         multimap<string,TypeBinder> getMultimap();
+
     };
 }
 
