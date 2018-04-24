@@ -14,3 +14,5 @@ def funcPow ( x : real , n : int ) : real{
 	}
 	return y ;
 }
+
+print funcPow(2.0,2);

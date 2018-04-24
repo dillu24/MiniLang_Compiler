@@ -1,1 +1,17 @@
-var a : int = 5.0+4;
+def test(n:int):int{
+    def test (n:int):bool{
+        if(n == 2){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    if(test(n)){
+        return n;
+    }else{
+        return -n;
+    }
+}
+
+print test(5);
+print test(2);

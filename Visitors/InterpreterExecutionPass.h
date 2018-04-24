@@ -17,7 +17,7 @@
 #include <stack>
 
 namespace Visitors{
-    class InterpreterExecutionPass : Visitors::Visitor {
+    class InterpreterExecutionPass :public Visitor {
     private:
         SemanticAnalysis* validator; //This is used as to check whether the inputted program is valid , if not then
                                      // there is no use for executing the program.
