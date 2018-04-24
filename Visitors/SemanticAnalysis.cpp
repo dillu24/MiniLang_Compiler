@@ -259,7 +259,7 @@ void SemanticAnalysis::visit(ASTStringLiteralExprNode*) {
 void SemanticAnalysis::visit(ASTIdentifierExprNode *node) {
     for(int i=0;i<ScopedTable.size();i++){ //Check if variable is declared in some scope
         if(ScopedTable.at(ScopedTable.size()-i-1)->checkIfInSymbolTable(node->getIdentifierName(),TypeBinder::VARIABLE)){
-            typeToBeChecked = ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifierName()).getPrimitiveType();
+            typeToBeChecked = ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifierName(),TypeBinder::VARIABLE).getPrimitiveType();
             //if found store it's type.
             return;
         }
@@ -296,14 +296,14 @@ void SemanticAnalysis::visit(ASTFnCallExprNode *node) {
         //same parameter types , otherwise continue searching since the function may be found in previously declared
         //scopes.
         if(ScopedTable.at(ScopedTable.size()-i-1)->checkIfInSymbolTable(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION)){
-            if(ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.size()
+            if(ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION).parameterTypes.size()
                     != node->getParameters().size()){ //check number of parameters
                 continue;
             }
             bool badTypes = false;
             for(unsigned int j=0;j<node->getParameters().size();j++){ //check parameter types.
                 node->getParameters().at(j)->accept(this);
-                if(typeToBeChecked != ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.at(j)){
+                if(typeToBeChecked != ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION).parameterTypes.at(j)){
                     badTypes =true;
                     break;
                 }
@@ -318,16 +318,16 @@ void SemanticAnalysis::visit(ASTFnCallExprNode *node) {
     }
     if(functionFound){ //if function found check that the number of parameters and the parameter types are correct,
                        // this was repeated so that an appropiate error message can be displayed to the user.
-        if(node->getParameters().size() != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.size()){
+        if(node->getParameters().size() != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION).parameterTypes.size()){
             throw CompilingErrorException("parameters numbers mismatch in function "+node->getIdentifier()->getIdentifierName());
         }
         for(unsigned int i=0;i<node->getParameters().size();i++){
             node->getParameters().at(i)->accept(this);
-            if(typeToBeChecked != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).parameterTypes.at(i)){
+            if(typeToBeChecked != ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION).parameterTypes.at(i)){
                 throw CompilingErrorException("Parameter type mismatch in function "+node->getIdentifier()->getIdentifierName());
             }
         }
-        typeToBeChecked = ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName()).getPrimitiveType();
+        typeToBeChecked = ScopedTable.at(tableIndex)->getTypeBinder(node->getIdentifier()->getIdentifierName(),TypeBinder::FUNCTION).getPrimitiveType();
     }else{ // if not found , the user is notified.
         throw CompilingErrorException("Function "+node->getIdentifier()->getIdentifierName()+" with given parameters was not declared");
     }

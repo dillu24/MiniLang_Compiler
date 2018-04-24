@@ -633,6 +633,7 @@ CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParam.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Statement/FormalParams.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/ASTHierarchy/Type.h
+ C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.cpp
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
  C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/TypeBinder.h

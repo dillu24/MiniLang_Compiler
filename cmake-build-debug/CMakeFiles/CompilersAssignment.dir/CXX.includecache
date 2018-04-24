@@ -447,6 +447,8 @@ vector
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.cpp
 SymbolTable.h
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
+../../Exceptions/CompilingErrorException.h
+C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Exceptions/CompilingErrorException.h
 
 C:/Users/Dylan Galea/ClionProjects/CompilersAssignment/Visitors/Utilities/SymbolTable.h
 map

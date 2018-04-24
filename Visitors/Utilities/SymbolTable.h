@@ -20,7 +20,7 @@ namespace Visitors{
         multimap<string,TypeBinder> contents; //Represents a hash map where the key is the identifier name and the mapped
                                               // value is an instance of type binder which stores information about that
                                               // identifier.Note 1 identifier can have a type binder related to a function
-                                              // and another one relatedto a variable.
+                                              // and another one related to a variable.
     public:
         /**
          * This method is used to create a new SymbolTable ,initializing memory to the vector 'contents'
@@ -53,7 +53,7 @@ namespace Visitors{
          * @return
          * The mapped value associated to the key stored in @param identifier , which is of type TypeBinder.
          */
-        TypeBinder getTypeBinder(string identifier);
+        TypeBinder getTypeBinder(string identifier,TypeBinder::IdentifierType);
 
         /**
          * This method is used to get the private field multimap

@@ -1,7 +1,3 @@
-while(true){
-    if(true){
-        return 1;
-    }else{
-        return 2;
-    }
+def test(): string{
+    return "boq";
 }

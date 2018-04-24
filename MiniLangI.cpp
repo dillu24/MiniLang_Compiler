@@ -81,9 +81,9 @@ int main() {
                 } */
 
                 /* This was used to test the parser and xml generator only , to view test , just remove the comments*/
-                xml->visitTree(parser->parse());
+                //xml->visitTree(parser->parse());
 
-                //interpreterExecutor->visitTree(parser->parse()); // create parse tree and call interpreter on it
+                interpreterExecutor->visitTree(parser->parse()); // create parse tree and call interpreter on it
                 lexer->clearCharactersContainer(); // clear characters to start from the beginning next time round
                 lexer->restartCurrentInputIndex(); // restart pointer from beginning
                 parser->resetAST(); // empty AST to start from the beginning next time round
