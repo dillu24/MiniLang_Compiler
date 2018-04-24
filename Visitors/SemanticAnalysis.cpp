@@ -259,7 +259,8 @@ void SemanticAnalysis::visit(ASTStringLiteralExprNode*) {
 void SemanticAnalysis::visit(ASTIdentifierExprNode *node) {
     for(int i=0;i<ScopedTable.size();i++){ //Check if variable is declared in some scope
         if(ScopedTable.at(ScopedTable.size()-i-1)->checkIfInSymbolTable(node->getIdentifierName(),TypeBinder::VARIABLE)){
-            typeToBeChecked = ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifierName(),TypeBinder::VARIABLE).getPrimitiveType();
+            typeToBeChecked = ScopedTable.at(ScopedTable.size()-i-1)->getTypeBinder(node->getIdentifierName()
+                    ,TypeBinder::VARIABLE).getPrimitiveType();
             //if found store it's type.
             return;
         }
