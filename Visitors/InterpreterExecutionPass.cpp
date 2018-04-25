@@ -200,6 +200,9 @@ void InterpreterExecutionPass::visit(ASTWhileStatementNode *node) {
                                             // and repeat untill the predicate is evaluated to false.
         node->getBlock()->accept(this);
         boolVals.pop_back(); // remove value so that we do not get a lot of boolean values in the vector
+        if(isReturnPresent){ // if return is in a while , go outside from block
+            break;
+        }
         node->getExpression()->accept(this);
     }
     boolVals.pop_back(); //remove value of predicate store in the bools
@@ -583,10 +586,10 @@ void InterpreterExecutionPass::visit(ASTFnCallExprNode *node) {
 void InterpreterExecutionPass::visitTree(vector<ASTStatementNode *> *tree) {
     validator->visitTree(tree); // check first that the tree is a valid program
     for (auto &i : *tree) {
+        i->accept(this); //visit each statement in the AST
         if(isReturnPresent){ //if there is a return in the global scope , is return is true ..therefore all remaining statements are unreachable .. therefore exit
             exit(0);
         }
-        i->accept(this); //visit each statement in the AST
     }
 }
 
@@ -608,4 +611,8 @@ SemanticAnalysis *InterpreterExecutionPass::getValidator() {
 
 void InterpreterExecutionPass::setValidator(SemanticAnalysis* sa) {
     this->validator = &*sa;
+}
+
+vector<SymbolTable *> InterpreterExecutionPass::getScopedTable() {
+    return ScopedTable;
 }

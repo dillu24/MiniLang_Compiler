@@ -117,6 +117,7 @@ void SemanticAnalysis::visit(ASTWhileStatementNode *node) {
         throw CompilingErrorException("The while statement condition must be a predicate");
     }
     node->getBlock()->accept(this); //visit block
+    isReturnPresent = false;
 }
 
 void SemanticAnalysis::visit(ASTReturnStatementNode *node) {

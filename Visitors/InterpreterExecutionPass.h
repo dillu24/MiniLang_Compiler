@@ -169,6 +169,13 @@ namespace Visitors{
         SemanticAnalysis* getValidator();
 
         void setValidator(SemanticAnalysis* sa);
+
+        /**
+         * This method is used to return the private field ScopedTable
+         * @return
+         * The ScopeTable field
+         */
+        vector<SymbolTable*> getScopedTable();
     };
 }
 

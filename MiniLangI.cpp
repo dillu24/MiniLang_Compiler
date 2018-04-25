@@ -49,30 +49,50 @@ int main() {
     cout<<"Minilang Interpreter running ,enter #help for command breakdown"<<endl;
     cout<<"MLI> ";
     string input;
+    SymbolTable tempValue ; // used in case when an exception is thrown whilst in a function block in the symbol table
     getline(cin,input); //get input
-    //ToDo fix repl in terms of error function and display value and parse expressions
+    vector<SymbolTable> scopedTemp = vector<SymbolTable>(); // used in case when an exception is thown whilst in a function block in symbol table
     while(true) { // keep iterating
+        //Store previous state so that if an exception happens whilst the interpretetr is in a function block , the state
+        // of the program prior to loading the program is kept , this had to be implemented because in the function
+        //declaration in order to implement factorial , the function had to be inserted immediately in the symbol table
+        //for semantics
+        for(unsigned int i=0;i<interpreterExecutor->getValidator()->getScopedTable().size();i++){
+            scopedTemp.push_back(*interpreterExecutor->getValidator()->getScopedTable().at(i));
+        }
         try {
             if (input == "#help") { // if help is entered display help screen menu
                 help();
             } else if (input == "#st") { // if st is entered
-                SemanticAnalysis* validator = interpreterExecutor->getValidator(); //get the semantic analyzer so that we can get it's symbol table
-                vector<SymbolTable*> st = validator->getScopedTable(); // get it#s symbol table
+                vector<SymbolTable*> st = interpreterExecutor->getScopedTable();// get symbol table containingg values
                 for (auto &i : st) {
                     auto contents = i->getMultimap(); // get the multimap corresponding to the current scope
                     int j = 0; // sort of index in the multimap
                     for (auto &content : contents) { // iterate untill the end of multimap
                         j++;
                         //display the name of the identifier and it's type(function or variable)
-                        cout <<j<<"."<<content.first<<" "<<content.second.getStringRepresentationOfIdentifierType()<<endl;
+                        cout <<j<<"."<<content.first<<" "<<content.second.getStringRepresentationOfIdentifierType()<<
+                             " "<<content.second.getStringRepresentationOfPrimitiveType();
+                        if(content.second.getStringRepresentationOfIdentifierType()=="variable"){ //display value if variable , according to it's type
+                            if(content.second.getStringRepresentationOfPrimitiveType()=="int"){
+                                cout<<" "<<content.second.getValueInIdentifier()->intValue<<endl;
+                            }else if(content.second.getStringRepresentationOfPrimitiveType()=="string"){
+                                cout<<" "<<content.second.getValueInIdentifier()->stringValue<<endl;
+                            }else if(content.second.getStringRepresentationOfPrimitiveType()=="real"){
+                                cout<<" "<<content.second.getValueInIdentifier()->realValue<<endl;
+                            }else if(content.second.getStringRepresentationOfPrimitiveType()=="bool"){
+                                cout<<" "<<content.second.getValueInIdentifier()->boolValue<<endl;
+                            }
+                        }else{
+                            cout<<endl;
+                        }
                     }
-                    cout<<endl;
                 }
             } else if (input == "#load") { //if load is entered
                 cout<<"Please enter the file name , make sure it is in the folder CompilersAssignment/TestPrograms"<<endl;
                 cout<<"MLI> ";
                 getline(cin,input); // get file name
-                lexer->initialize_input_characters("../TestPrograms/"+input); //initialize characters with file name
+                lexer->initialize_input_characters("TestPrograms/"+input); //initialize characters with file name
 
                 /* This was used to test the lexer only , to view test , just remove the comments
                 auto* token = lexer->getNextToken();
@@ -102,7 +122,20 @@ int main() {
             lexer->clearCharactersContainer();
             lexer->restartCurrentInputIndex();
             parser->resetAST();
+            auto * previousScope = new vector<SymbolTable*>();
+            for(unsigned int i=0;i<scopedTemp.size();i++){ //get previous state , this works since in the interpreter
+                                                           // we are always in the global scope.
+                if(interpreterExecutor->getValidator()->getScopedTable().at(i)->getMultimap().size() ==
+                        scopedTemp.at(i).getMultimap().size()){
+                    previousScope->push_back(interpreterExecutor->getValidator()->getScopedTable().at(i));
+                }else{
+                    tempValue=scopedTemp.at(i);
+                    previousScope->push_back(&tempValue);
+                }
+            }
+            interpreterExecutor->getValidator()->setScopedTable(*previousScope);
         }
+        scopedTemp.clear();
         cout << "MLI> ";
         getline(cin, input); //get next input
     }
