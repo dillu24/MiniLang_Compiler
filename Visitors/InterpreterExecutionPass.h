@@ -17,7 +17,7 @@
 #include <stack>
 
 namespace Visitors{
-    class InterpreterExecutionPass : Visitors::Visitor {
+    class InterpreterExecutionPass :public Visitor {
     private:
         SemanticAnalysis* validator; //This is used as to check whether the inputted program is valid , if not then
                                      // there is no use for executing the program.
@@ -167,6 +167,15 @@ namespace Visitors{
          */
 
         SemanticAnalysis* getValidator();
+
+        void setValidator(SemanticAnalysis* sa);
+
+        /**
+         * This method is used to return the private field ScopedTable
+         * @return
+         * The ScopeTable field
+         */
+        vector<SymbolTable*> getScopedTable();
     };
 }
 

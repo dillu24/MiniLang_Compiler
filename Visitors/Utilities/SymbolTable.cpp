@@ -3,6 +3,7 @@
 //
 
 #include "SymbolTable.h"
+#include "../../Exceptions/CompilingErrorException.h"
 
 Visitors::SymbolTable::SymbolTable() {
     contents = multimap<string,TypeBinder>();
@@ -23,10 +24,18 @@ bool Visitors::SymbolTable::checkIfInSymbolTable(string identifier,TypeBinder::I
     return false; // if we do not find such a pair.
 }
 
-Visitors::TypeBinder Visitors::SymbolTable::getTypeBinder(string identifier) {
-    return contents.find(identifier)->second;
+Visitors::TypeBinder Visitors::SymbolTable::getTypeBinder(string identifier,TypeBinder::IdentifierType identifierType) {
+    typedef std::multimap<string,TypeBinder>::iterator iterator1; //create an iterator type of the map
+    std::pair<iterator1,iterator1> answers = contents.equal_range(identifier); //get the range of values of the mapped key value
+    for(auto iterator = answers.first;iterator != answers.second;iterator++){
+        if(iterator->second.getIdentifierType() == identifierType){ //if we find a mapped value of type given in identifierType
+            return iterator->second;                                      // we have found such a pair
+        }
+    }
+    throw Exception::CompilingErrorException("Did not find variable"); //else compiling error
 }
 
 multimap<string, TypeBinder> SymbolTable::getMultimap() {
     return contents;
 }
+

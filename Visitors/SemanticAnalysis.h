@@ -147,6 +147,12 @@ namespace Visitors{
          * The vector of type SymbolTable pointer , that contains the scoped symbol table instance
          */
         vector<SymbolTable*> getScopedTable();
+        /**
+         * This method is used to give a value to the private field ScopedTable
+         * @param st
+         * Stores the scope table to be assigned to the private variable ScopedTable
+         */
+        void setScopedTable(vector<SymbolTable*> st);
     };
 }
 

@@ -632,6 +632,7 @@ CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../AS
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Statement/FormalParam.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Statement/FormalParams.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../ASTHierarchy/Type.h
+CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../Exceptions/CompilingErrorException.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../Visitors/Utilities/SymbolTable.cpp
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../Visitors/Utilities/SymbolTable.h
 CMakeFiles/CompilersAssignment.dir/Visitors/Utilities/SymbolTable.cpp.obj: ../Visitors/Utilities/TypeBinder.h

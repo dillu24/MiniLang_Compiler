@@ -8,7 +8,7 @@
 #include "Visitor.h"
 using namespace Visitors;
 namespace Visitors{
-    class XMLGenerator:Visitor {
+    class XMLGenerator:public Visitor {
     public:
         /**
          * This constructor creates a new XMLGenerator visitor class and declares the indentation level to "" since
